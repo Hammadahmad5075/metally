@@ -952,6 +952,19 @@ html[dir="rtl"] .use-item:hover {
   width: 100%;
   text-align: center;
 }
+@media (max-width: 768px) {
+  .floor-highlight {
+    font-size: 0.65rem;
+    padding: 2px;
+    letter-spacing: 0;
+    line-height: 1.15;
+  }
+}
+@media (max-width: 480px) {
+  .floor-highlight {
+    font-size: 0.55rem;
+  }
+}
 .floor-highlight-bedroom {
   top: 15%;
   left: 10%;
