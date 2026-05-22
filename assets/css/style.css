@@ -17,6 +17,7 @@
   --secondary-olive: #4E8A53;     /* Vibrant Sage/Leaf Green from SS */
   --secondary-olive-rgb: 78, 138, 83;
   --accent-leaf: #4E8A53;         /* Sharp vibrant accent green */
+  --accent-leaf-bright: #6AD375;  /* Brighter, highly visible green for dark backgrounds */
   --accent-leaf-rgb: 78, 138, 83;
   --accent-leaf-dark: #3E7242;
   --bg-cream: #F2F7F5;            /* Soft, clean off-white mint from SS */
@@ -130,7 +131,7 @@ body.ar-font button {
 .text-green { color: var(--accent-leaf); }
 .bg-deep-green { background-color: var(--bg-deep-green); }
 .bg-cream { background-color: var(--bg-cream); }
-.bg-green { background-color: var(--accent-leaf) !important; }
+.bg-green { background-color: var(--accent-leaf-bright) !important; color: var(--primary-dark) !important; font-weight: 700; }
 .border-gold { border: 1px solid var(--accent-leaf); }
 .border-green { border: 1px solid var(--accent-leaf); }
 .text-justify { text-align: justify; }
@@ -176,7 +177,7 @@ section {
   border: none;
   padding: 14px 34px;
   border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(78, 138, 83, 0.15);
+  box-shadow: 0 6px 20px rgba(78, 138, 83, 0.4);
   transition: var(--transition-smooth);
   display: inline-flex;
   align-items: center;
@@ -193,8 +194,8 @@ section {
 
 .btn-outline-gold, .btn-outline-green {
   background: transparent;
-  color: var(--accent-leaf) !important;
-  border: 1.5px solid var(--accent-leaf);
+  color: var(--bg-cream) !important;
+  border: 1.5px solid var(--accent-leaf-bright);
   font-weight: 600;
   font-size: 0.95rem;
   padding: 13px 32px;
@@ -575,15 +576,16 @@ section {
 .hero-badge-slogan {
   display: inline-block;
   padding: 6px 18px;
-  background-color: rgba(78, 138, 83, 0.12);
-  border: 1px solid rgba(78, 138, 83, 0.35);
-  color: var(--accent-leaf);
+  background-color: rgba(106, 211, 117, 0.15);
+  border: 1px solid rgba(106, 211, 117, 0.4);
+  color: var(--accent-leaf-bright);
   border-radius: 50px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
   margin-bottom: 24px;
   backdrop-filter: blur(5px);
+  text-shadow: 0 0 10px rgba(106, 211, 117, 0.5);
 }
 
 .hero-title {
