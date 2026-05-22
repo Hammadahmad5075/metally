@@ -1026,6 +1026,9 @@ html[dir="rtl"] .use-item:hover {
   background-color: var(--primary-dark);
   box-shadow: 0 25px 60px rgba(3, 14, 12, 0.5);
   margin-top: 24px;
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 @media (max-width: 991px) {
   .ops-showcase-container {
@@ -1051,6 +1054,8 @@ html[dir="rtl"] .use-item:hover {
   object-fit: cover;
   transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
   filter: brightness(0.9) contrast(1.02);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 }
 .ops-showcase-container:hover .ops-showcase-img {
   transform: scale(1.025);
@@ -1075,6 +1080,9 @@ html[dir="rtl"] .use-item:hover {
   background-color: var(--primary-dark);
   box-shadow: 0 20px 45px rgba(3, 14, 12, 0.4);
   margin-top: 24px;
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .invest-showcase-img-wrapper {
   width: 100%;
