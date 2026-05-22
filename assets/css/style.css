@@ -602,8 +602,18 @@ section {
   }
 }
 @media (max-width: 576px) {
+  .hero-badge-slogan {
+    font-size: 0.75rem;
+    padding: 5px 14px;
+    margin-bottom: 16px;
+  }
   .hero-title {
-    font-size: 2.3rem;
+    font-size: 2.2rem;
+    margin-bottom: 4px;
+  }
+  .hero-location {
+    font-size: 1.15rem;
+    margin-bottom: 16px;
   }
 }
 
@@ -634,6 +644,25 @@ section {
   opacity: 0.85;
   margin-bottom: 40px;
   max-width: 560px;
+}
+@media (max-width: 576px) {
+  .hero-subtitle {
+    font-size: 1.35rem;
+    margin-bottom: 16px;
+  }
+  .hero-desc {
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+    line-height: 1.5;
+  }
+  .btn-gold, .btn-green {
+    padding: 12px 24px !important;
+    font-size: 0.9rem !important;
+  }
+  .btn-outline-gold, .btn-outline-green {
+    padding: 11px 22px !important;
+    font-size: 0.9rem !important;
+  }
 }
 
 /* Floating Metrics Grid */
