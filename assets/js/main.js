@@ -1,8 +1,8 @@
 $(document).ready(function () {
-  // --- INITIATE SCROLL REVEAL ACTIVATION ---
+  // Initiate Scroll Reveal Activation
   $("html").addClass("js-active");
 
-  // --- LANGUAGE INTERACTIVITY (i18n) ---
+  // Language Interactivity (I18N)
   let preferredLang = localStorage.getItem("preferredLanguage");
   let currentLang = (preferredLang === "en" || preferredLang === "ar") ? preferredLang : "en";
   let activeStrengthKey = null;
@@ -159,7 +159,7 @@ $(document).ready(function () {
   // Language toggler hook is configured; initialization deferred to bottom of file
 
 
-  // --- STICKY GLASSMORPHIC HEADER ---
+  // Sticky Glassmorphic Header
   const $nav = $(".navbar");
   $(window).on("scroll", function () {
     if ($(window).scrollTop() > 50) {
@@ -170,7 +170,7 @@ $(document).ready(function () {
   });
 
 
-  // --- ADVANCED MOUSE PARALLAX & SPOTLIGHT TRACKING ---
+  // Advanced Mouse Parallax & Spotlight Tracking
   const $heroSection = $("#home");
   if ($heroSection.length) {
     $heroSection.on("mousemove", function (e) {
@@ -186,7 +186,7 @@ $(document).ready(function () {
     });
   }
 
-  // --- HIGH-PERFORMANCE SCROLL PARALLAX DRIVER ---
+  // High-Performance Scroll Parallax Driver
   let isScrollParallaxTicking = false;
   $(window).on("scroll", function () {
     if (!isScrollParallaxTicking) {
@@ -201,7 +201,7 @@ $(document).ready(function () {
 
 
 
-  // --- LIGHTWEIGHT SCROLL REVEAL (AOS ALTERNATIVE) ---
+  // Lightweight Scroll Reveal (Aos Alternative)
   const revealObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -223,7 +223,7 @@ $(document).ready(function () {
   });
 
 
-  // --- ANIMATED METRICS COUNTER ---
+  // Animated Metrics Counter
   function animateCounters() {
     $(".counter-animate").each(function () {
       const $this = $(this);
@@ -261,7 +261,7 @@ $(document).ready(function () {
   setTimeout(animateCounters, 600);
 
 
-  // --- INTERACTIVE YIELD CALCULATOR ---
+  // Interactive Yield Calculator
   const $unitsInput = $("#calc-units");
   const $rentInput = $("#calc-rent");
   const $occupancyInput = $("#calc-occupancy");
@@ -333,7 +333,7 @@ $(document).ready(function () {
   $(".calc-range").on("input change", updateCalculator);
 
 
-  // --- INTERACTIVE FLOOR PLAN EXPLORER ---
+  // Interactive Floor Plan Explorer
   const floorPlanDetails = {
     bedroom: {
       en: {
@@ -408,7 +408,7 @@ $(document).ready(function () {
   });
 
 
-  // --- INTERACTIVE STRENGTH BADGES ---
+  // Interactive Strength Badges
   $(".strength-badge").on("mouseenter click", function () {
     const key = $(this).data("strength");
     if (!key || !strengthDetails[key]) return;
@@ -438,7 +438,7 @@ $(document).ready(function () {
     }
   });
 
-  // --- ACTIVE NAV LINK HIGHLIGHTING VIA INTERSECTIONOBSERVER ---
+  // Active Nav Link Highlighting Via Intersectionobserver
   const sections = $("section[id]");
   const navLinks = $(".navbar-nav .nav-link");
 
@@ -474,7 +474,7 @@ $(document).ready(function () {
   });
 
 
-  // --- CONTACT ENQUIRY HUB ---
+  // Contact Enquiry Hub
   const $contactForm = $("#enquiry-form");
   const $formFeedback = $("#form-feedback");
 

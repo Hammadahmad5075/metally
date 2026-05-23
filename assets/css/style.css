@@ -10,7 +10,7 @@
 @import url('https://db.onlinewebfonts.com/c/11d2534b1be852ecc92863ef5cbda987?family=TT+Interphases+Pro');
 @import url('https://db.onlinewebfonts.com/c/dee436f274c410c23fc3de43367ef1ae?family=Janna+LT');
 
-/* --- CUSTOM VARIABLES --- */
+/* Custom Variables */
 :root {
   --primary-dark: #06332A;       /* Deep Pine Green from SS */
   --primary-dark-rgb: 6, 51, 42;
@@ -59,7 +59,7 @@
   --scroll-top: 0;
 }
 
-/* --- GENERAL RESET & BASE STYLES --- */
+/* General Reset & Base Styles */
 * {
   box-sizing: border-box;
 }
@@ -71,6 +71,9 @@ html, body {
 
 body {
   background-color: var(--bg-cream);
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
   color: var(--text-dark);
   overflow-x: hidden;
   transition: opacity 0.2s ease;
@@ -126,7 +129,7 @@ body.ar-font button {
   color: var(--primary-dark);
 }
 
-/* --- UTILITY CLASSES --- */
+/* Utility Classes */
 .text-gold { color: var(--accent-leaf); }
 .text-green { color: var(--accent-leaf); }
 .bg-deep-green { background-color: var(--bg-deep-green); }
@@ -260,7 +263,7 @@ section {
   }
 }
 
-/* --- FIXED DUAL-PHASE GLASSMORPHIC NAVBAR --- */
+/* Fixed Dual-Phase Glassmorphic Navbar */
 .navbar {
   transition: var(--transition-smooth);
   padding: 20px 0;
@@ -408,7 +411,7 @@ section {
   }
 }
 
-/* --- DECORATIVE FLOATING VECTOR SHAPES --- */
+/* Decorative Floating Vector Shapes */
 .floating-elements-container {
   position: absolute;
   top: 0;
@@ -454,7 +457,7 @@ section {
   100% { transform: translateY(0px) rotate(360deg); }
 }
 
-/* --- ADVANCED INTERACTIVE & PARALLAX SYSTEMS --- */
+/* Advanced Interactive & Parallax Systems */
 .hero-spotlight {
   position: absolute;
   top: 0;
@@ -542,7 +545,7 @@ section {
   box-shadow: 0 15px 35px rgba(6, 51, 42, 0.05);
 }
 
-/* --- HERO SECTION --- */
+/* Hero Section */
 .hero-section {
   position: relative;
   min-height: 100vh;
@@ -714,7 +717,7 @@ section {
   opacity: 0.8;
 }
 
-/* --- FOUNDER BIOGRAPHY SECTION --- */
+/* Founder Biography Section */
 .founder-image-wrapper {
   position: relative;
   border-radius: var(--radius-lg);
@@ -780,7 +783,7 @@ section {
   color: var(--text-muted);
 }
 
-/* --- STRUCTURED LIVING CONCEPT SECTION --- */
+/* Structured Living Concept Section */
 .concept-tabs-nav {
   display: flex;
   gap: 12px;
@@ -845,7 +848,7 @@ html[dir="rtl"] .use-item:hover {
   transform: translateX(-6px);
 }
 
-/* --- INTERACTIVE FLOOR PLAN SECTION --- */
+/* Interactive Floor Plan Section */
 .floor-plan-pill-container {
   display: flex;
   flex-direction: column;
@@ -1026,7 +1029,7 @@ html[dir="rtl"] .use-item:hover {
   border-inline-start: 4px solid var(--accent-leaf) !important;
 }
 
-/* --- OPERATIONAL ADVANTAGE SECTION --- */
+/* Operational Advantage Section */
 #operations {
   background-color: var(--primary-dark) !important;
   background-image: radial-gradient(circle at 50% 10%, rgba(78, 138, 83, 0.12) 0%, transparent 70%);
@@ -1125,7 +1128,7 @@ html[dir="rtl"] .use-item:hover {
   border: 1.5px solid rgba(78, 138, 83, 0.2);
   overflow: hidden;
   position: relative;
-  height: 380px;
+  min-height: 380px; height: 100%;
   background-color: var(--primary-dark);
   box-shadow: 0 20px 45px rgba(3, 14, 12, 0.4);
   margin-top: 24px;
@@ -1152,7 +1155,7 @@ html[dir="rtl"] .use-item:hover {
   transform: scale(1.045);
 }
 
-/* --- INVESTMENT CASE & CALCULATOR SECTION --- */
+/* Investment Case & Calculator Section */
 .invest-stat-card {
   text-align: center;
   padding: 30px;
@@ -1382,7 +1385,7 @@ input[type=range].calc-range::-moz-range-thumb:hover {
   border: 1.5px solid var(--accent-leaf);
 }
 
-/* --- CONTACT ENQUIRY HUB --- */
+/* Contact Enquiry Hub */
 .contact-info-card {
   background-color: var(--primary-dark);
   color: var(--text-light);
@@ -1516,7 +1519,7 @@ input[type=range].calc-range::-moz-range-thumb:hover {
   margin-bottom: 6px;
 }
 
-/* --- FOOTER --- */
+/* Footer */
 footer {
   background-color: var(--bg-deep-green);
   color: var(--text-light);
@@ -1595,7 +1598,7 @@ html[dir="rtl"] .footer-links-list a:hover {
   opacity: 0.7;
 }
 
-/* --- ANIMATIONS AND MICRO-TRANSITIONS --- */
+/* Animations And Micro-Transitions */
 @keyframes pulseGlow {
   0% { box-shadow: 0 0 10px rgba(78, 138, 83, 0.15); }
   50% { box-shadow: 0 0 25px rgba(78, 138, 83, 0.45); }
@@ -1767,7 +1770,7 @@ html[dir="rtl"] .btn-outline-green i {
   transform: scaleX(-1);
 }
 
-/* --- PREMIUM MAGAZINE EDITORIAL STYLES --- */
+/* Premium Magazine Editorial Styles */
 .magazine-editorial-box {
   border: 1px solid rgba(78, 138, 83, 0.15);
   padding: 35px;
