@@ -118,6 +118,9 @@ $(document).ready(function () {
     if (window.initProjectsSwiper) {
       window.initProjectsSwiper(lang);
     }
+    if (window.initInventorySwiper) {
+      window.initInventorySwiper(lang);
+    }
 
     // 2. Translate elements
     $("[data-i18n]").each(function () {
@@ -622,6 +625,46 @@ $(document).ready(function () {
   updateVisibility();
 
   // Initialize Featured Projects Swiper
+  
+  // Initialize Inventory Swiper
+  window.initInventorySwiper = function(lang) {
+    if (typeof Swiper === 'undefined') return;
+    
+    const swiperEl = document.querySelector('.inventory-swiper');
+    if (swiperEl && swiperEl.swiper) {
+      swiperEl.swiper.destroy(true, true);
+    }
+    
+    if (swiperEl) {
+      swiperEl.setAttribute("dir", lang === "ar" ? "rtl" : "ltr");
+    }
+
+    new Swiper('.inventory-swiper', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: false,
+      dir: lang === "ar" ? "rtl" : "ltr",
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        992: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        }
+      }
+    });
+  };
+
   window.initProjectsSwiper = function(lang) {
     if (typeof Swiper === 'undefined') return;
     
@@ -662,5 +705,31 @@ $(document).ready(function () {
     });
   };
   
-  // Initial call with current language
-  window.initProjectsSwiper(currentLang);
+
+
+// Spatial Tabs Interactive Logic
+window.switchSpatialTab = function(target) {
+  // Update Tab States
+  document.querySelectorAll('.spatial-tab').forEach(tab => {
+    tab.classList.remove('active');
+    tab.querySelector('.spatial-tab-content').style.display = 'none';
+    tab.querySelector('span').classList.add('opacity-50');
+  });
+  
+  const activeTab = document.querySelector(`.spatial-tab[data-target="${target}"]`);
+  if (activeTab) {
+    activeTab.classList.add('active');
+    activeTab.querySelector('.spatial-tab-content').style.display = 'block';
+    activeTab.querySelector('span').classList.remove('opacity-50');
+  }
+
+  // Update Image Opacities (Crossfade)
+  document.querySelectorAll('.spatial-image-container img').forEach(img => {
+    img.style.opacity = '0';
+  });
+  
+  const targetImg = document.getElementById(`img-${target}`);
+  if (targetImg) {
+    targetImg.style.opacity = '1';
+  }
+};

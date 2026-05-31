@@ -2076,3 +2076,191 @@ html[dir="rtl"] .swiper-button-next {
   left: 10px !important;
   right: auto !important;
 }
+
+
+/* --- PROJECT PAGE BESPOKE UI --- */
+.spec-matrix-cell {
+  transition: background-color 0.4s ease;
+}
+.spec-matrix-cell:hover {
+  background-color: rgba(255, 255, 255, 0.03);
+}
+.pulse-marker {
+  animation: pulse-ring 2s infinite;
+}
+@keyframes pulse-ring {
+  0% {
+    box-shadow: 0 0 0 0 rgba(116, 172, 114, 0.4), 0 0 0 10px rgba(116, 172, 114, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 15px rgba(116, 172, 114, 0), 0 0 0 30px rgba(116, 172, 114, 0);
+  }
+}
+
+
+/* --- GLOBAL MOBILE & TABLET RESPONSIVENESS OVERRIDES --- */
+
+/* Tablet (Max 991px) */
+@media (max-width: 991.98px) {
+  /* Reduce heavy padding globally */
+  .py-6 {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+  }
+  .p-5 {
+    padding: 2.5rem !important;
+  }
+  
+  /* Scale down massive display typography */
+  .display-1 {
+    font-size: 3.5rem !important;
+  }
+  .display-4 {
+    font-size: 2.5rem !important;
+  }
+  .display-5 {
+    font-size: 2.25rem !important;
+  }
+  .display-6 {
+    font-size: 1.75rem !important;
+  }
+
+  /* Fixed height images override */
+  .img-fluid[style*="height: 500px"],
+  .bg-image[style*="height: 600px"] {
+    height: 400px !important;
+  }
+}
+
+/* Mobile (Max 768px) */
+@media (max-width: 767.98px) {
+  /* Further reduce padding for small screens */
+  .py-6 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+  
+  /* Typography */
+  .display-1 {
+    font-size: 2.75rem !important;
+    letter-spacing: 0 !important;
+  }
+  .display-4 {
+    font-size: 2rem !important;
+  }
+  .display-5 {
+    font-size: 1.75rem !important;
+  }
+  
+  /* Project Specs Matrix Compression */
+  .spec-matrix-cell {
+    padding: 1.5rem 1rem !important;
+  }
+  .spec-matrix-cell h5 {
+    font-size: 1rem !important;
+  }
+  
+  /* Cinematic Hero Fixes */
+  #project-hero {
+    min-height: 100vh !important;
+    height: auto !important;
+    padding-top: 120px !important; /* Ensure navbar doesn't cover content */
+  }
+  
+  /* Image height overrides for mobile */
+  .img-fluid[style*="height: 500px"],
+  .bg-image[style*="height: 600px"] {
+    height: 300px !important;
+  }
+  
+  /* Filter bar stacking */
+  .filter-bar-container .row {
+    row-gap: 0.5rem;
+  }
+  
+  /* Ops showcase card minimum height fix */
+  .ops-showcase-card {
+    min-height: auto !important;
+  }
+  
+  /* Contact Info Card Padding */
+  .contact-info-card {
+    padding: 2rem !important;
+  }
+}
+
+/* Extra Small Mobile (Max 576px) */
+@media (max-width: 575.98px) {
+  .display-1 {
+    font-size: 2.25rem !important;
+  }
+  
+  /* Ensure matrix text doesn't overflow completely on tiny screens */
+  .spec-matrix-cell {
+    padding: 1rem 0.5rem !important;
+  }
+  .spec-matrix-cell h5 {
+    font-size: 0.85rem !important;
+  }
+  .spec-matrix-cell p {
+    font-size: 0.7rem !important;
+  }
+}
+
+/* --- LIVE INVENTORY MATRIX --- */
+.inventory-card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+}
+.inventory-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(116, 172, 114, 0.15);
+  border-color: rgba(116, 172, 114, 0.8) !important;
+}
+.inventory-card .badge {
+  font-size: 0.75rem;
+}
+
+/* --- INTERACTIVE SPATIAL TABS --- */
+.cursor-pointer {
+  cursor: pointer;
+}
+.spatial-tab {
+  background-color: transparent;
+  border-left: 3px solid transparent;
+}
+.spatial-tab.active {
+  background-color: white;
+  border-left: 3px solid var(--accent-leaf);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+.spatial-tab.active span.opacity-50 {
+  opacity: 1 !important;
+}
+.transition-opacity {
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Inventory Swiper Overrides */
+.inv-swiper-pagination .swiper-pagination-bullet {
+  background: var(--accent-leaf);
+  opacity: 0.5;
+  width: 10px;
+  height: 10px;
+}
+.inv-swiper-pagination .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+.inv-swiper-prev:hover,
+.inv-swiper-next:hover {
+  background: var(--accent-leaf) !important;
+  border-color: var(--accent-leaf) !important;
+}
+.inventory-swiper .swiper-slide {
+  height: auto;
+}
+.inventory-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
