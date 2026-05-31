@@ -2051,3 +2051,28 @@ html[dir="rtl"] .magazine-editorial::first-letter {
   font-weight: 700;
   color: var(--accent-leaf-bright);
 }
+
+/* Swiper Custom Styling */
+.swiper-pagination-bullet {
+  background: var(--bg-cream);
+  opacity: 0.5;
+}
+.swiper-pagination-bullet-active {
+  background: var(--accent-leaf-bright);
+  opacity: 1;
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+  color: var(--accent-leaf-bright);
+  font-weight: 900;
+}
+
+
+/* RTL Overrides for Swiper Navigation Arrows */
+html[dir="rtl"] .swiper-button-prev {
+  right: 10px !important;
+  left: auto !important;
+}
+html[dir="rtl"] .swiper-button-next {
+  left: 10px !important;
+  right: auto !important;
+}

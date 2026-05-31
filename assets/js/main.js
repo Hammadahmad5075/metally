@@ -98,6 +98,7 @@ $(document).ready(function () {
     // 1. Toggle HTML direction and lang
     if (lang === "ar") {
       $html.attr("dir", "rtl").attr("lang", "ar");
+      $(".swiper").attr("dir", "rtl");
       $bootstrapLink.attr(
         "href",
         "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"
@@ -105,11 +106,17 @@ $(document).ready(function () {
       $("body").addClass("ar-font").removeClass("en-font");
     } else {
       $html.attr("dir", "ltr").attr("lang", "en");
+      $(".swiper").attr("dir", "ltr");
       $bootstrapLink.attr(
         "href",
         "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       );
       $("body").addClass("en-font").removeClass("ar-font");
+    }
+
+    // Update Swiper instance securely by destroying and re-initializing
+    if (window.initProjectsSwiper) {
+      window.initProjectsSwiper(lang);
     }
 
     // 2. Translate elements
@@ -555,11 +562,10 @@ $(document).ready(function () {
         if (budget !== 'all' && itemBudget !== budget) match = false;
         
         if (match) {
-          item.style.display = 'block';
-          // Small animation for showing
-          item.style.animation = 'fadeInUp 0.5s ease forwards';
+          item.classList.add('match-filter');
           visibleCount++;
         } else {
+          item.classList.remove('match-filter');
           item.style.display = 'none';
         }
       });
@@ -570,5 +576,91 @@ $(document).ready(function () {
       } else {
         noMsg.classList.add('d-none');
       }
+      
+      // Reset load more state
+      currentVisibleLimit = 3;
+      updateVisibility();
     });
   }
+  
+  // Load More Logic
+  const properties = document.querySelectorAll('.property-item');
+  const loadMoreBtn = document.getElementById('load-more-btn');
+  const loadMoreContainer = document.getElementById('load-more-container');
+  let currentVisibleLimit = 3; // Show 3 initially
+  
+  // Initialize all properties as matching
+  properties.forEach(item => item.classList.add('match-filter'));
+  
+  function updateVisibility() {
+    const matchingItems = document.querySelectorAll('.property-item.match-filter');
+    
+    matchingItems.forEach((item, index) => {
+      if (index < currentVisibleLimit) {
+        item.style.display = 'block';
+        item.style.animation = 'fadeInUp 0.5s ease forwards';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+    
+    if (matchingItems.length > currentVisibleLimit) {
+      loadMoreContainer.style.display = 'block';
+    } else {
+      loadMoreContainer.style.display = 'none';
+    }
+  }
+  
+  if (loadMoreBtn) {
+    loadMoreBtn.addEventListener('click', function() {
+      currentVisibleLimit += 3; // Load 3 more at a time
+      updateVisibility();
+    });
+  }
+  
+  // Initial call
+  updateVisibility();
+
+  // Initialize Featured Projects Swiper
+  window.initProjectsSwiper = function(lang) {
+    if (typeof Swiper === 'undefined') return;
+    
+    // Destroy existing swiper instances if any
+    const swiperEl = document.querySelector('.projects-swiper');
+    if (swiperEl && swiperEl.swiper) {
+      swiperEl.swiper.destroy(true, true);
+    }
+    
+    // Ensure dir attribute is set before init
+    if (swiperEl) {
+      swiperEl.setAttribute("dir", lang === "ar" ? "rtl" : "ltr");
+    }
+
+    new Swiper('.projects-swiper', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: false,
+      dir: lang === "ar" ? "rtl" : "ltr", // Tell Swiper explicitly
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        992: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        }
+      }
+    });
+  };
+  
+  // Initial call with current language
+  window.initProjectsSwiper(currentLang);
