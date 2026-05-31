@@ -2264,3 +2264,316 @@ html[dir="rtl"] .swiper-button-next {
   flex-direction: column;
   justify-content: space-between;
 }
+
+/* --- Project Page Bento Box Grid --- */
+.bento-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+@media (min-width: 992px) {
+  .bento-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+  }
+  .bento-card.large {
+    grid-column: 1 / -1;
+  }
+}
+
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bento-card {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.bento-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  border-color: rgba(255,255,255,0.15) !important;
+}
+.hover-scale-img {
+  transition: transform 0.6s ease;
+}
+.image-wrapper:hover .hover-scale-img {
+  transform: scale(1.05);
+}
+.shadow-xl {
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+
+/* --- Modern Project Page Redesign --- */
+.w-lg-50 {
+  width: 100% !important;
+}
+@media (min-width: 992px) {
+  .w-lg-50 {
+    width: 50% !important;
+  }
+  .border-end-lg {
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
+.explore-btn-modern:hover .explore-circle {
+  background: var(--accent-gold);
+  border-color: var(--accent-gold) !important;
+}
+.explore-btn-modern:hover .explore-circle i {
+  color: var(--dark-bg) !important;
+}
+.explore-btn-modern:hover span {
+  color: #fff !important;
+}
+
+.bg-gradient-dark-up {
+  background: linear-gradient(to top, rgba(3, 26, 18, 1) 0%, rgba(3, 26, 18, 0.7) 40%, transparent 100%);
+}
+
+.tall-glass-card {
+  height: 450px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+}
+.tall-glass-card:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-10px);
+}
+.tall-glass-card:hover .card-glow-bg {
+  opacity: 0.6;
+}
+.tall-glass-card:hover .card-icon {
+  color: #fff !important;
+  transform: scale(1.1);
+}
+
+/* --- Bespoke Project Page Redesign --- */
+.bg-gradient-dark-radial {
+  background: radial-gradient(circle at center, transparent 0%, rgba(3, 26, 18, 0.95) 100%);
+}
+
+.mouse-scroll-indicator {
+  width: 30px;
+  height: 50px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  position: relative;
+}
+.mouse-scroll-indicator::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 8px;
+  background: var(--accent-leaf);
+  border-radius: 2px;
+  animation: scrollWheel 2s infinite;
+}
+@keyframes scrollWheel {
+  0% { top: 8px; opacity: 1; }
+  100% { top: 24px; opacity: 0; }
+}
+
+.blueprint-grid {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.blueprint-cell {
+  padding: 3rem 2rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  transition: background 0.3s ease;
+}
+.blueprint-cell:last-child {
+  border-right: none;
+}
+.blueprint-cell:hover {
+  background: rgba(255, 255, 255, 0.02);
+}
+.blueprint-label {
+  display: block;
+  font-family: monospace;
+  font-size: 0.8rem;
+  color: var(--accent-gold);
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+.blueprint-value {
+  font-size: 4rem;
+  font-weight: 300;
+  color: #fff;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+.blueprint-detail {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.pulsing-marker {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+.marker-core {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+.marker-ring, .marker-ring-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 2;
+}
+.marker-ring {
+  width: 40px;
+  height: 40px;
+  opacity: 0.5;
+  animation: pulse-ring 2s infinite ease-out;
+}
+.marker-ring-2 {
+  width: 80px;
+  height: 80px;
+  opacity: 0.2;
+  animation: pulse-ring 2s infinite ease-out 1s;
+}
+@keyframes pulse-ring {
+  0% { transform: translate(-50%, -50%) scale(0.5); opacity: 0.8; }
+  100% { transform: translate(-50%, -50%) scale(1.5); opacity: 0; }
+}
+
+/* --- Massive Project Page Updates --- */
+.factsheet-card {
+  transition: all 0.3s ease;
+}
+.factsheet-card:hover {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
+  transform: translateY(-5px);
+}
+
+/* --- Project Page Enhanced Interactions --- */
+/* Amenity Card Hover */
+.amenity-card {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+}
+.amenity-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: radial-gradient(circle at top right, rgba(78, 138, 83, 0.15), transparent 70%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.amenity-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--accent-leaf) !important;
+  box-shadow: var(--shadow-leaf);
+}
+.amenity-card:hover::before {
+  opacity: 1;
+}
+.amenity-card:hover i {
+  animation: pulseIcon 1s infinite alternate;
+  color: var(--accent-leaf-bright) !important;
+}
+
+/* Image Zoom Hover */
+.hover-zoom-img {
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.hover-zoom-img:hover, 
+.overflow-hidden:hover > .hover-zoom-img {
+  transform: scale(1.06);
+}
+
+/* Factsheet Hover Enhancements */
+.factsheet-card:hover i {
+  color: var(--accent-leaf-bright) !important;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+.factsheet-card i {
+  transition: all 0.3s ease;
+}
+
+@keyframes pulseIcon {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.15); }
+}
+
+/* --- Comprehensive Responsive Fixes for Project Page --- */
+@media (max-width: 991px) {
+  /* Scale down huge typography for tablets and mobiles */
+  .display-1 { font-size: 4rem !important; }
+  .display-3 { font-size: 3rem !important; }
+  .display-5 { font-size: 2.5rem !important; }
+
+  /* Adjust fixed image heights to prevent massive blocks on small screens */
+  .hover-zoom-img[style*="height: 450px"],
+  .hover-zoom-img[style*="height: 400px"] {
+    height: 350px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .display-1 { font-size: 3.5rem !important; }
+  .display-3 { font-size: 2.5rem !important; }
+  .display-5 { font-size: 2rem !important; }
+
+  /* Further reduce image heights for mobile */
+  .hover-zoom-img[style*="height: 450px"],
+  .hover-zoom-img[style*="height: 400px"] {
+    height: 250px !important;
+  }
+  
+  /* Reduce excessive padding on factsheet cards for mobile */
+  .factsheet-card.p-5 { 
+    padding: 2rem !important; 
+  }
+  
+  /* Fix the Developer Vision floating badge so it fits perfectly on small mobile screens */
+  .position-absolute.bottom-0.end-0.m-3.m-lg-4 {
+    padding: 1rem !important;
+    margin: 1rem !important;
+    bottom: 0 !important;
+    right: 0 !important;
+  }
+  .position-absolute.bottom-0.end-0.m-3.m-lg-4 h4 {
+    font-size: 1.1rem !important;
+  }
+  .position-absolute.bottom-0.end-0.m-3.m-lg-4 p {
+    font-size: 0.75rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .display-1 { font-size: 2.8rem !important; }
+  
+  /* Fix hero text width on very small screens */
+  .w-md-75 {
+    width: 100% !important;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

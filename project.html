@@ -22,7 +22,7 @@
   <!-- Swiper CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <!-- Core Design System Custom Stylesheet -->
-  <link rel="stylesheet" href="assets/css/style.css?v=1.3.0">
+  <link rel="stylesheet" href="assets/css/style.css?v=2.4.0">
 </head>
 
 <body class="en-font">
@@ -76,279 +76,361 @@
       </div>
     </nav>
   </header>
-    <!-- Inner Hero Section -->
-    <section class="position-relative d-flex align-items-center" style="min-height: 40vh; background: linear-gradient(to right, rgba(3, 26, 18, 0.9), rgba(3, 26, 18, 0.7)), url('assets/images/dubai-skyline.png') center/cover; padding-top: 100px;">
-      <div class="container position-relative z-index-2">
-        <div class="row">
-          <div class="col-lg-8" data-aos="fade-up">
-            <span class="badge bg-gold text-dark px-3 py-2 rounded-pill mb-3 fw-bold letter-spacing-1" data-i18n="proj-hero-badge">ZIMFORTH RESIDENCE</span>
-            <h1 class="text-white fw-bold display-4 mb-3" data-i18n="proj-hero-title">The Project</h1>
-            <p class="lead text-white-50 mb-0" data-i18n="proj-hero-desc">An exclusive glimpse into the architecture, concept, and hospitality-grade operations defining Al Twar 3's premier structured living destination.</p>
+    <!-- 1. Grand Cinematic Hero -->
+    <section class="vh-100 position-relative d-flex align-items-center justify-content-center bg-dark overflow-hidden" id="proj-hero">
+      <div class="position-absolute top-0 start-0 w-100 h-100" style="background: url('assets/images/dubai-skyline.png') center/cover no-repeat; filter: grayscale(50%) brightness(0.4);"></div>
+      <div class="position-absolute top-0 start-0 w-100 h-100 bg-gradient-dark-radial"></div>
+      
+      <div class="container position-relative z-index-2 text-center mt-5">
+        <span class="badge border border-secondary text-white-50 px-4 py-2 rounded-pill mb-4 font-monospace letter-spacing-2" data-i18n="proj-hero-badge">ZIMFORTH RESIDENCE</span>
+        <h1 class="text-white fw-light display-1 mb-4" style="letter-spacing: -2px;" data-i18n="proj-hero-title">The Complete Project.</h1>
+        <p class="lead text-white-50 fw-light mx-auto w-md-75" style="letter-spacing: 1px; line-height: 1.8;" data-i18n="proj-hero-desc">A deep dive into the architectural integrity, spatial optimization, and premium hospitality-grade operations that define Al Twar 3's most exclusive structured living destination.</p>
+        
+        <div class="mt-5 pt-5" data-aos="fade-in" data-aos-delay="500">
+          <a href="#vision" class="text-decoration-none text-white-50 d-inline-flex flex-column align-items-center">
+            <span class="font-monospace small mb-3 letter-spacing-2" data-i18n="proj-scroll-down">DISCOVER MORE</span>
+            <div class="mouse-scroll-indicator mx-auto"></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Developer's Vision -->
+    <section class="py-6 bg-cream border-bottom border-light" id="vision">
+      <div class="container py-5">
+        <div class="row align-items-center">
+          <div class="col-lg-5" data-aos="fade-right">
+            <span class="font-monospace small text-green letter-spacing-1 mb-3 d-block" data-i18n="vision-tag">THE DEVELOPER'S VISION</span>
+            <h2 class="display-5 fw-bold text-dark mb-4" data-i18n="vision-title">Redefining Boutique Living</h2>
+            <div class="border-start border-4 border-green ps-4 py-2 mb-4">
+              <p class="fs-5 fst-italic text-muted mb-0" data-i18n="vision-quote">"We identified a gap in the market for true boutique, hospitality-managed residential spaces in established neighborhoods. Metally Residence is our uncompromising answer to that demand."</p>
+            </div>
+            <p class="text-muted fw-light" data-i18n="vision-desc">Developed and managed by Zimforth Group, Metally Residence was conceived to bring Downtown-level finishes and hotel-grade facility management to the quiet, highly sought-after community of Al Twar 3.</p>
+          </div>
+          <div class="col-lg-6 offset-lg-1 mt-5 mt-lg-0" data-aos="fade-left">
+            <div class="position-relative overflow-hidden rounded-4 shadow-lg">
+              <img src="assets/images/lobby.png" class="img-fluid w-100 hover-zoom-img" style="height: 450px; object-fit: cover;" alt="Zimforth Vision">
+              <div class="position-absolute bottom-0 end-0 bg-dark p-4 shadow-lg rounded-4 m-3 m-lg-4">
+                <h4 class="text-white fw-bold mb-0">Zimforth Group</h4>
+                <p class="text-green font-monospace small mb-0">Real Estate Development</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Key Specifications Banner -->
-    <section class="py-5 bg-gold position-relative" style="margin-top: -30px; z-index: 10;">
+    <!-- 3. Comprehensive Project Factsheet -->
+    <section class="bg-white py-6 position-relative z-index-1" id="factsheet">
       <div class="container">
-        <div class="row g-4 text-center">
-          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
-            <div class="bg-white rounded p-4 shadow-sm h-100">
-              <i class="fas fa-building text-green fa-3x mb-3"></i>
-              <h3 class="fw-bold text-dark display-5 mb-1">G+2</h3>
-              <p class="text-muted text-uppercase letter-spacing-1 mb-0 fw-bold" data-i18n="proj-spec-struct">Structure</p>
-            </div>
-          </div>
-          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
-            <div class="bg-white rounded p-4 shadow-sm h-100">
-              <i class="fas fa-vector-square text-green fa-3x mb-3"></i>
-              <h3 class="fw-bold text-dark display-5 mb-1">777 m²</h3>
-              <p class="text-muted text-uppercase letter-spacing-1 mb-0 fw-bold" data-i18n="proj-spec-area">Plot Area</p>
-            </div>
-          </div>
-          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
-            <div class="bg-white rounded p-4 shadow-sm h-100">
-              <i class="fas fa-key text-green fa-3x mb-3"></i>
-              <h3 class="fw-bold text-dark display-5 mb-1">12</h3>
-              <p class="text-muted text-uppercase letter-spacing-1 mb-0 fw-bold" data-i18n="proj-spec-units">Exclusive Units</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Unit Layout Details -->
-    <section class="py-6 bg-light" id="unit-layouts">
-      <div class="container">
-        <div class="row justify-content-center mb-5 text-center">
-          <div class="col-lg-8" data-aos="fade-up">
-            <span class="section-tag" data-i18n="proj-arch-tag">ARCHITECTURE</span>
-            <h2 class="h1 fw-bold heading-green-accent" data-i18n="proj-arch-title">Unit Layout Details</h2>
-            <p class="text-muted lead" data-i18n="proj-arch-desc">Masterfully optimized 1-bedroom configurations designed to maximize usable space and daily comfort.</p>
-          </div>
-        </div>
-
-        <div class="row g-5 align-items-center">
-          <div class="col-lg-6" data-aos="fade-right">
-            <img src="assets/images/dubai-bedroom.png" class="img-fluid rounded shadow-lg" alt="Bedroom Layout">
-          </div>
-          <div class="col-lg-6" data-aos="fade-left">
-            <h3 class="fw-bold mb-4 text-green" data-i18n="proj-arch-master-title">The Master Suite</h3>
-            <p class="text-muted mb-4" data-i18n="proj-arch-master-desc">Every unit features a spacious master bedroom designed for tranquility. Large floor-to-ceiling windows invite natural light while preserving privacy, and built-in premium wardrobes ensure seamless storage.</p>
-            <ul class="list-unstyled mb-0">
-              <li class="mb-3 d-flex"><i class="fas fa-check-circle text-gold me-3 mt-1"></i><span class="text-muted" data-i18n="proj-arch-master-1">Acoustically insulated walls for undisturbed rest.</span></li>
-              <li class="mb-3 d-flex"><i class="fas fa-check-circle text-gold me-3 mt-1"></i><span class="text-muted" data-i18n="proj-arch-master-2">Smart climate control integration.</span></li>
-              <li class="mb-0 d-flex"><i class="fas fa-check-circle text-gold me-3 mt-1"></i><span class="text-muted" data-i18n="proj-arch-master-3">En-suite luxury bathroom access.</span></li>
-            </ul>
+        <div class="row text-center mb-6" data-aos="fade-up">
+          <div class="col-12">
+            <span class="font-monospace small text-gold letter-spacing-2 mb-3 d-block text-uppercase" data-i18n="facts-tag">TECHNICAL SPECIFICATIONS</span>
+            <h2 class="display-5 fw-bold text-dark" data-i18n="facts-title">Project Factsheet</h2>
           </div>
         </div>
         
-        <div class="row g-5 align-items-center mt-5 flex-lg-row-reverse">
-          <div class="col-lg-6" data-aos="fade-left">
-            <img src="assets/images/dubai-pantry.png" class="img-fluid rounded shadow-lg" alt="Pantry Layout">
+        <div class="row g-4 factsheet-grid">
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="factsheet-card p-5 rounded-4 shadow-sm h-100 bg-cream text-center border-0">
+              <h3 class="display-3 fw-bold text-dark mb-2">G+2</h3>
+              <h5 class="text-green font-monospace mb-3" data-i18n="facts-struct-title">Structural Elevation</h5>
+              <p class="text-muted small mb-0 fw-light" data-i18n="facts-struct-desc">Low-rise density ensuring maximum exclusivity and a quiet living environment.</p>
+            </div>
           </div>
-          <div class="col-lg-6" data-aos="fade-right">
-            <h3 class="fw-bold mb-4 text-green" data-i18n="proj-arch-pantry-title">Smart Living & Pantry</h3>
-            <p class="text-muted mb-4" data-i18n="proj-arch-pantry-desc">The living hall acts as the central hub of the residence, flowing naturally into a highly-functional smart pantry. The open-plan design creates an illusion of a much larger space.</p>
-            <ul class="list-unstyled mb-0">
-              <li class="mb-3 d-flex"><i class="fas fa-check-circle text-gold me-3 mt-1"></i><span class="text-muted" data-i18n="proj-arch-pantry-1">Integrated premium European appliances.</span></li>
-              <li class="mb-3 d-flex"><i class="fas fa-check-circle text-gold me-3 mt-1"></i><span class="text-muted" data-i18n="proj-arch-pantry-2">Custom-built cabinetry maximizing vertical storage.</span></li>
-              <li class="mb-0 d-flex"><i class="fas fa-check-circle text-gold me-3 mt-1"></i><span class="text-muted" data-i18n="proj-arch-pantry-3">Durable, stain-resistant stone countertops.</span></li>
-            </ul>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="factsheet-card p-5 rounded-4 shadow-sm h-100 bg-cream text-center border-0">
+              <h3 class="display-3 fw-bold text-dark mb-2">777<span class="fs-4 ms-1">m²</span></h3>
+              <h5 class="text-green font-monospace mb-3" data-i18n="facts-area-title">Total Plot Area</h5>
+              <p class="text-muted small mb-0 fw-light" data-i18n="facts-area-desc">Highly optimized footprint maximizing functional interior space over common corridors.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="factsheet-card p-5 rounded-4 shadow-sm h-100 bg-cream text-center border-0">
+              <h3 class="display-3 fw-bold text-green mb-2">12</h3>
+              <h5 class="text-gold font-monospace mb-3" data-i18n="facts-units-title">Exclusive Units</h5>
+              <p class="text-muted small mb-0 fw-light" data-i18n="facts-units-desc">A highly limited inventory of masterfully designed 1-Bedroom Suites.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="factsheet-card p-5 rounded-4 shadow-sm h-100 bg-cream text-center border-0">
+              <i class="fas fa-car fa-3x text-dark mb-3"></i>
+              <h5 class="text-green font-monospace mb-3" data-i18n="facts-park-title">Covered Parking</h5>
+              <p class="text-muted small mb-0 fw-light" data-i18n="facts-park-desc">Dedicated, secure, and shaded ground-level parking for all residents.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+            <div class="factsheet-card p-5 rounded-4 shadow-sm h-100 bg-cream text-center border-0">
+              <i class="fas fa-shield-halved fa-3x text-dark mb-3"></i>
+              <h5 class="text-green font-monospace mb-3" data-i18n="facts-sec-title">24/7 Security</h5>
+              <p class="text-muted small mb-0 fw-light" data-i18n="facts-sec-desc">Comprehensive CCTV coverage and integrated smart biometric access control.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+            <div class="factsheet-card p-5 rounded-4 shadow-sm h-100 bg-cream text-center border-0">
+              <i class="fas fa-bell-concierge fa-3x text-dark mb-3"></i>
+              <h5 class="text-green font-monospace mb-3" data-i18n="facts-manage-title">Hospitality Management</h5>
+              <p class="text-muted small mb-0 fw-light" data-i18n="facts-manage-desc">Operations and maintenance strictly governed by Zimforth Hospitality.</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-<!-- Concept & Structured Living -->
-    <section class="bg-white overflow-hidden position-relative" id="project">
-            <div class="dotted-canvas" style="opacity: 0.03;"></div>
-      
-            <div class="floating-elements-container">
-        <div class="floating-ring floating-ring-2 rotating-ring-slow" style="width: 250px; height: 250px; opacity: 0.5;"></div>
-                <svg class="luxury-star-anim" style="position: absolute; top: 15%; left: 5%; width: 22px; height: 22px; fill: var(--accent-leaf); opacity: 0.25; z-index: 2;" viewBox="0 0 24 24"><path d="M12 0l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></svg>
-        <svg class="luxury-star-anim" style="position: absolute; bottom: 15%; right: 5%; width: 18px; height: 18px; fill: var(--accent-leaf); opacity: 0.2; z-index: 2; animation-delay: 1.5s;" viewBox="0 0 24 24"><path d="M12 0l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></svg>
+    <!-- 4. Exterior Architecture -->
+    <section class="py-6 bg-light" id="exterior">
+      <div class="container py-4">
+        <div class="row align-items-center flex-row-reverse">
+          <div class="col-lg-6" data-aos="fade-left">
+            <span class="font-monospace small text-green letter-spacing-1 mb-3 d-block" data-i18n="ext-tag">EXTERIOR DESIGN</span>
+            <h2 class="display-5 fw-bold text-dark mb-4" data-i18n="ext-title">Modern Geometric Facade</h2>
+            <p class="lead text-muted fw-light mb-4" data-i18n="ext-desc">The exterior architecture of Metally Residence is defined by clean geometric lines, large glass expanses, and a sophisticated material palette that stands out while respecting the local neighborhood context.</p>
+            <ul class="list-unstyled mb-0 mt-4">
+              <li class="mb-3 d-flex"><i class="fas fa-check text-gold me-3 mt-1"></i><span class="text-secondary" data-i18n="ext-list-1">Expansive floor-to-ceiling windows maximizing natural daylight.</span></li>
+              <li class="mb-3 d-flex"><i class="fas fa-check text-gold me-3 mt-1"></i><span class="text-secondary" data-i18n="ext-list-2">Weather-resistant, highly durable premium cladding.</span></li>
+              <li class="mb-0 d-flex"><i class="fas fa-check text-gold me-3 mt-1"></i><span class="text-secondary" data-i18n="ext-list-3">Architectural lighting emphasizing the building's structural form at night.</span></li>
+            </ul>
+          </div>
+          <div class="col-lg-5 offset-lg-1 mt-5 mt-lg-0" data-aos="fade-right">
+            <div class="overflow-hidden rounded-4 shadow-xl">
+              <img src="assets/images/dubai-skyline.png" class="img-fluid w-100 hover-zoom-img" alt="Exterior Architecture">
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="container position-relative z-3">
+    <!-- 5. Interior Design & Materials -->
+    <section class="py-6 bg-white" id="interiors">
+      <div class="container py-4">
+        <div class="row text-center mb-6" data-aos="fade-up">
+          <div class="col-12">
+            <span class="font-monospace small text-green letter-spacing-1 mb-3 d-block" data-i18n="int-tag">INTERIOR FINISHES</span>
+            <h2 class="display-5 fw-bold text-dark" data-i18n="int-title">Material Excellence</h2>
+          </div>
+        </div>
+        
+        <!-- Kitchens -->
+        <div class="row align-items-center mb-6">
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="overflow-hidden h-100 w-100 rounded-4 shadow-sm">
+              <img src="assets/images/dubai-pantry.png" class="img-fluid rounded-4 w-100 hover-zoom-img" style="height: 400px; object-fit: cover;" alt="European Kitchen">
+            </div>
+          </div>
+          <div class="col-lg-5 offset-lg-1 mt-4 mt-lg-0" data-aos="fade-left">
+            <h3 class="fw-bold mb-3 text-dark" data-i18n="int-kitchen-title">European Kitchens</h3>
+            <p class="text-muted fw-light mb-4" data-i18n="int-kitchen-desc">Seamless handle-less cabinetry imported directly from Europe, maximizing vertical storage. Featuring non-porous Engineered Quartz countertops for a hygienic, stain-resistant culinary space.</p>
+          </div>
+        </div>
+        
+        <!-- Master Suites -->
+        <div class="row align-items-center flex-row-reverse mb-6">
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="overflow-hidden h-100 w-100 rounded-4 shadow-sm">
+              <img src="assets/images/dubai-bedroom.png" class="img-fluid rounded-4 w-100 hover-zoom-img" style="height: 400px; object-fit: cover;" alt="Master Suite">
+            </div>
+          </div>
+          <div class="col-lg-5 offset-lg-1 mt-4 mt-lg-0" data-aos="fade-right">
+            <h3 class="fw-bold mb-3 text-dark" data-i18n="int-bed-title">Tranquil Master Suites</h3>
+            <p class="text-muted fw-light mb-4" data-i18n="int-bed-desc">Engineered for absolute rest. Acoustic double-glazing isolates external noise, while integrated smart climate control ensures optimal sleeping conditions. Complete with bespoke built-in wardrobes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Amenities & Inclusions -->
+    <section class="py-6 bg-cream text-dark" id="amenities">
+      <div class="container">
+        <div class="row text-center mb-5" data-aos="fade-up">
+          <div class="col-12">
+            <span class="font-monospace small text-gold letter-spacing-2 mb-3 d-block text-uppercase" data-i18n="amen-tag">RESIDENT BENEFITS</span>
+            <h2 class="display-5 fw-bold text-dark" data-i18n="amen-title">The Metally Inclusions</h2>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-6 col-lg-3 text-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="p-4 rounded-4 shadow-sm bg-white h-100 amenity-card border-0">
+              <i class="fas fa-fingerprint text-gold fa-2x mb-3"></i>
+              <h6 class="fw-bold text-dark mb-2" data-i18n="amen-smart-title">Biometric Entry</h6>
+              <p class="small text-muted mb-0 font-monospace" data-i18n="amen-smart-desc">Keyless secure access</p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3 text-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="p-4 rounded-4 shadow-sm bg-white h-100 amenity-card border-0">
+              <i class="fas fa-snowflake text-gold fa-2x mb-3"></i>
+              <h6 class="fw-bold text-dark mb-2" data-i18n="amen-ac-title">Smart Climate</h6>
+              <p class="small text-muted mb-0 font-monospace" data-i18n="amen-ac-desc">App-controlled AC</p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3 text-center" data-aos="fade-up" data-aos-delay="300">
+            <div class="p-4 rounded-4 shadow-sm bg-white h-100 amenity-card border-0">
+              <i class="fas fa-broom text-gold fa-2x mb-3"></i>
+              <h6 class="fw-bold text-dark mb-2" data-i18n="amen-clean-title">Common Cleaning</h6>
+              <p class="small text-muted mb-0 font-monospace" data-i18n="amen-clean-desc">Daily hospitality upkeep</p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3 text-center" data-aos="fade-up" data-aos-delay="400">
+            <div class="p-4 rounded-4 shadow-sm bg-white h-100 amenity-card border-0">
+              <i class="fas fa-wrench text-gold fa-2x mb-3"></i>
+              <h6 class="fw-bold text-dark mb-2" data-i18n="amen-maint-title">Pro Maintenance</h6>
+              <p class="small text-muted mb-0 font-monospace" data-i18n="amen-maint-desc">Rapid response team</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="bg-cream" id="contact">
+      <div class="container">
+        <!-- Header -->
         <div class="row justify-content-center text-center mb-5 reveal-on-scroll">
           <div class="col-lg-8">
-            <span class="section-tag" data-i18n="concept-tag">CONCEPT & POSITIONING</span>
+            <span class="section-tag" data-i18n="contact-tag">CONNECT WITH US</span>
             <div class="mb-3">
-              <h2 class="h1 fw-bold heading-green-accent" data-i18n="concept-title">Branded Residential Concept + Operational Model</h2>
+              <h2 class="h1 fw-bold heading-green-accent" data-i18n="contact-title">Start Your Metally Journey</h2>
             </div>
-            <p class="lead text-muted" data-i18n="concept-desc">
-              Metally Residence is an elite residential concept where spaces are organized for maximum efficiency, operations are managed with strict discipline, and services are consistently maintained at hospitality levels.
+            <p class="lead text-muted" data-i18n="contact-desc">
+              Whether you are looking for premium accommodation or a structured investment opportunity, our team is ready.
             </p>
           </div>
         </div>
-        
-        <!-- Three pillars Grid with scroll reveals -->
-        <div class="row g-4 mt-2">
-          <div class="col-md-4 reveal-on-scroll delay-1">
-            <div class="soft-card">
-              <div class="concept-pill-icon"><i class="fas fa-crop-simple"></i></div>
-              <h4 class="fw-bold mb-3 text-green" data-i18n="concept-pill-efficiency-title">Organized Spaces</h4>
-              <p class="text-muted mb-0" data-i18n="concept-pill-efficiency-desc">
-                Every square meter of the 777 m² area is optimized for space utilization, ensuring clean, highly functional 1-bedroom layouts.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4 reveal-on-scroll delay-2">
-            <div class="soft-card">
-              <div class="concept-pill-icon"><i class="fas fa-shield-halved"></i></div>
-              <h4 class="fw-bold mb-3 text-green" data-i18n="concept-pill-discipline-title">Disciplined Operations</h4>
-              <p class="text-muted mb-0" data-i18n="concept-pill-discipline-desc">
-                Professional systems minimize structural and operational friction, resulting in seamless property management and high asset appreciation.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4 reveal-on-scroll delay-3">
-            <div class="soft-card">
-              <div class="concept-pill-icon"><i class="fas fa-bell-concierge"></i></div>
-              <h4 class="fw-bold mb-3 text-green" data-i18n="concept-pill-service-title">Hospitality Service</h4>
-              <p class="text-muted mb-0" data-i18n="concept-pill-service-desc">
-                Integrated with Zimforth Hospitality Services to command higher rent, offering trained staff and standardized maintenance.
-              </p>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Target Uses segment with animated interactive items -->
-        <div class="row mt-5 pt-4 align-items-stretch g-5">
-          <div class="col-lg-6 reveal-on-scroll">
-            <div class="soft-card border-green p-4 p-md-5 bg-cream h-100 position-relative overflow-hidden">
-              <div class="dotted-canvas" style="opacity: 0.08;"></div>
-              <div class="position-relative z-3">
-                <span class="text-green font-monospace small" data-i18n="founder-group">ZIMFORTH RESIDENCE – AL TWAR 3</span>
-                <h3 class="fw-bold h2 mt-2 mb-4 heading-green-accent" data-i18n="concept-use-title" style="display: block;">Target Uses</h3>
+
+        <div class="row g-5 align-items-stretch">
+          <!-- Information & Map side with reveal -->
+          <div class="col-lg-5 reveal-on-scroll">
+            <div class="contact-info-card d-flex flex-column justify-content-between">
+              <div>
+                <h4 class="fw-bold mb-4 font-serif text-white" data-i18n="info-title">Headquarters</h4>
                 
-                <div class="d-flex flex-column gap-3 mt-3">
-                  <div class="use-item reveal-on-scroll delay-1">
-                    <i class="fas fa-circle-check text-green fs-5"></i>
-                    <div>
-                      <h6 class="mb-0 fw-bold" data-i18n="concept-use-1">Premium Long-Term Rentals</h6>
-                    </div>
+                <!-- Address row -->
+                <div class="info-detail-row">
+                  <div class="info-icon"><i class="fas fa-location-dot"></i></div>
+                  <div>
+                    <div class="info-label" data-i18n="info-addr-lbl">Location Address</div>
+                    <div class="info-value" data-i18n="info-addr-val">Al Twar 3, Dubai, United Arab Emirates</div>
                   </div>
-                  
-                  <div class="use-item reveal-on-scroll delay-2">
-                    <i class="fas fa-circle-check text-green fs-5"></i>
-                    <div>
-                      <h6 class="mb-0 fw-bold" data-i18n="concept-use-2">Fully Serviced Residential Units</h6>
-                    </div>
+                </div>
+                
+                <!-- Phone row -->
+                <div class="info-detail-row">
+                  <div class="info-icon"><i class="fas fa-phone-volume"></i></div>
+                  <div>
+                    <div class="info-label" data-i18n="info-phone-lbl">Phone & WhatsApp</div>
+                    <div class="info-value" data-i18n="info-phone-val">+971 4 XXX XXXX</div>
                   </div>
-                  
-                  <div class="use-item reveal-on-scroll delay-3">
-                    <i class="fas fa-circle-check text-green fs-5"></i>
-                    <div>
-                      <h6 class="mb-0 fw-bold" data-i18n="concept-use-3">Multi-Household Family Living</h6>
-                    </div>
+                </div>
+                
+                <!-- Email row -->
+                <div class="info-detail-row">
+                  <div class="info-icon"><i class="fas fa-envelope-open-text"></i></div>
+                  <div>
+                    <div class="info-label" data-i18n="info-email-lbl">Email Address</div>
+                    <div class="info-value" data-i18n="info-email-val">info@zimforth.com</div>
                   </div>
-                  
-                  <div class="use-item reveal-on-scroll delay-4">
-                    <i class="fas fa-circle-check text-green fs-5"></i>
-                    <div>
-                      <h6 class="mb-0 fw-bold" data-i18n="concept-use-4">Hybrid Model (Private Use + High-Yield Rental)</h6>
-                    </div>
+                </div>
+
+                <!-- Group row -->
+                <div class="info-detail-row">
+                  <div class="info-icon"><i class="fas fa-building-shield"></i></div>
+                  <div>
+                    <div class="info-label" data-i18n="info-group-lbl">Parent Organization</div>
+                    <div class="info-value" data-i18n="info-group-val">Zimforth Group</div>
                   </div>
                 </div>
               </div>
+              
+              <!-- Direct WhatsApp button -->
+              <div class="mt-5 text-center text-lg-start">
+                <a href="https://wa.me/9714XXXXXXX" target="_blank" class="whatsapp-link-btn text-decoration-none">
+                  <i class="fab fa-whatsapp fs-4"></i> <span data-i18n="info-whatsapp-btn">Chat on WhatsApp</span>
+                </a>
+              </div>
             </div>
           </div>
           
-          <div class="col-lg-6 reveal-zoom">
-            <div class="p-4 p-md-5 bg-deep-green text-light rounded-4 border-green h-100 d-flex flex-column justify-content-between position-relative overflow-hidden">
-              <div class="dotted-canvas" style="opacity: 0.05;"></div>
-              <div class="position-relative z-3">
-                <i class="fas fa-quote-left fs-1 text-green mb-3 opacity-20"></i>
-                <h4 class="lh-base mb-4" data-i18n="hero-subtitle">Structured Living. Elevated Standards.</h4>
-                <p class="opacity-80" data-i18n="hero-desc">
-                  Boutique G+2 residential concept in Al Twar 3, Dubai. Featuring 12 premium 1-bedroom units designed for optimized space utilization and hospitality-level standards.
-                </p>
-              </div>
-              <div class="border-top border-green pt-3 mt-4 opacity-80 position-relative z-3">
-                <span class="small" data-i18n="nav-subbrand">REAL ESTATE DEVELOPMENT</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- Operational Advantage -->
-    <section class="bg-deep-green text-light overflow-hidden position-relative" id="operations">
-      <!-- Dotted grid background overlay -->
-      <div class="dotted-canvas ops-dotted-canvas"></div>
-      
-      <div class="container position-relative" style="z-index: 2;">
-        <!-- Centered Header -->
-        <div class="row justify-content-center text-center mb-5 reveal-on-scroll">
-          <div class="col-lg-8">
-            <span class="section-tag" data-i18n="ops-tag">OPERATIONAL ADVANTAGE</span>
-            <div class="mb-3">
-              <h2 class="h1 fw-bold text-white heading-green-accent" data-i18n="ops-title">Zimforth Hospitality Ecosystem</h2>
-            </div>
-            <p class="lead opacity-80" data-i18n="ops-desc">
-              We integrate a professional hospitality ecosystem that ensures long-term asset protection and elevated rental prestige.
-            </p>
-          </div>
-        </div>
-        
-        <!-- Horizontal Cards Grid (3 Columns) -->
-        <div class="row g-4 mb-5 justify-content-center">
-                    <div class="col-md-6 col-lg-4 reveal-on-scroll delay-1">
-            <div class="ops-feat-card h-100">
-              <div class="d-flex justify-content-between align-items-start mb-4">
-                <div class="ops-feat-icon"><i class="fas fa-users-gear"></i></div>
-                <span class="ops-feat-num font-monospace">01</span>
-              </div>
-              <h5 class="fw-bold text-green mb-3" data-i18n="ops-feat-1-title">Trained Household Staff</h5>
-              <p class="opacity-70 mb-0 small" data-i18n="ops-feat-1-desc">
-                Concierge and resident assistance managed by hospitality specialists.
-              </p>
-            </div>
-          </div>
-          
-                    <div class="col-md-6 col-lg-4 reveal-on-scroll delay-2">
-            <div class="ops-feat-card h-100">
-              <div class="d-flex justify-content-between align-items-start mb-4">
-                <div class="ops-feat-icon"><i class="fas fa-broom"></i></div>
-                <span class="ops-feat-num font-monospace">02</span>
-              </div>
-              <h5 class="fw-bold text-green mb-3" data-i18n="ops-feat-2-title">Standardized Cleaning</h5>
-              <p class="opacity-70 mb-0 small" data-i18n="ops-feat-2-desc">
-                Rigorous hospitality protocols for daily cleaning and proactive preventive maintenance.
-              </p>
-            </div>
-          </div>
-          
-                    <div class="col-md-6 col-lg-4 reveal-on-scroll delay-3">
-            <div class="ops-feat-card h-100">
-              <div class="d-flex justify-content-between align-items-start mb-4">
-                <div class="ops-feat-icon"><i class="fas fa-circle-nodes"></i></div>
-                <span class="ops-feat-num font-monospace">03</span>
-              </div>
-              <h5 class="fw-bold text-green mb-3" data-i18n="ops-feat-3-title">Centralized Control</h5>
-              <p class="opacity-70 mb-0 small" data-i18n="ops-feat-3-desc">
-                A single point of operational command ensuring consistent quality and low overheads.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Widescreen Parallax Render Showcase -->
-        <div class="row justify-content-center reveal-zoom mt-5">
-          <div class="col-lg-11">
-            <div class="ops-showcase-container">
-              <div class="ops-showcase-image-wrapper">
-                <img src="assets/images/lobby.png" alt="Metally Residence Lobby Render" class="ops-showcase-img scroll-parallax-layer" style="--parallax-speed: -0.05;">
-              </div>
-              <div class="ops-showcase-overlay">
+          <!-- Forms side with zoom reveal -->
+          <div class="col-lg-7 reveal-zoom">
+            <div class="soft-card bg-white p-4 p-md-5">
+              <h4 class="fw-bold mb-4 font-serif text-dark" data-i18n="contact-form-title">Send an Enquiry</h4>
+              
+              <!-- Success Alert Message -->
+              <div class="alert alert-success border-0 rounded-3 p-3 mb-4 shadow-sm" id="form-feedback" style="display: none;">
                 <div class="d-flex align-items-center gap-2">
-                  <span class="status-dot-glowing"></span>
-                  <span class="small font-monospace letter-spacing-1 text-white-50 text-uppercase">METALLY RESIDENCE — PREMIUM LOBBY CONCEPT</span>
+                  <i class="fas fa-circle-check fs-4"></i>
+                  <span class="small fw-semibold" data-i18n="contact-success">Thank you! Your enquiry has been received. Our team will contact you shortly.</span>
+                </div>
+              </div>
+
+              <!-- Form markup with unique IDs -->
+              <form id="enquiry-form" novalidate>
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <label class="form-label" for="contact-name" data-i18n="contact-lbl-name">Full Name</label>
+                    <input type="text" class="form-control" id="contact-name" required data-i18n-placeholder="contact-lbl-name" placeholder="Full Name">
+                  </div>
+                  
+                  <div class="col-md-6 form-group">
+                    <label class="form-label" for="contact-email" data-i18n="contact-lbl-email">Email Address</label>
+                    <input type="email" class="form-control" id="contact-email" required data-i18n-placeholder="contact-lbl-email" placeholder="Email Address">
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <label class="form-label" for="contact-phone" data-i18n="contact-lbl-phone">Phone Number</label>
+                    <input type="tel" class="form-control" id="contact-phone" required data-i18n-placeholder="contact-lbl-phone" placeholder="Phone Number">
+                  </div>
+                  
+                  <div class="col-md-6 form-group">
+                    <label class="form-label" for="contact-role" data-i18n="contact-lbl-role">I am interested as a:</label>
+                    <select class="form-select" id="contact-role">
+                      <option value="tenant" data-i18n="contact-opt-tenant">Premium Tenant / Resident</option>
+                      <option value="investor" data-i18n="contact-opt-investor">Investment Partner</option>
+                    </select>
+                  </div>
+                </div>
+                
+                <div class="form-group mb-4">
+                  <label class="form-label" for="contact-message" data-i18n="contact-lbl-msg">Your Message</label>
+                  <textarea class="form-control" id="contact-message" rows="4" required data-i18n-placeholder="contact-lbl-msg" placeholder="Your Message"></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-green w-100 py-3 justify-content-center border-0 text-uppercase" id="form-submit-btn">
+                  <span data-i18n="contact-btn-submit">Send Secure Enquiry</span> <i class="fas fa-paper-plane ms-2"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- Map of Al Twar 3 below with zoom reveal -->
+        <div class="row mt-5 pt-3 reveal-zoom">
+          <div class="col-lg-12">
+            <div class="map-placeholder-wrapper">
+              <div class="styled-map-container">
+                <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" style="background:#072C24; display:block;">
+                  <defs>
+                    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(78, 138, 83, 0.05)" stroke-width="1"/>
+                    </pattern>
+                  </defs>
+                  <rect width="100%" height="100%" fill="url(#grid)" />
+                  <path d="M-50,80 L1200,80 M-50,200 L1200,200 M200,-50 L200,400 M800,-50 L800,400" fill="none" stroke="rgba(78, 138, 83, 0.12)" stroke-width="8" />
+                  <path d="M-50,140 L1200,140 M450,-50 L450,400" fill="none" stroke="rgba(78, 138, 83, 0.08)" stroke-width="4" stroke-dasharray="10,5" />
+                  <text x="120" y="50" fill="rgba(78, 138, 83, 0.3)" font-family="sans-serif" font-size="14" font-weight="700" letter-spacing="2">AL TWAR 3 RESIDENTIAL DISTRICT</text>
+                  <text x="830" y="290" fill="rgba(78, 138, 83, 0.2)" font-family="sans-serif" font-size="12" letter-spacing="1">D92 MAIN AIRPORT ROAD</text>
+                  <rect x="500" y="100" width="120" height="80" fill="rgba(71, 108, 63, 0.25)" rx="10" />
+                  <rect x="90" y="240" width="80" height="40" fill="rgba(71, 108, 63, 0.25)" rx="5" />
+                  <circle cx="450" cy="200" r="14" fill="rgba(78, 138, 83, 0.25)" />
+                  <circle cx="450" cy="200" r="6" fill="#4E8A53" class="pulse-glow-green" />
+                  <path d="M450,186 L450,165" stroke="#4E8A53" stroke-width="2" />
+                </svg>
+                
+                <div class="map-card-overlay">
+                  <i class="fas fa-location-dot fs-3 mb-2"></i>
+                  <h6 class="mb-1 fw-bold text-white">METALLY RESIDENCE</h6>
+                  <p class="mb-0 text-green small" data-i18n="hero-location">AL TWAR 3, DUBAI</p>
                 </div>
               </div>
             </div>
@@ -358,9 +440,6 @@
       </div>
     </section>
 
-
-
-    <!-- Footer -->
   <footer>
     <div class="container">
       <div class="row g-5">
@@ -424,10 +503,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   
   <!-- i18n Translation Dictionary -->
-  <script src="assets/js/i18n.js?v=1.3.0"></script>
+  <script src="assets/js/i18n.js?v=2.4.0"></script>
   
   <!-- Core Custom Controller -->
-  <script src="assets/js/main.js?v=1.3.0"></script>
+  <script src="assets/js/main.js?v=2.4.0"></script>
 
 
   <!-- WhatsApp Floating Widget -->
