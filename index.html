@@ -587,6 +587,161 @@
     </section>
 
 
+
+    <!-- Real Estate Portfolio & Filtering -->
+    <section id="portfolio" class="py-5 bg-deep-green position-relative overflow-hidden">
+      <div class="container position-relative z-index-2">
+        
+        <!-- Filter Bar -->
+        <div class="filter-bar-container mb-5" data-aos="fade-up">
+          <div class="row g-3">
+            <div class="col-md-3">
+              <select class="form-select filter-select" id="filter-location">
+                <option value="all" data-i18n="filter-loc-all">All Locations</option>
+                <option value="al-twar" data-i18n="filter-loc-altwar">Al Twar</option>
+                <option value="downtown" data-i18n="filter-loc-downtown">Downtown</option>
+                <option value="palm" data-i18n="filter-loc-palm">Palm Jumeirah</option>
+              </select>
+            </div>
+            <div class="col-md-3">
+              <select class="form-select filter-select" id="filter-type">
+                <option value="all" data-i18n="filter-type-all">Property Type</option>
+                <option value="apartment" data-i18n="filter-type-apt">Apartment</option>
+                <option value="villa" data-i18n="filter-type-villa">Villa</option>
+                <option value="penthouse" data-i18n="filter-type-pent">Penthouse</option>
+              </select>
+            </div>
+            <div class="col-md-3">
+              <select class="form-select filter-select" id="filter-budget">
+                <option value="all" data-i18n="filter-budget-all">Any Budget</option>
+                <option value="low" data-i18n="filter-budget-low">Under 1M AED</option>
+                <option value="mid" data-i18n="filter-budget-mid">1M - 5M AED</option>
+                <option value="high" data-i18n="filter-budget-high">Above 5M AED</option>
+              </select>
+            </div>
+            <div class="col-md-3">
+              <button class="btn btn-green w-100 h-100" id="apply-filters" data-i18n="filter-btn-search">Search Properties</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Featured Projects -->
+        <div class="mb-5 pb-3">
+          <h2 class="h1 text-white mb-4 fw-bold" data-i18n="portfolio-projects-title">Featured Projects</h2>
+          <div class="row g-4">
+            <!-- Project 1 -->
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <a href="#" class="text-decoration-none">
+                <div class="project-card">
+                  <img src="assets/images/hero-bg.jpg" alt="Metally Residence">
+                  <div class="project-card-content">
+                    <span class="project-badge" data-i18n="project-badge-ready">Ready to Move</span>
+                    <h3 class="text-white h2 mb-2">Metally Residence</h3>
+                    <p class="text-white-50 mb-0"><i class="fas fa-map-marker-alt text-success me-2"></i>Al Twar 3, Dubai</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- Project 2 -->
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <a href="#" class="text-decoration-none">
+                <div class="project-card">
+                  <img src="assets/images/gallery-1.jpg" alt="Future Development">
+                  <div class="project-card-content">
+                    <span class="project-badge bg-warning text-dark" data-i18n="project-badge-offplan">Off-Plan</span>
+                    <h3 class="text-white h2 mb-2" data-i18n="project-future-title">Zimforth Heights</h3>
+                    <p class="text-white-50 mb-0"><i class="fas fa-map-marker-alt text-success me-2"></i>Downtown Dubai</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Available Properties Grid -->
+        <div>
+          <h2 class="h1 text-white mb-4 fw-bold" data-i18n="portfolio-properties-title">Available Properties</h2>
+          <div class="row g-4" id="properties-grid">
+            
+            <!-- Property 1 -->
+            <div class="col-lg-4 col-md-6 property-item" data-location="al-twar" data-type="apartment" data-budget="mid">
+              <div class="property-card">
+                <div class="property-img-wrapper">
+                  <span class="property-status">Available</span>
+                  <img src="assets/images/gallery-2.jpg" alt="Property">
+                </div>
+                <div class="property-content">
+                  <h4 class="property-title">1-Bedroom Elite Unit</h4>
+                  <p class="property-location"><i class="fas fa-map-marker-alt"></i> Metally Residence, Al Twar 3</p>
+                  <div class="property-specs">
+                    <span class="property-spec-item"><i class="fas fa-bed text-success"></i> 1 Bed</span>
+                    <span class="property-spec-item"><i class="fas fa-bath text-success"></i> 2 Baths</span>
+                    <span class="property-spec-item"><i class="fas fa-vector-square text-success"></i> 850 Sq.Ft</span>
+                  </div>
+                  <div class="property-footer">
+                    <span class="property-price">AED 1,250,000</span>
+                    <a href="#" class="btn btn-sm btn-outline-green">View Details</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Property 2 -->
+            <div class="col-lg-4 col-md-6 property-item" data-location="downtown" data-type="penthouse" data-budget="high">
+              <div class="property-card">
+                <div class="property-img-wrapper">
+                  <span class="property-status text-warning border-warning" style="background:rgba(255,193,7,0.1)">Reserved</span>
+                  <img src="assets/images/gallery-3.jpg" alt="Property">
+                </div>
+                <div class="property-content">
+                  <h4 class="property-title">Luxury Penthouse</h4>
+                  <p class="property-location"><i class="fas fa-map-marker-alt"></i> Zimforth Heights, Downtown</p>
+                  <div class="property-specs">
+                    <span class="property-spec-item"><i class="fas fa-bed text-success"></i> 4 Beds</span>
+                    <span class="property-spec-item"><i class="fas fa-bath text-success"></i> 5 Baths</span>
+                    <span class="property-spec-item"><i class="fas fa-vector-square text-success"></i> 4,200 Sq.Ft</span>
+                  </div>
+                  <div class="property-footer">
+                    <span class="property-price">AED 8,500,000</span>
+                    <a href="#" class="btn btn-sm btn-outline-green">View Details</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Property 3 -->
+            <div class="col-lg-4 col-md-6 property-item" data-location="palm" data-type="villa" data-budget="high">
+              <div class="property-card">
+                <div class="property-img-wrapper">
+                  <span class="property-status">Available</span>
+                  <img src="assets/images/hero-bg.jpg" alt="Property">
+                </div>
+                <div class="property-content">
+                  <h4 class="property-title">Signature Villa</h4>
+                  <p class="property-location"><i class="fas fa-map-marker-alt"></i> Palm Jumeirah</p>
+                  <div class="property-specs">
+                    <span class="property-spec-item"><i class="fas fa-bed text-success"></i> 6 Beds</span>
+                    <span class="property-spec-item"><i class="fas fa-bath text-success"></i> 7 Baths</span>
+                    <span class="property-spec-item"><i class="fas fa-vector-square text-success"></i> 8,000 Sq.Ft</span>
+                  </div>
+                  <div class="property-footer">
+                    <span class="property-price">AED 25,000,000</span>
+                    <a href="#" class="btn btn-sm btn-outline-green">View Details</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- No Results Message -->
+          <div id="no-properties-msg" class="text-center py-5 d-none">
+            <i class="fas fa-search fa-3x text-white-50 mb-3"></i>
+            <h4 class="text-white">No properties found</h4>
+            <p class="text-white-50">Please adjust your filter criteria and try again.</p>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Investment Perspective & Yield Calculator -->
     <section class="bg-white" id="investment">
       <div class="container">
@@ -999,5 +1154,10 @@
   <!-- Core Custom Controller -->
   <script src="assets/js/main.js?v=1.3.0"></script>
 
+
+  <!-- WhatsApp Floating Widget -->
+  <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 </body>
 </html>

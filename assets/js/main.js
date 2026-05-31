@@ -531,3 +531,44 @@ $(document).ready(function () {
   // Init Lang after all elements, variables, and modules are fully defined
   setLanguage(currentLang);
 });
+
+  // Portfolio Filtering Logic
+  const filterBtn = document.getElementById('apply-filters');
+  if (filterBtn) {
+    filterBtn.addEventListener('click', function() {
+      const loc = document.getElementById('filter-location').value;
+      const type = document.getElementById('filter-type').value;
+      const budget = document.getElementById('filter-budget').value;
+      
+      const properties = document.querySelectorAll('.property-item');
+      let visibleCount = 0;
+      
+      properties.forEach(item => {
+        const itemLoc = item.getAttribute('data-location');
+        const itemType = item.getAttribute('data-type');
+        const itemBudget = item.getAttribute('data-budget');
+        
+        let match = true;
+        
+        if (loc !== 'all' && itemLoc !== loc) match = false;
+        if (type !== 'all' && itemType !== type) match = false;
+        if (budget !== 'all' && itemBudget !== budget) match = false;
+        
+        if (match) {
+          item.style.display = 'block';
+          // Small animation for showing
+          item.style.animation = 'fadeInUp 0.5s ease forwards';
+          visibleCount++;
+        } else {
+          item.style.display = 'none';
+        }
+      });
+      
+      const noMsg = document.getElementById('no-properties-msg');
+      if (visibleCount === 0) {
+        noMsg.classList.remove('d-none');
+      } else {
+        noMsg.classList.add('d-none');
+      }
+    });
+  }
