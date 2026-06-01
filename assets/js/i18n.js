@@ -526,6 +526,10 @@ const translations = {
     "timeline-step-3-desc": "Onboard your asset into the Zimforth Services ecosystem. All marketing, tenant management, and housekeeping are fully delegated.",
     "timeline-step-4-title": "4. Yield Distribution",
     "timeline-step-4-desc": "Begin receiving automated quarterly rental yield payouts directly into your nominated bank account, backed by institutional audits.",
+    "timeline-step-1-phase": "PHASE 01",
+    "timeline-step-2-phase": "PHASE 02",
+    "timeline-step-3-phase": "PHASE 03",
+    "timeline-step-4-phase": "PHASE 04",
 },
   ar: {
     "proj-hero-badge": "مساكن زيمفورث",
@@ -1054,5 +1058,9 @@ const translations = {
     "timeline-step-3-desc": "إدراج أصلك العقاري في نظام خدمات زيمفورث المدار. يتم تفويض جميع أعمال التسويق وإدارة المستأجرين والصيانة بالكامل.",
     "timeline-step-4-title": "٤. توزيع العوائد ربع السنوية",
     "timeline-step-4-desc": "البدء في تلقي عوائد الإيجار ربع السنوية المحولة تلقائياً إلى حسابك البنكي المعتمد، مدعومة بتقارير تدقيق حسابية.",
+    "timeline-step-1-phase": "المرحلة ٠١",
+    "timeline-step-2-phase": "المرحلة ٠٢",
+    "timeline-step-3-phase": "المرحلة ٠٣",
+    "timeline-step-4-phase": "المرحلة ٠٤",
 }
 };
