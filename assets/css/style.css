@@ -2687,3 +2687,9 @@ html[dir="rtl"] .swiper-button-next {
   transform: scale(1.15) translateY(-3px);
   color: var(--accent-leaf-bright);
 }
+
+/* RTL Support for Step Card Watermarked Numbers */
+html[dir="rtl"] .timeline-card-number {
+  right: auto;
+  left: 25px;
+}
