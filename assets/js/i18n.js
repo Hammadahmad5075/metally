@@ -530,6 +530,44 @@ const translations = {
     "timeline-step-2-phase": "PHASE 02",
     "timeline-step-3-phase": "PHASE 03",
     "timeline-step-4-phase": "PHASE 04",
+
+    // Contact Page (English)
+    "contact-hero-badge": "CONNECT WITH METALLY",
+    "contact-hero-title": "Contact Our Team",
+    "contact-hero-desc": "Connect with our dedicated real estate curation and investment team. Whether you are looking to secure a master suite or discuss high-yield cash flow investments, our team provides complete legal and operational clarity.",
+    
+    "contact-card-phone-title": "Direct Call",
+    "contact-card-phone-desc": "+971 4 XXX XXXX",
+    "contact-card-email-title": "Direct Email",
+    "contact-card-email-desc": "info@zimforth.com",
+    "contact-card-loc-title": "Development Site",
+    "contact-card-loc-desc": "Al Twar 3, Dubai, UAE",
+    "contact-card-hours-title": "Business Hours",
+    "contact-card-hours-desc": "Mon - Sat: 9:00 AM - 6:00 PM",
+    
+    "contact-tab-tenant": "Tenant Inquiry",
+    "contact-tab-investor": "Investor Curation",
+    "contact-section-tag": "PARTNER PORTAL",
+    "contact-section-title": "Inquiry Curation Hub",
+    "contact-section-desc": "Select your pathway below and register your interest to receive immediate support.",
+    
+    "contact-lbl-unit": "Preferred Unit Type",
+    "contact-opt-unit1": "1-Bedroom Executive Suite",
+    "contact-opt-unit2": "1-Bedroom Duplex Loft",
+    "contact-opt-unit3": "1-Bedroom Master Suite",
+    "contact-lbl-lease": "Preferred Lease Duration",
+    "contact-opt-lease1": "3 Months (Short Term)",
+    "contact-opt-lease2": "6 Months (Medium Term)",
+    "contact-opt-lease3": "12 Months (Standard)",
+    "contact-lbl-start": "Target Lease Start",
+    
+    "contact-wa-title": "Instant WhatsApp Chat",
+    "contact-wa-desc": "Chat directly with an investment concierge for instant support and project briefs.",
+    "contact-wa-btn": "Start WhatsApp Chat",
+    
+    "contact-map-tag": "LOCATION",
+    "contact-map-title": "Find Metally Residence",
+    "contact-map-desc": "Located in Al Twar 3, one of Dubai's most stable and premium residential zones, close to airport hubs and key arterial routes.",
 },
   ar: {
     "proj-hero-badge": "مساكن زيمفورث",
@@ -1062,5 +1100,43 @@ const translations = {
     "timeline-step-2-phase": "المرحلة ٠٢",
     "timeline-step-3-phase": "المرحلة ٠٣",
     "timeline-step-4-phase": "المرحلة ٠٤",
+
+    // Contact Page (Arabic)
+    "contact-hero-badge": "تواصل مع ميتالي",
+    "contact-hero-title": "تواصل مع فريقنا",
+    "contact-hero-desc": "تواصل مع فريق التطوير والاستثمار المخصص لدينا. سواء كنت تتطلع إلى تأمين جناح سكني فاخر أو مناقشة استثمارات التدفق النقدي عالية العائد، فإن فريقنا يوفر لك وضوحاً تشغيلياً وقانونياً كاملاً.",
+    
+    "contact-card-phone-title": "الاتصال المباشر",
+    "contact-card-phone-desc": "+٩٧١ ٤ XXX XXXX",
+    "contact-card-email-title": "البريد الإلكتروني",
+    "contact-card-email-desc": "info@zimforth.com",
+    "contact-card-loc-title": "موقع المشروع",
+    "contact-card-loc-desc": "الطوار ٣، دبي، الإمارات",
+    "contact-card-hours-title": "ساعات العمل",
+    "contact-card-hours-desc": "الإثنين - السبت: ٩:٠٠ ص - ٦:٠٠ م",
+    
+    "contact-tab-tenant": "استفسار المستأجرين",
+    "contact-tab-investor": "استفسار المستثمرين",
+    "contact-section-tag": "بوابة الشركاء",
+    "contact-section-title": "مركز إدارة الاستفسارات",
+    "contact-section-desc": "اختر مسارك المفضل أدناه وسجل اهتمامك لتلقي الدعم الفوري المخصص.",
+    
+    "contact-lbl-unit": "نوع الوحدة المفضلة",
+    "contact-opt-unit1": "جناح تنفيذي غرفة واحدة",
+    "contact-opt-unit2": "شقة دوبلكس علوية غرفة واحدة",
+    "contact-opt-unit3": "جناح ماستر فاخر غرفة واحدة",
+    "contact-lbl-lease": "مدة الإيجار المفضلة",
+    "contact-opt-lease1": "٣ أشهر (مدى قصير)",
+    "contact-opt-lease2": "٦ أشهر (مدى متوسط)",
+    "contact-opt-lease3": "١٢ شهراً (عقد سنوي قياسي)",
+    "contact-lbl-start": "تاريخ بدء الإيجار المستهدف",
+    
+    "contact-wa-title": "محادثة واتساب الفورية",
+    "contact-wa-desc": "تحدث مباشرة مع مستشار الاستثمار لتلقي الردود الفورية ونشرات المشروع التفصيلية.",
+    "contact-wa-btn": "ابدأ محادثة واتساب",
+    
+    "contact-map-tag": "الموقع الجغرافي",
+    "contact-map-title": "موقع مساكن ميتالي",
+    "contact-map-desc": "يقع المشروع في منطقة الطوار ٣ السكنية العريقة والمتميزة في دبي، بالقرب من المطارات والطرق الشريانية الحيوية.",
 }
 };
