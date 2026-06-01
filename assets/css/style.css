@@ -2577,3 +2577,113 @@ html[dir="rtl"] .swiper-button-next {
     padding-right: 1rem;
   }
 }
+
+/* Investment Page Premium Custom Styling */
+.hover-up {
+  transition: var(--transition-smooth);
+}
+.hover-up:hover {
+  transform: translateY(-5px);
+}
+
+/* Light Glass Panel Hover Interactions */
+.glass-panel {
+  transition: var(--transition-smooth);
+  position: relative;
+  overflow: hidden;
+}
+.glass-panel:hover {
+  border-color: rgba(78, 138, 83, 0.4) !important;
+  box-shadow: 0 15px 35px rgba(6, 51, 42, 0.08), var(--shadow-leaf);
+  background: rgba(255, 255, 255, 0.95);
+  transform: translateY(-5px);
+}
+.glass-panel::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 30%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0) 100%);
+  transform: skewX(-25deg);
+  transition: 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  pointer-events: none;
+}
+.glass-panel:hover::after {
+  left: 125%;
+}
+
+.glass-panel .rounded-circle {
+  transition: var(--transition-smooth);
+}
+.glass-panel:hover .rounded-circle {
+  transform: scale(1.1) rotate(5deg);
+  background-color: var(--accent-leaf) !important;
+  border-color: var(--accent-leaf) !important;
+  box-shadow: 0 0 15px rgba(78, 138, 83, 0.4);
+}
+.glass-panel:hover .rounded-circle i {
+  color: #ffffff !important;
+}
+
+/* Dark Glass Panel (Pillars Below Hero) Hover Interactions */
+.glass-panel-dark {
+  transition: var(--transition-smooth);
+  position: relative;
+  overflow: hidden;
+}
+.glass-panel-dark:hover {
+  transform: translateY(-8px) scale(1.01);
+  border-color: var(--accent-leaf-bright) !important;
+  box-shadow: 0 20px 45px rgba(3, 26, 18, 0.5), var(--shadow-leaf);
+  background: rgba(6, 51, 42, 0.95);
+}
+.glass-panel-dark::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 30%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0) 100%);
+  transform: skewX(-25deg);
+  transition: 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  pointer-events: none;
+}
+.glass-panel-dark:hover::after {
+  left: 125%;
+}
+
+.glass-panel-dark .rounded-circle {
+  transition: var(--transition-smooth);
+}
+.glass-panel-dark:hover .rounded-circle {
+  transform: scale(1.1) rotate(5deg);
+  background-color: var(--accent-leaf-bright) !important;
+  border-color: var(--accent-leaf-bright) !important;
+  box-shadow: 0 0 15px rgba(118, 186, 124, 0.5);
+}
+.glass-panel-dark:hover .rounded-circle i {
+  color: #031a12 !important;
+}
+
+/* Step Card Translucent Watermarked Numbers */
+.timeline-card-number {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 3.5rem;
+  font-weight: 700;
+  font-family: var(--font-header);
+  color: var(--accent-leaf);
+  opacity: 0.12;
+  line-height: 1;
+  pointer-events: none;
+  transition: var(--transition-smooth);
+}
+.glass-panel:hover .timeline-card-number {
+  opacity: 0.25;
+  transform: scale(1.15) translateY(-3px);
+  color: var(--accent-leaf-bright);
+}

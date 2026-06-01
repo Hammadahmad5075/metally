@@ -343,60 +343,72 @@
         </div>
       </div>
       
-      <!-- Premium Stepper Row with horizontal connector line track behind nodes -->
-      <div class="row g-4 justify-content-center position-relative mt-5">
-        <!-- Horizontal Connector Line Track Overlay (Large screens only) -->
-        <div class="position-absolute d-none d-lg-block" style="top: 30px; left: 12.5%; right: 12.5%; height: 4px; z-index: 1;">
-          <div class="w-100 h-100 bg-secondary bg-opacity-20 rounded-pill position-relative">
-            <!-- Glowing leaf green progress indicator line -->
-            <div class="h-100 bg-green rounded-pill position-absolute top-0 start-0" style="width: 80%; box-shadow: var(--shadow-leaf); transition: width 1s ease;"></div>
-          </div>
-        </div>
-
+      <!-- Premium Grid-Style Stepper Cards -->
+      <div class="row g-4 mt-2 justify-content-center">
         <!-- Step 1 -->
-        <div class="col-md-6 col-lg-3 text-center position-relative" style="z-index: 2;" data-aos="fade-up" data-aos-delay="100">
-          <div class="timeline-circle bg-white text-green border border-green border-opacity-30 rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4 fs-4 fw-bold" style="width: 60px; height: 60px; box-shadow: var(--shadow-leaf); z-index: 3;">1</div>
-          <div class="glass-panel p-4 rounded-4 h-100 transition-all hover-up d-flex flex-column justify-content-between border border-secondary border-opacity-10 shadow-sm" style="background: rgba(255,255,255,0.9); backdrop-filter: blur(15px); min-height: 250px;">
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="glass-panel p-4 p-lg-5 rounded-4 h-100 position-relative hover-up shadow-sm d-flex flex-column justify-content-between" style="min-height: 280px;">
+            <div class="timeline-card-number">01</div>
             <div>
-              <div class="text-green mb-3"><i class="fas fa-hand-holding-dollar fs-3"></i></div>
-              <h4 class="fw-bold text-dark mb-3 fs-5" data-i18n="timeline-step-1-title">1. Allocation & Reserve</h4>
-              <p class="text-muted small mb-0 font-sans" style="font-weight: 300; line-height: 1.6;" data-i18n="timeline-step-1-desc">Select your preferred master suite(s) from the live availability grid and secure it with a soft reservation deposit.</p>
+              <div class="d-flex align-items-center justify-content-between mb-4">
+                <div class="rounded-circle bg-light d-flex align-items-center justify-content-center text-green" style="width: 54px; height: 54px; border: 1px solid rgba(78, 138, 83, 0.15); box-shadow: var(--shadow-soft);">
+                  <i class="fas fa-hand-holding-dollar fs-4"></i>
+                </div>
+                <span class="badge bg-green bg-opacity-10 text-green rounded-pill px-3 py-1 font-monospace" style="font-size: 0.7rem; letter-spacing: 1px;">PHASE 01</span>
+              </div>
+              <h4 class="fw-bold text-dark mb-3 font-serif fs-5" data-i18n="timeline-step-1-title">1. Allocation & Reserve</h4>
+              <p class="text-muted small mb-0 font-sans" style="font-weight: 300; line-height: 1.6; font-size: 0.85rem;" data-i18n="timeline-step-1-desc">Select your preferred master suite(s) from the live availability grid and secure it with a soft reservation deposit.</p>
             </div>
           </div>
         </div>
 
         <!-- Step 2 -->
-        <div class="col-md-6 col-lg-3 text-center position-relative" style="z-index: 2;" data-aos="fade-up" data-aos-delay="200">
-          <div class="timeline-circle bg-white text-green border border-green border-opacity-30 rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4 fs-4 fw-bold" style="width: 60px; height: 60px; box-shadow: var(--shadow-leaf); z-index: 3;">2</div>
-          <div class="glass-panel p-4 rounded-4 h-100 transition-all hover-up d-flex flex-column justify-content-between border border-secondary border-opacity-10 shadow-sm" style="background: rgba(255,255,255,0.9); backdrop-filter: blur(15px); min-height: 250px;">
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="glass-panel p-4 p-lg-5 rounded-4 h-100 position-relative hover-up shadow-sm d-flex flex-column justify-content-between" style="min-height: 280px;">
+            <div class="timeline-card-number">02</div>
             <div>
-              <div class="text-green mb-3"><i class="fas fa-file-signature fs-3"></i></div>
-              <h4 class="fw-bold text-dark mb-3 fs-5" data-i18n="timeline-step-2-title">2. SPA Execution</h4>
-              <p class="text-muted small mb-0 font-sans" style="font-weight: 300; line-height: 1.6;" data-i18n="timeline-step-2-desc">Execute the standard Sales & Purchase Agreement (SPA) under standard Dubai Land Department (DLD) regulations with complete legal clarity.</p>
+              <div class="d-flex align-items-center justify-content-between mb-4">
+                <div class="rounded-circle bg-light d-flex align-items-center justify-content-center text-green" style="width: 54px; height: 54px; border: 1px solid rgba(78, 138, 83, 0.15); box-shadow: var(--shadow-soft);">
+                  <i class="fas fa-file-signature fs-4"></i>
+                </div>
+                <span class="badge bg-green bg-opacity-10 text-green rounded-pill px-3 py-1 font-monospace" style="font-size: 0.7rem; letter-spacing: 1px;">PHASE 02</span>
+              </div>
+              <h4 class="fw-bold text-dark mb-3 font-serif fs-5" data-i18n="timeline-step-2-title">2. SPA Execution</h4>
+              <p class="text-muted small mb-0 font-sans" style="font-weight: 300; line-height: 1.6; font-size: 0.85rem;" data-i18n="timeline-step-2-desc">Execute the standard Sales & Purchase Agreement (SPA) under standard Dubai Land Department (DLD) regulations with complete legal clarity.</p>
             </div>
           </div>
         </div>
 
         <!-- Step 3 -->
-        <div class="col-md-6 col-lg-3 text-center position-relative" style="z-index: 2;" data-aos="fade-up" data-aos-delay="300">
-          <div class="timeline-circle bg-white text-green border border-green border-opacity-30 rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4 fs-4 fw-bold" style="width: 60px; height: 60px; box-shadow: var(--shadow-leaf); z-index: 3;">3</div>
-          <div class="glass-panel p-4 rounded-4 h-100 transition-all hover-up d-flex flex-column justify-content-between border border-secondary border-opacity-10 shadow-sm" style="background: rgba(255,255,255,0.9); backdrop-filter: blur(15px); min-height: 250px;">
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="glass-panel p-4 p-lg-5 rounded-4 h-100 position-relative hover-up shadow-sm d-flex flex-column justify-content-between" style="min-height: 280px;">
+            <div class="timeline-card-number">03</div>
             <div>
-              <div class="text-green mb-3"><i class="fas fa-hotel fs-3"></i></div>
-              <h4 class="fw-bold text-dark mb-3 fs-5" data-i18n="timeline-step-3-title">3. Hospitality Integration</h4>
-              <p class="text-muted small mb-0 font-sans" style="font-weight: 300; line-height: 1.6;" data-i18n="timeline-step-3-desc">Onboard your asset into the Zimforth Services ecosystem. All marketing, tenant management, and housekeeping are fully delegated.</p>
+              <div class="d-flex align-items-center justify-content-between mb-4">
+                <div class="rounded-circle bg-light d-flex align-items-center justify-content-center text-green" style="width: 54px; height: 54px; border: 1px solid rgba(78, 138, 83, 0.15); box-shadow: var(--shadow-soft);">
+                  <i class="fas fa-hotel fs-4"></i>
+                </div>
+                <span class="badge bg-green bg-opacity-10 text-green rounded-pill px-3 py-1 font-monospace" style="font-size: 0.7rem; letter-spacing: 1px;">PHASE 03</span>
+              </div>
+              <h4 class="fw-bold text-dark mb-3 font-serif fs-5" data-i18n="timeline-step-3-title">3. Hospitality Integration</h4>
+              <p class="text-muted small mb-0 font-sans" style="font-weight: 300; line-height: 1.6; font-size: 0.85rem;" data-i18n="timeline-step-3-desc">Onboard your asset into the Zimforth Services ecosystem. All marketing, tenant management, and housekeeping are fully delegated.</p>
             </div>
           </div>
         </div>
 
         <!-- Step 4 -->
-        <div class="col-md-6 col-lg-3 text-center position-relative" style="z-index: 2;" data-aos="fade-up" data-aos-delay="400">
-          <div class="timeline-circle bg-white text-green border border-green border-opacity-30 rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4 fs-4 fw-bold" style="width: 60px; height: 60px; box-shadow: var(--shadow-soft); z-index: 3;">4</div>
-          <div class="glass-panel p-4 rounded-4 h-100 transition-all hover-up d-flex flex-column justify-content-between border border-secondary border-opacity-10 shadow-sm" style="background: rgba(255,255,255,0.9); backdrop-filter: blur(15px); min-height: 250px;">
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+          <div class="glass-panel p-4 p-lg-5 rounded-4 h-100 position-relative hover-up shadow-sm d-flex flex-column justify-content-between" style="min-height: 280px;">
+            <div class="timeline-card-number">04</div>
             <div>
-              <div class="text-green mb-3"><i class="fas fa-coins fs-3"></i></div>
-              <h4 class="fw-bold text-dark mb-3 fs-5" data-i18n="timeline-step-4-title">4. Yield Distribution</h4>
-              <p class="text-muted small mb-0 font-sans" style="font-weight: 300; line-height: 1.6;" data-i18n="timeline-step-4-desc">Begin receiving automated quarterly rental yield payouts directly into your nominated bank account, backed by institutional audits.</p>
+              <div class="d-flex align-items-center justify-content-between mb-4">
+                <div class="rounded-circle bg-light d-flex align-items-center justify-content-center text-green" style="width: 54px; height: 54px; border: 1px solid rgba(78, 138, 83, 0.15); box-shadow: var(--shadow-soft);">
+                  <i class="fas fa-coins fs-4"></i>
+                </div>
+                <span class="badge bg-green bg-opacity-10 text-green rounded-pill px-3 py-1 font-monospace" style="font-size: 0.7rem; letter-spacing: 1px;">PHASE 04</span>
+              </div>
+              <h4 class="fw-bold text-dark mb-3 font-serif fs-5" data-i18n="timeline-step-4-title">4. Yield Distribution</h4>
+              <p class="text-muted small mb-0 font-sans" style="font-weight: 300; line-height: 1.6; font-size: 0.85rem;" data-i18n="timeline-step-4-desc">Begin receiving automated quarterly rental yield payouts directly into your nominated bank account, backed by institutional audits.</p>
             </div>
           </div>
         </div>
