@@ -27,10 +27,10 @@
   --text-muted: #53756E;          /* Soft organic slate teal-green */
   --text-light: #F2F7F5;
   
-  /* Fallbacks - Mapped to leaf green to guarantee zero golden tones remain */
-  --accent-gold: var(--accent-leaf);
-  --accent-gold-dark: var(--accent-leaf-dark);
-  --shadow-gold: var(--shadow-leaf);
+  /* Gold Accents - Mapped to premium, sophisticated gold colors */
+  --accent-gold: #C5A880;
+  --accent-gold-dark: #A3835B;
+  --shadow-gold: 0 0 25px rgba(197, 168, 128, 0.35);
   
   /* Fonts */
   --font-header: 'Playfair Display', 'Outfit', 'Plus Jakarta Sans', system-ui, sans-serif;
@@ -2573,6 +2573,11 @@ html[dir="rtl"] .swiper-button-next {
 }
 .w-md-75 {
   width: 75%;
+}
+@media (min-width: 576px) {
+  .w-sm-auto {
+    width: auto !important;
+  }
 }
 
 @media (max-width: 992px) {
