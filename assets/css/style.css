@@ -2567,14 +2567,41 @@ html[dir="rtl"] .swiper-button-next {
   }
 }
 
-@media (max-width: 576px) {
-  .display-1 { font-size: 2.8rem !important; }
-  
-  /* Fix hero text width on very small screens */
+/* Responsive Layout Utilities */
+.w-40 {
+  width: 40% !important;
+}
+.w-md-75 {
+  width: 75%;
+}
+
+@media (max-width: 992px) {
+  .display-1 { 
+    font-size: 3.8rem !important; 
+  }
   .w-md-75 {
     width: 100% !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .display-1 { 
+    font-size: 2.5rem !important; 
+  }
+  .w-md-75 {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+  
+  /* Output Cards Mobilization */
+  .calc-output-card {
+    padding: 20px !important;
+  }
+  .calc-output-value {
+    font-size: 1.6rem !important;
+  }
+  .calc-output-subvalue {
+    font-size: 1.1rem !important;
   }
 }
 
