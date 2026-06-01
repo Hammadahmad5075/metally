@@ -2720,3 +2720,16 @@ html[dir="rtl"] .timeline-card-number {
   right: auto;
   left: 25px;
 }
+
+/* Active Tab Button Styling for Curation Forms */
+.btn-outline-green.active {
+  background-color: var(--primary-dark) !important;
+  color: var(--bg-cream) !important;
+  border-color: var(--primary-dark) !important;
+  box-shadow: var(--shadow-medium);
+  transform: translateY(-2px);
+}
+.btn-outline-green.active:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: var(--shadow-medium) !important;
+}
