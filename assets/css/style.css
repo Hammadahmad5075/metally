@@ -2757,3 +2757,26 @@ html[dir="rtl"] .timeline-card-number {
   box-shadow: var(--shadow-medium) !important;
   color: var(--bg-cream) !important;
 }
+
+/* Contact Page Specific Responsiveness */
+#contact-hero {
+  min-height: 100vh;
+  padding-top: 140px;
+  padding-bottom: 80px;
+}
+@media (max-width: 992px) {
+  #contact-hero {
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
+}
+@media (max-width: 576px) {
+  #contact-hero {
+    padding-top: 100px;
+    padding-bottom: 40px;
+    min-height: 85vh; /* slightly shorter on mobile for neat navigation visibility */
+  }
+  #location-map .overflow-hidden {
+    height: 320px !important;
+  }
+}

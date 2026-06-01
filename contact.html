@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   
   <!-- Core Design System Custom Stylesheet -->
-  <link rel="stylesheet" href="assets/css/style.css?v=3.1.0">
+  <link rel="stylesheet" href="assets/css/style.css?v=3.2.0">
 </head>
 
 <body class="en-font">
@@ -167,9 +167,9 @@
       </div>
 
       <!-- Tabbed Selector -->
-      <div class="d-flex justify-content-center gap-3 mb-5" data-aos="fade-up">
-        <button type="button" class="btn btn-outline-green active px-4 py-2 font-monospace text-uppercase" id="btn-tab-tenant" data-i18n="contact-tab-tenant">Tenant Inquiry</button>
-        <button type="button" class="btn btn-outline-green px-4 py-2 font-monospace text-uppercase" id="btn-tab-investor" data-i18n="contact-tab-investor">Investor Curation</button>
+      <div class="d-flex flex-column flex-sm-row justify-content-center gap-2 gap-sm-3 mb-5" data-aos="fade-up">
+        <button type="button" class="btn btn-outline-green active px-4 py-2 font-monospace text-uppercase w-100 w-sm-auto" id="btn-tab-tenant" data-i18n="contact-tab-tenant">Tenant Inquiry</button>
+        <button type="button" class="btn btn-outline-green px-4 py-2 font-monospace text-uppercase w-100 w-sm-auto" id="btn-tab-investor" data-i18n="contact-tab-investor">Investor Curation</button>
       </div>
 
       <div class="row justify-content-center">
@@ -521,6 +521,13 @@
         if ($(this).val().trim()) {
           $(this).removeClass('is-invalid');
         }
+      });
+
+      // Premium focus highlights for form groups
+      $('#tenant-enquiry-form, #investor-enquiry-form').find('input, textarea, select').on('focus', function () {
+        $(this).parent('.form-group').addClass('focused');
+      }).on('blur', function () {
+        $(this).parent('.form-group').removeClass('focused');
       });
     });
   </script>
