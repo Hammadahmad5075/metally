@@ -144,8 +144,12 @@ $(document).ready(function () {
     });
 
     // 4. Recalculate and update sub-views
-    updateCalculator();
-    updateFloorPlanDetail($(".floor-plan-pill.active").data("part"));
+    if ($unitsInput.length) {
+      updateCalculator();
+    }
+    if ($(".floor-plan-pill.active").length) {
+      updateFloorPlanDetail($(".floor-plan-pill.active").data("part"));
+    }
 
     // 5. Dynamic Active Strength Translation
     if (activeStrengthKey && strengthDetails[activeStrengthKey]) {
@@ -538,9 +542,7 @@ $(document).ready(function () {
     }
   });
 
-  // Init Lang after all elements, variables, and modules are fully defined
-  setLanguage(currentLang);
-});
+
 
   // Portfolio Filtering Logic
   const filterBtn = document.getElementById('apply-filters');
@@ -607,10 +609,12 @@ $(document).ready(function () {
       }
     });
     
-    if (matchingItems.length > currentVisibleLimit) {
-      loadMoreContainer.style.display = 'block';
-    } else {
-      loadMoreContainer.style.display = 'none';
+    if (loadMoreContainer) {
+      if (matchingItems.length > currentVisibleLimit) {
+        loadMoreContainer.style.display = 'block';
+      } else {
+        loadMoreContainer.style.display = 'none';
+      }
     }
   }
   
@@ -639,31 +643,32 @@ $(document).ready(function () {
       swiperEl.setAttribute("dir", lang === "ar" ? "rtl" : "ltr");
     }
 
-    new Swiper('.inventory-swiper', {
+    window._inventorySwiper = new Swiper('.inventory-swiper', {
       slidesPerView: 1,
       spaceBetween: 20,
-      loop: false,
-      dir: lang === "ar" ? "rtl" : "ltr",
+      loop: true,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
       pagination: {
-        el: '.swiper-pagination',
+        el: '.inv-swiper-pagination',
         clickable: true,
       },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
       breakpoints: {
-        768: {
+        576: {
           slidesPerView: 2,
-          spaceBetween: 30,
+          spaceBetween: 20,
         },
         992: {
           slidesPerView: 3,
-          spaceBetween: 40,
+          spaceBetween: 30,
         }
       }
     });
   };
+  
+
 
   window.initProjectsSwiper = function(lang) {
     if (typeof Swiper === 'undefined') return;
@@ -682,8 +687,7 @@ $(document).ready(function () {
     new Swiper('.projects-swiper', {
       slidesPerView: 1,
       spaceBetween: 20,
-      loop: false,
-      dir: lang === "ar" ? "rtl" : "ltr", // Tell Swiper explicitly
+      loop: false, // Tell Swiper explicitly
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -733,3 +737,7 @@ window.switchSpatialTab = function(target) {
     targetImg.style.opacity = '1';
   }
 };
+
+  // Init Lang after all elements, variables, and modules are fully defined
+  setLanguage(currentLang);
+});

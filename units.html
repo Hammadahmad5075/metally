@@ -22,7 +22,7 @@
   <!-- Swiper CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <!-- Core Design System Custom Stylesheet -->
-  <link rel="stylesheet" href="assets/css/style.css?v=2.4.0">
+  <link rel="stylesheet" href="assets/css/style.css?v=3.0.0">
 </head>
 
 <body class="en-font">
@@ -515,11 +515,10 @@
           </div>
           </div>
           
-          <!-- Swiper Navigation -->
-          <div class="d-flex justify-content-center align-items-center gap-4 mt-5">
-            <div class="inv-swiper-prev position-relative start-0 top-0 m-0 w-auto h-auto rounded-circle border border-secondary text-white p-3 hover-bg-green transition-all" style="background: rgba(255,255,255,0.05); cursor:pointer;"><i class="fas fa-arrow-left"></i></div>
+
+          <!-- Swiper Pagination (Dots Only at bottom) -->
+          <div class="d-flex justify-content-center mt-5">
             <div class="inv-swiper-pagination position-relative bottom-0 w-auto"></div>
-            <div class="inv-swiper-next position-relative end-0 top-0 m-0 w-auto h-auto rounded-circle border border-secondary text-white p-3 hover-bg-green transition-all" style="background: rgba(255,255,255,0.05); cursor:pointer;"><i class="fas fa-arrow-right"></i></div>
           </div>
         </div>
 
@@ -754,10 +753,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   
   <!-- i18n Translation Dictionary -->
-  <script src="assets/js/i18n.js?v=2.4.0"></script>
+  <script src="assets/js/i18n.js?v=3.0.0"></script>
   
   <!-- Core Custom Controller -->
-  <script src="assets/js/main.js?v=2.4.0"></script>
+  <script src="assets/js/main.js?v=3.0.3"></script>
 
 
   <!-- WhatsApp Floating Widget -->
@@ -767,47 +766,7 @@
 
   <!-- Inline Initialization Script -->
   <script>
-    // Initialize Inventory Swiper after all scripts are loaded
-    (function() {
-      if (typeof Swiper === 'undefined') return;
-      
-      var lang = localStorage.getItem('preferredLanguage') || 'en';
-      var swiperEl = document.querySelector('.inventory-swiper');
-      if (!swiperEl) return;
-      
-      swiperEl.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
-      
-      var invSwiper = new Swiper('.inventory-swiper', {
-        slidesPerView: 1,
-        spaceBetween: 20,
-        loop: true,
-        autoplay: {
-          delay: 4000,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: '.inv-swiper-pagination',
-          clickable: true,
-        },
-        navigation: {
-          nextEl: '.inv-swiper-next',
-          prevEl: '.inv-swiper-prev',
-        },
-        breakpoints: {
-          576: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          992: {
-            slidesPerView: 3,
-            spaceBetween: 30,
-          }
-        }
-      });
-      
-      // Store reference for language switching
-      window._inventorySwiper = invSwiper;
-    })();
+
     
     // Spatial Tabs Logic
     window.switchSpatialTab = function(target) {
