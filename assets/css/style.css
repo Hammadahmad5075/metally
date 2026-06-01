@@ -2721,15 +2721,39 @@ html[dir="rtl"] .timeline-card-number {
   left: 25px;
 }
 
+/* Scroll offset for navigation targets to prevent navbar overlap */
+#contact, 
+#inquiry-hub, 
+#contact-cards {
+  scroll-margin-top: 100px;
+}
+
 /* Active Tab Button Styling for Curation Forms */
-.btn-outline-green.active {
+#inquiry-hub .btn-outline-green {
+  color: var(--accent-leaf) !important;
+  border-color: var(--accent-leaf) !important;
+  background-color: transparent !important;
+}
+#inquiry-hub .btn-outline-green:not(.active) {
+  color: var(--accent-leaf) !important;
+  background-color: transparent !important;
+  border-color: var(--accent-leaf) !important;
+  opacity: 1 !important;
+}
+#inquiry-hub .btn-outline-green:hover {
+  color: var(--bg-cream) !important;
+  background-color: var(--accent-leaf) !important;
+  border-color: var(--accent-leaf) !important;
+}
+#inquiry-hub .btn-outline-green.active {
   background-color: var(--primary-dark) !important;
   color: var(--bg-cream) !important;
   border-color: var(--primary-dark) !important;
   box-shadow: var(--shadow-medium);
   transform: translateY(-2px);
 }
-.btn-outline-green.active:hover {
+#inquiry-hub .btn-outline-green.active:hover {
   transform: translateY(-2px) !important;
   box-shadow: var(--shadow-medium) !important;
+  color: var(--bg-cream) !important;
 }

@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   
   <!-- Core Design System Custom Stylesheet -->
-  <link rel="stylesheet" href="assets/css/style.css?v=3.0.3">
+  <link rel="stylesheet" href="assets/css/style.css?v=3.1.0">
 </head>
 
 <body class="en-font">
@@ -70,7 +70,7 @@
             
             <!-- Call to Action -->
             <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
-              <a class="btn btn-green text-uppercase" href="contact.html" id="btn-enquire-now" data-i18n="nav-btn-enquire">Enquire</a>
+              <a class="btn btn-green text-uppercase" href="#inquiry-hub" id="btn-enquire-now" data-i18n="nav-btn-enquire">Enquire</a>
             </li>
           </ul>
         </div>
@@ -444,6 +444,17 @@
   <!-- Contact Form Controller -->
   <script>
     $(document).ready(function () {
+      // Smooth scroll specifically for Enquire button
+      $('#btn-enquire-now').on('click', function (e) {
+        e.preventDefault();
+        const target = $('#inquiry-hub');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top - 100
+          }, 800);
+        }
+      });
+
       // Dynamic Tab Selector Toggling
       $('#btn-tab-tenant').on('click', function () {
         $('#btn-tab-tenant').addClass('active');
