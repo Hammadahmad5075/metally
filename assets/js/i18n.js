@@ -514,6 +514,18 @@ const translations = {
     "inv-opt-yield": "High-Yield Cash Flow",
     "inv-opt-growth": "Capital Preservation & Growth",
     "inv-opt-portfolio": "Portfolio Diversification",
+
+    // Acquisition Roadmap Timeline (English)
+    "timeline-tag": "ACQUISITION ROADMAP",
+    "timeline-title": "The Structured Investment Pipeline",
+    "timeline-step-1-title": "1. Allocation & Reserve",
+    "timeline-step-1-desc": "Select your preferred master suite(s) from the live availability grid and secure it with a soft reservation deposit.",
+    "timeline-step-2-title": "2. SPA Execution",
+    "timeline-step-2-desc": "Execute the standard Sales & Purchase Agreement (SPA) under standard Dubai Land Department (DLD) regulations with complete legal clarity.",
+    "timeline-step-3-title": "3. Hospitality Integration",
+    "timeline-step-3-desc": "Onboard your asset into the Zimforth Services ecosystem. All marketing, tenant management, and housekeeping are fully delegated.",
+    "timeline-step-4-title": "4. Yield Distribution",
+    "timeline-step-4-desc": "Begin receiving automated quarterly rental yield payouts directly into your nominated bank account, backed by institutional audits.",
 },
   ar: {
     "proj-hero-badge": "مساكن زيمفورث",
@@ -1030,5 +1042,17 @@ const translations = {
     "inv-opt-yield": "تدفقات نقدية عالية العائد",
     "inv-opt-growth": "حفظ رأس المال ونموه",
     "inv-opt-portfolio": "تنويع المحفظة الاستثمارية",
+
+    // Acquisition Roadmap Timeline (Arabic)
+    "timeline-tag": "خارطة طريق الاستحواذ",
+    "timeline-title": "مراحل وخطوات الاستثمار العقاري",
+    "timeline-step-1-title": "١. التخصيص والحجز المبدئي",
+    "timeline-step-1-desc": "اختر الجناح السكني المفضل لديك من جدول الوحدات المتاحة، وقم بتأمينه عن طريق إيداع مبلغ حجز مبدئي.",
+    "timeline-step-2-title": "٢. توقيع عقود البيع والشراء",
+    "timeline-step-2-desc": "توقيع عقد البيع والشراء القياسي (SPA) بموجب لوائح دائرة الأراضي والأملاك في دبي مع وضوح قانوني كامل.",
+    "timeline-step-3-title": "٣. الدمج وإدارة الضيافة الموحدة",
+    "timeline-step-3-desc": "إدراج أصلك العقاري في نظام خدمات زيمفورث المدار. يتم تفويض جميع أعمال التسويق وإدارة المستأجرين والصيانة بالكامل.",
+    "timeline-step-4-title": "٤. توزيع العوائد ربع السنوية",
+    "timeline-step-4-desc": "البدء في تلقي عوائد الإيجار ربع السنوية المحولة تلقائياً إلى حسابك البنكي المعتمد، مدعومة بتقارير تدقيق حسابية.",
 }
 };
