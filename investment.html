@@ -243,18 +243,18 @@
                 <div class="calc-input-group">
                   <div class="calc-label-header text-dark font-sans">
                     <span data-i18n="calc-label-rent">Base Annual Rent per Unit (AED)</span>
-                    <span class="calc-val-readout text-green font-monospace"><span id="val-rent">85,000</span></span>
+                    <span class="calc-val-readout text-green font-monospace"><span id="val-rent">80,000</span></span>
                   </div>
-                  <input type="range" class="calc-range w-100" id="calc-rent" min="50000" max="150000" step="5000" value="85000">
+                  <input type="range" class="calc-range w-100" id="calc-rent" min="50000" max="150000" step="5000" value="80000">
                 </div>
                 
                 <!-- Control 3 -->
                 <div class="calc-input-group">
                   <div class="calc-label-header text-dark font-sans">
                     <span data-i18n="calc-label-occupancy">Expected Occupancy Rate (%)</span>
-                    <span class="calc-val-readout text-green font-monospace"><span id="val-occupancy">85</span>%</span>
+                    <span class="calc-val-readout text-green font-monospace"><span id="val-occupancy">90</span>%</span>
                   </div>
-                  <input type="range" class="calc-range w-100" id="calc-occupancy" min="50" max="100" value="85">
+                  <input type="range" class="calc-range w-100" id="calc-occupancy" min="50" max="100" step="5" value="90">
                 </div>
                 
                 <!-- Visual Comparison Chart Bars -->
@@ -262,16 +262,16 @@
                   <div class="yield-graph-container border border-secondary border-opacity-10 rounded-3 p-4 bg-light d-flex justify-content-around align-items-end" style="height: 200px;">
                     <!-- Conventional Yield Bar -->
                     <div class="d-flex flex-column align-items-center w-40 h-100 justify-content-end">
-                      <div class="yield-bar yield-bar-conv bg-secondary rounded-top w-100 text-center font-monospace small text-white py-1" style="height: 60%; min-height: 20%; transition: height 0.4s ease-out;">
-                        <span>6.12%</span>
+                      <div class="yield-bar yield-bar-conv bg-secondary rounded-top w-100 text-center font-monospace small text-white py-1" style="height: 68.21%; min-height: 20%; transition: height 0.4s ease-out;">
+                        <span>7.34%</span>
                       </div>
                       <span class="small font-monospace text-muted mt-2 text-uppercase text-center" style="font-size: 0.65rem;" data-i18n="comp-conventional">Conventional</span>
                     </div>
 
                     <!-- Metally Yield Bar -->
                     <div class="d-flex flex-column align-items-center w-40 h-100 justify-content-end">
-                      <div class="yield-bar yield-bar-metally bg-green rounded-top w-100 text-center font-monospace small text-white py-1" style="height: 80%; min-height: 20%; transition: height 0.4s ease-out; box-shadow: var(--shadow-leaf);">
-                        <span>8.58%</span>
+                      <div class="yield-bar yield-bar-metally bg-green rounded-top w-100 text-center font-monospace small text-white py-1" style="height: 90%; min-height: 20%; transition: height 0.4s ease-out; box-shadow: var(--shadow-leaf);">
+                        <span>8.89%</span>
                       </div>
                       <span class="small font-monospace text-green mt-2 text-uppercase text-center" style="font-size: 0.65rem;" data-i18n="comp-metally">Metally</span>
                     </div>
@@ -287,11 +287,11 @@
                     <div class="calc-output-card calc-output-card-conv border border-secondary border-opacity-10 rounded-4 p-4 bg-light h-100 d-flex flex-column justify-content-between shadow-sm">
                       <div>
                         <div class="calc-output-label text-muted font-monospace small text-uppercase mb-2" data-i18n="calc-model-conventional">Conventional Rental Model</div>
-                        <div class="calc-output-value text-dark fw-bold fs-3 mb-3" id="conv-gross-revenue">AED 867,000</div>
+                        <div class="calc-output-value text-dark fw-bold fs-3 mb-3" id="conv-gross-revenue">AED 864,000</div>
                       </div>
                       <div class="d-flex justify-content-between align-items-center border-top border-secondary border-opacity-10 pt-3">
                         <span class="small text-muted" data-i18n="calc-net-yield">Est. Net Yield Rate</span>
-                        <span class="calc-output-subvalue text-dark font-monospace fw-bold" id="conv-net-yield">6.12%</span>
+                        <span class="calc-output-subvalue text-dark font-monospace fw-bold" id="conv-net-yield">7.34%</span>
                       </div>
                     </div>
                   </div>
@@ -304,11 +304,11 @@
                           <div class="calc-output-label text-green font-monospace small text-uppercase" data-i18n="calc-model-metally">Metally Serviced Model</div>
                           <span class="badge bg-green text-white rounded-pill px-2 py-1 font-monospace" style="font-size: 0.6rem;" data-i18n="calc-badge-premium">Serviced Model Premium</span>
                         </div>
-                        <div class="calc-output-value text-green fw-bold fs-3 mb-3" id="met-gross-revenue">AED 1,215,000</div>
+                        <div class="calc-output-value text-green fw-bold fs-3 mb-3" id="met-gross-revenue">AED 1,140,000</div>
                       </div>
                       <div class="d-flex justify-content-between align-items-center border-top border-green border-opacity-25 pt-3">
                         <span class="small text-muted" data-i18n="calc-net-yield">Est. Net Yield Rate</span>
-                        <span class="calc-output-subvalue text-green font-monospace fw-bold" id="met-net-yield">8.58%</span>
+                        <span class="calc-output-subvalue text-green font-monospace fw-bold" id="met-net-yield">8.89%</span>
                       </div>
                     </div>
                   </div>
@@ -317,7 +317,7 @@
                   <div class="col-12">
                     <div class="p-4 rounded-4 bg-light border border-green border-opacity-20 text-center h-100 d-flex flex-column justify-content-center" style="box-shadow: inset 0 2px 10px rgba(78, 138, 83, 0.05);">
                       <span class="text-muted small d-block mb-1 font-monospace text-uppercase" data-i18n="calc-yield-premium">Metally Premium Yield Advantage</span>
-                      <h2 class="text-green fw-bold font-serif mb-0 fs-2" id="advantage-amount">AED 348,000</h2>
+                      <h2 class="text-green fw-bold font-serif mb-0 fs-2" id="advantage-amount">AED 276,000</h2>
                     </div>
                   </div>
                 </div>
