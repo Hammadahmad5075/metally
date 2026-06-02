@@ -333,6 +333,15 @@ const translations = {
     "portfolio-no-results": "No properties found",
     "portfolio-no-results-desc": "Please adjust your filter criteria and try again.",
     "portfolio-btn-loadmore": "Load More Properties",
+    "modal-btn-inquire": "Inquire Now",
+    "modal-label-specs": "Property Specifications",
+    "modal-label-price": "Investment Value",
+    "prop-desc-1": "This premier 1-bedroom executive suite is located in Metally Residence, Al Twar 3, Dubai. Designed with standard-setting luxury, it features premium built-in wardrobes, a fully integrated modern kitchen layout, acoustic wall insulation for peaceful rest, and state-of-the-art smart climate control. A perfect, ready-to-move-in opportunity optimized for strategic rental yields and long-term sustainability.",
+    "prop-desc-2": "This grand luxury penthouse sits majestically in Zimforth Heights, Downtown Dubai. Offering breathtaking floor-to-ceiling views of the iconic skyline, it features expansive master bedrooms, premium marble tiling, bespoke fixtures, and institutional-grade luxury finishes. An exceptional high-yield asset designed for sophisticated preservation of capital.",
+    "prop-desc-3": "An ultra-exclusive signature villa situated on the world-renowned Palm Jumeirah. Spanning across a massive plot area with dedicated beachfront access, it features 6 master bedrooms, multiple customized swimming pools, and standard-setting design rigorousness. Engineered specifically for high-end portfolio diversification.",
+    "prop-desc-4": "This stunning 2-bedroom executive apartment is situated in the premium Zimforth Heights complex in Downtown Dubai. Featuring pristine custom finishes, fully integrated high-end kitchen appliances, and highly structured layout details, this property delivers direct access to luxury amenities and strong strategic returns.",
+    "prop-desc-5": "An exceptionally optimized studio flex space at Metally Residence, Al Twar 3. Specifically engineered for space maximization, it offers automated space dividers, smart-managed utility structures, and standard-setting hospitality services. The ultimate high-yield investment entry point into Dubai's premier residential district.",
+    "prop-desc-6": "A masterful oceanic duplex penthouse on the Palm Jumeirah, offering sweeping 360-degree views of the Arabian Gulf. Built on luxury architecture, it integrates a private elevator, masterfully designed lounge zones, and standard-setting hospitality services, creating a world-class lifestyle asset.",
     
     // --- THE PROJECT PAGE NEW TRANSLATIONS ---
     "proj-hero-badge": "ZIMFORTH RESIDENCE",
@@ -903,6 +912,15 @@ const translations = {
     "portfolio-no-results": "لم يتم العثور على عقارات",
     "portfolio-no-results-desc": "يرجى تعديل معايير التصفية والمحاولة مرة أخرى.",
     "portfolio-btn-loadmore": "تحميل المزيد من العقارات",
+    "modal-btn-inquire": "اتصل الآن",
+    "modal-label-specs": "مواصفات العقار",
+    "modal-label-price": "القيمة الاستثمارية",
+    "prop-desc-1": "تقع هذه الوحدة التنفيذية الفاخرة المكونة من غرفة نوم واحدة في ميتالي ريزيدنس، الطوار 3، دبي. تم تصميمها بمعايير فخامة استثنائية، وتتميز بخزائن ملابس مدمجة متميزة، ومطبخ حديث متكامل بالكامل، وعزل صوتي للجدران لنوم مريح وهادئ، وتحكم ذكي في المناخ. فرصة استثمارية جاهزة للسكن ومحسنة لتحقيق عوائد إيجارية قوية واستدامة طويلة الأجل.",
+    "prop-desc-2": "يقع هذا البنتهاوس الفاخر والمهيب في زيمفورث هايتس، وسط مدينة دبي. يوفر إطلالات خلابة وممتدة من الأرض حتى السقف على أفق دبي الشهير وبرج خليفة، ويتميز بغرف نوم رئيسية واسعة، وأرضيات رخامية فاخرة، وتجهيزات مخصصة، وتشطيبات راقية بمستوى مؤسسي. أصل عقاري ذو عائد مرتفع مصمم للحفاظ على رأس المال وتنميته.",
+    "prop-desc-3": "فيلا حصرية ومميزة للغاية تقع في نخلة جميرا المشهورة عالمياً. تمتد على مساحة أرض ضخمة مع إمكانية الوصول المباشر إلى الشاطئ الخاص، وتتميز بـ 6 غرف نوم رئيسية، وحمامات سباحة متعددة مخصصة، ودقة تصميم قياسية. تم هندستها خصيصاً لتنويع المحافظ الاستثمارية الراقية.",
+    "prop-desc-4": "تقع هذه الشقة التنفيذية الرائعة المكونة من غرفتي نوم في مجمع زيمفورث هايتس الفاخر في وسط مدينة دبي. تتميز بتشطيبات مخصصة راقية، وأجهزة مطبخ متكاملة عالية الجودة، وتفاصيل تخطيط منظمة للغاية، وتوفر وصولاً مباشراً إلى المرافق الفاخرة وعوائد استراتيجية قوية.",
+    "prop-desc-5": "استوديو مرن ومحسّن بشكل استثنائي في ميتالي ريزيدنس، الطوار 3. تم تصميمه خصيصاً لزيادة المساحة القابلة للاستخدام، ويتميز بفواصل مساحة ذكية، وأنظمة مرافق تدار بذكاء، وخدمات ضيافة قياسية. نقطة دخول استثمارية ممتازة وعالية العائد في منطقة الطوار السكنية الأولى في دبي.",
+    "prop-desc-6": "بنتهاوس أوشيانيك دوبلكس فاخر وساحر في نخلة جميرا، يوفر إطلالات بانورامية مذهلة بزاوية 360 درجة على الخليج العربي. بني على طراز هندسي معاصر راقٍ، ويدمج مصعداً خاصاً، ومناطق جلوس مصممة ببراعة، وخدمات ضيافة قياسية، مما يخلق أصلاً عقارياً لأسلوب حياة عالمي متميز.",
 
     // --- THE PROJECT PAGE NEW TRANSLATIONS ---
     "proj-hero-badge": "زيمفورث ريزيدنس",

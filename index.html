@@ -22,7 +22,7 @@
   <!-- Swiper CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <!-- Core Design System Custom Stylesheet -->
-  <link rel="stylesheet" href="assets/css/style.css?v=3.2.0">
+  <link rel="stylesheet" href="assets/css/style.css?v=3.3.0">
 </head>
 
 <body class="en-font">
@@ -287,7 +287,7 @@
                   </div>
                   <div class="property-footer">
                     <span class="property-price">AED 1,250,000</span>
-                    <a href="index.html" class="btn btn-sm btn-outline-green" data-i18n="prop-btn-view">View Details</a>
+                    <button type="button" class="btn btn-sm btn-outline-green view-details-btn" data-property-id="1" data-i18n="prop-btn-view">View Details</button>
                   </div>
                 </div>
               </div>
@@ -310,7 +310,7 @@
                   </div>
                   <div class="property-footer">
                     <span class="property-price">AED 8,500,000</span>
-                    <a href="index.html" class="btn btn-sm btn-outline-green" data-i18n="prop-btn-view">View Details</a>
+                    <button type="button" class="btn btn-sm btn-outline-green view-details-btn" data-property-id="2" data-i18n="prop-btn-view">View Details</button>
                   </div>
                 </div>
               </div>
@@ -333,7 +333,7 @@
                   </div>
                   <div class="property-footer">
                     <span class="property-price">AED 25,000,000</span>
-                    <a href="index.html" class="btn btn-sm btn-outline-green" data-i18n="prop-btn-view">View Details</a>
+                    <button type="button" class="btn btn-sm btn-outline-green view-details-btn" data-property-id="3" data-i18n="prop-btn-view">View Details</button>
                   </div>
                 </div>
               </div>
@@ -356,7 +356,7 @@
                   </div>
                   <div class="property-footer">
                     <span class="property-price">AED 2,850,000</span>
-                    <a href="index.html" class="btn btn-sm btn-outline-green" data-i18n="prop-btn-view">View Details</a>
+                    <button type="button" class="btn btn-sm btn-outline-green view-details-btn" data-property-id="4" data-i18n="prop-btn-view">View Details</button>
                   </div>
                 </div>
               </div>
@@ -379,7 +379,7 @@
                   </div>
                   <div class="property-footer">
                     <span class="property-price">AED 850,000</span>
-                    <a href="index.html" class="btn btn-sm btn-outline-green" data-i18n="prop-btn-view">View Details</a>
+                    <button type="button" class="btn btn-sm btn-outline-green view-details-btn" data-property-id="5" data-i18n="prop-btn-view">View Details</button>
                   </div>
                 </div>
               </div>
@@ -402,7 +402,7 @@
                   </div>
                   <div class="property-footer">
                     <span class="property-price">AED 18,500,000</span>
-                    <a href="index.html" class="btn btn-sm btn-outline-green" data-i18n="prop-btn-view">View Details</a>
+                    <button type="button" class="btn btn-sm btn-outline-green view-details-btn" data-property-id="6" data-i18n="prop-btn-view">View Details</button>
                   </div>
                 </div>
               </div>
@@ -1262,5 +1262,228 @@
   <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
     <i class="fab fa-whatsapp"></i>
   </a>
+
+  <!-- Premium Property Details Modal Popup Overlay -->
+  <div class="property-modal-overlay" id="propertyDetailModal">
+    <div class="property-modal-card">
+      <button type="button" class="property-modal-close" id="closePropertyModal" aria-label="Close details">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="property-modal-grid">
+        <!-- Media Side -->
+        <div class="property-modal-media">
+          <div class="property-modal-gallery-main">
+            <img src="assets/images/dubai-bedroom.png" id="modalMainImg" alt="Property Main Showcase">
+          </div>
+          <div class="property-modal-thumbs" id="modalThumbsContainer">
+            <!-- Dynamic thumbnails will go here -->
+          </div>
+        </div>
+        <!-- Info Side -->
+        <div class="property-modal-info">
+          <div>
+            <div class="property-modal-header">
+              <h3 class="property-modal-title" id="modalTitle">Property Title</h3>
+              <p class="property-modal-location" id="modalLocation"><i class="fas fa-map-marker-alt"></i> <span>Location</span></p>
+            </div>
+            
+            <div class="mt-4">
+              <span class="property-modal-specs-title" data-i18n="modal-label-specs">Property Specifications</span>
+              <div class="property-modal-specs-list" id="modalSpecsList">
+                <!-- Specs badges go here -->
+              </div>
+            </div>
+            
+            <div class="mt-4">
+              <p class="property-modal-desc" id="modalDescription">Property rich details curation goes here...</p>
+            </div>
+          </div>
+          
+          <div class="property-modal-footer">
+            <div>
+              <span class="property-modal-price-title" data-i18n="modal-label-price">Investment Value</span>
+              <span class="property-modal-price-val" id="modalPrice">AED 1,250,000</span>
+            </div>
+            <button type="button" class="btn property-modal-inquire-btn" id="modalInquireBtn" data-i18n="modal-btn-inquire">Inquire Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom Modal Controller Scripts -->
+  <script>
+    $(document).ready(function () {
+      const propertyDataset = {
+        "1": {
+          images: ["assets/images/dubai-bedroom.png", "assets/images/dubai-pantry.png", "assets/images/lobby.png"],
+          price: "AED 1,250,000",
+          beds: "1",
+          baths: "2",
+          area: "850"
+        },
+        "2": {
+          images: ["assets/images/lobby.png", "assets/images/dubai-bedroom.png", "assets/images/dubai-residence.png"],
+          price: "AED 8,500,000",
+          beds: "4",
+          baths: "5",
+          area: "4,200"
+        },
+        "3": {
+          images: ["assets/images/hero-bg.png", "assets/images/dubai-residence.png", "assets/images/dubai-skyline.png"],
+          price: "AED 25,000,000",
+          beds: "6",
+          baths: "7",
+          area: "8,000"
+        },
+        "4": {
+          images: ["assets/images/dubai-skyline.png", "assets/images/lobby.png", "assets/images/dubai-bedroom.png"],
+          price: "AED 2,850,000",
+          beds: "2",
+          baths: "3",
+          area: "1,450"
+        },
+        "5": {
+          images: ["assets/images/lobby.png", "assets/images/dubai-pantry.png", "assets/images/dubai-bedroom.png"],
+          price: "AED 850,000",
+          beds: "Studio",
+          baths: "1",
+          area: "550"
+        },
+        "6": {
+          images: ["assets/images/dubai-residence.png", "assets/images/dubai-skyline.png", "assets/images/lobby.png"],
+          price: "AED 18,500,000",
+          beds: "5",
+          baths: "6",
+          area: "6,500"
+        }
+      };
+
+      // Modal open click handler
+      $('.view-details-btn').on('click', function () {
+        const id = $(this).data('property-id');
+        const data = propertyDataset[id];
+        if (!data) return;
+
+        // Current active language
+        const currentLang = localStorage.getItem("preferredLanguage") || "en";
+
+        // Fetch translations dynamically
+        const titleKey = `prop-title-${id}`;
+        const descKey = `prop-desc-${id}`;
+        const locMap = {
+          "1": "prop-loc-altwar",
+          "2": "prop-loc-downtown",
+          "3": "prop-loc-palm",
+          "4": "prop-loc-downtown",
+          "5": "prop-loc-altwar",
+          "6": "prop-loc-palm"
+        };
+        const locKey = locMap[id];
+
+        const titleText = translations[currentLang][titleKey] || `Property ${id}`;
+        const descText = translations[currentLang][descKey] || "";
+        const locText = translations[currentLang][locKey] || "";
+
+        const specBedLabel = translations[currentLang]['prop-spec-bed'] || "Beds";
+        const specBathLabel = translations[currentLang]['prop-spec-bath'] || "Baths";
+        const specSqftLabel = translations[currentLang]['prop-spec-sqft'] || "Sq.Ft";
+        const specStudioLabel = translations[currentLang]['prop-spec-studio'] || "Studio";
+
+        // 1. Set text elements
+        $('#modalTitle').text(titleText);
+        $('#modalLocation span').text(locText);
+        $('#modalDescription').text(descText);
+        $('#modalPrice').text(data.price);
+
+        // 2. Set spec list badges
+        let specHtml = "";
+        if (data.beds === "Studio") {
+          specHtml += `<span class="property-modal-spec-badge"><i class="fas fa-bed"></i> ${specStudioLabel}</span>`;
+        } else {
+          specHtml += `<span class="property-modal-spec-badge"><i class="fas fa-bed"></i> ${data.beds} ${specBedLabel}</span>`;
+        }
+        specHtml += `<span class="property-modal-spec-badge"><i class="fas fa-bath"></i> ${data.baths} ${specBathLabel}</span>`;
+        specHtml += `<span class="property-modal-spec-badge"><i class="fas fa-vector-square"></i> ${data.area} ${specSqftLabel}</span>`;
+        $('#modalSpecsList').html(specHtml);
+
+        // 3. Set primary showcase image & dynamic thumbnail previews
+        $('#modalMainImg').attr('src', data.images[0]);
+        let thumbsHtml = "";
+        data.images.forEach((imgSrc, idx) => {
+          const activeClass = idx === 0 ? "active" : "";
+          thumbsHtml += `
+            <div class="property-modal-thumb-item ${activeClass}" data-img="${imgSrc}">
+              <img src="${imgSrc}" alt="Property Thumb ${idx + 1}">
+            </div>
+          `;
+        });
+        $('#modalThumbsContainer').html(thumbsHtml);
+
+        // 4. Inquire button direct contact form scroll-to setup
+        $('#modalInquireBtn').off('click').on('click', function () {
+          // Close modal cleanly
+          $('#propertyDetailModal').removeClass('active');
+          $('body').css('overflow', '');
+
+          // Smooth scroll to contact form section
+          const target = $('#contact');
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: target.offset().top - 90
+            }, 800);
+
+            // Populate the enquiry form message field
+            const msgInput = $('#contact-message');
+            if (msgInput.length) {
+              const localizedMsg = currentLang === "ar" 
+                ? `مرحباً، أنا مهتم بالحصول على استفسار خاص ومعاينة لوحدة "${titleText}" المعروضة في المحفظة العقارية لميتالي.` 
+                : `Hello, I am interested in securing a private viewing and inquiry for the "${titleText}" featured in the Metally properties portfolio.`;
+              msgInput.val(localizedMsg).trigger('input');
+            }
+          }
+        });
+
+        // 5. Open Modal with clean scale transition
+        $('#propertyDetailModal').addClass('active');
+        $('body').css('overflow', 'hidden'); // Lock background scroll
+      });
+
+      // Gallery Thumbnail Click Swapper
+      $(document).on('click', '.property-modal-thumb-item', function () {
+        const imgSrc = $(this).data('img');
+        $('.property-modal-thumb-item').removeClass('active');
+        $(this).addClass('active');
+        
+        // Dynamic crossfade flash on showcase screen
+        $('#modalMainImg').css('opacity', '0.4');
+        setTimeout(() => {
+          $('#modalMainImg').attr('src', imgSrc).css('opacity', '1');
+        }, 150);
+      });
+
+      // Modal Close handlers
+      function closeModal() {
+        $('#propertyDetailModal').removeClass('active');
+        $('body').css('overflow', ''); // Unlock background scroll
+      }
+
+      $('#closePropertyModal').on('click', closeModal);
+
+      // Close modal on click outside card
+      $('#propertyDetailModal').on('click', function (e) {
+        if ($(e.target).hasClass('property-modal-overlay')) {
+          closeModal();
+        }
+      });
+
+      // Close modal on escape keypress
+      $(document).on('keydown', function (e) {
+        if (e.key === "Escape") {
+          closeModal();
+        }
+      });
+    });
+  </script>
 </body>
 </html>
