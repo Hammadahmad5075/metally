@@ -1,8 +1,8 @@
 $(document).ready(function () {
-  // Initiate Scroll Reveal Activation
+  // Scroll reveal
   $("html").addClass("js-active");
 
-  // Language Interactivity (I18N)
+  // Language translation setup (i18n)
   let preferredLang = localStorage.getItem("preferredLanguage");
   let currentLang = (preferredLang === "en" || preferredLang === "ar") ? preferredLang : "en";
   let activeStrengthKey = null;
@@ -170,10 +170,10 @@ $(document).ready(function () {
     });
   });
 
-  // Language toggler hook is configured; initialization deferred to bottom of file
+  // Language toggler event listener
 
 
-  // Sticky Glassmorphic Header
+  // Sticky header
   const $nav = $(".navbar");
   $(window).on("scroll", function () {
     if ($(window).scrollTop() > 50) {
@@ -184,7 +184,7 @@ $(document).ready(function () {
   });
 
 
-  // Advanced Mouse Parallax & Spotlight Tracking
+  // Mouse parallax effect in hero section
   const $heroSection = $("#home");
   if ($heroSection.length) {
     $heroSection.on("mousemove", function (e) {
@@ -271,11 +271,11 @@ $(document).ready(function () {
     });
   }
 
-  // Fallback trigger for hero metrics if observer hasn't loaded instantly
+  // Fallback trigger for counters
   setTimeout(animateCounters, 600);
 
 
-  // Interactive Yield Calculator
+  // Yield calculator
   const $unitsInput = $("#calc-units");
   const $rentInput = $("#calc-rent");
   const $occupancyInput = $("#calc-occupancy");
@@ -318,7 +318,7 @@ $(document).ready(function () {
     const convNetIncome = convGrossRevenue - convExpenses;
     const convNetYieldVal = (convNetIncome / PROPERTY_VALUATION) * 100;
 
-    // 2. METALLY SERVICED (25% Rent Premium, +5% stable occupancy, higher expenses)
+    // Metally model calculations (rent premium and stable occupancy)
     const metRentPremium = baseRent * 1.25;
     const metOccupancyRate = Math.min(occupancy + 5, 100) / 100;
     const metGrossRevenue = units * metRentPremium * metOccupancyRate;
@@ -335,7 +335,7 @@ $(document).ready(function () {
     $metNet.text(formatPercent(metNetYieldVal));
     $advantageAmt.text(formatCurrency(netAdvantage));
 
-    // Update Dynamic Graphic Bars heights
+    // Update chart bar heights
     const maxGross = Math.max(convGrossRevenue, metGrossRevenue) || 1;
     const convHeight = Math.max((convGrossRevenue / maxGross) * 90, 20); // Min height 20%
     const metHeight = Math.max((metGrossRevenue / maxGross) * 90, 20);
@@ -347,7 +347,7 @@ $(document).ready(function () {
   $(".calc-range").on("input change", updateCalculator);
 
 
-  // Interactive Floor Plan Explorer
+  // Floor plan explorer
   const floorPlanDetails = {
     bedroom: {
       en: {
@@ -422,7 +422,7 @@ $(document).ready(function () {
   });
 
 
-  // Interactive Strength Badges
+  // Strength badges interactions
   $(".strength-badge").on("mouseenter click", function () {
     const key = $(this).data("strength");
     if (!key || !strengthDetails[key]) return;
@@ -452,7 +452,7 @@ $(document).ready(function () {
     }
   });
 
-  // Active Nav Link Highlighting Via Intersectionobserver
+  // Active nav link highlighting on scroll
   const sections = $("section[id]");
   const navLinks = $(".navbar-nav .nav-link");
 
