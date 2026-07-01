@@ -3705,3 +3705,57 @@ html[dir="rtl"] .service-process-content {
     font-size: 0.82rem;
   }
 }
+
+/* ==========================================
+   Service Details Custom Glassmorphic Styles
+   ========================================== */
+.service-detail-card {
+  background: rgba(250, 247, 242, 0.02) !important;
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  backdrop-filter: blur(15px);
+  border-radius: 24px;
+  padding: 50px;
+  color: #FAF7F2;
+  box-shadow: 0 15px 45px rgba(3, 26, 18, 0.2);
+  transition: transform 0.4s ease, border-color 0.4s ease;
+}
+.service-detail-card:hover {
+  border-color: rgba(78, 138, 83, 0.15) !important;
+}
+
+.service-sidebar-card {
+  background: rgba(250, 247, 242, 0.03) !important;
+  border: 1px solid rgba(78, 138, 83, 0.25) !important;
+  backdrop-filter: blur(15px);
+  border-radius: 24px;
+  padding: 50px;
+  color: #FAF7F2;
+  box-shadow: 0 15px 45px rgba(3, 26, 18, 0.3) !important;
+  transition: transform 0.4s ease, border-color 0.4s ease;
+}
+.service-sidebar-card:hover {
+  border-color: rgba(78, 138, 83, 0.45) !important;
+}
+
+.service-sidebar-card .concept-pill-icon {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(78, 138, 83, 0.4);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.service-sidebar-card:hover .concept-pill-icon {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(78, 138, 83, 0.6);
+}
+
+@media (max-width: 768px) {
+  .service-detail-card,
+  .service-sidebar-card {
+    padding: 30px 20px;
+    border-radius: 16px;
+  }
+}
