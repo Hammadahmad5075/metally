@@ -3549,7 +3549,7 @@ html[dir="rtl"] .property-modal-close {
 /* Service Process Timeline Layout (Minimal & Modern) */
 .service-sticky-sidebar {
   position: sticky;
-  top: 0px;
+  top: 100px;
   /* height: fit-content; */
 }
 
