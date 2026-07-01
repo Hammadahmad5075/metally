@@ -41,17 +41,15 @@
           <i class="fas fa-bars-staggered fs-4"></i>
         </button>
         
-        <!-- Nav Links -->
+        <!-- Nav Links & Controls -->
         <div class="collapse navbar-collapse" id="navContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+          <!-- Left menu: links next to logo -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center ps-lg-4">
             <li class="nav-item">
               <a class="nav-link active" href="index.html" data-i18n="nav-home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="project.html" data-i18n="nav-project">The Project</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="units.html" data-i18n="nav-units">Units & Availability</a>
+              <a class="nav-link" href="services.html" data-i18n="nav-services">Services</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="investment.html" data-i18n="nav-investment">Investment Case</a>
@@ -59,7 +57,10 @@
             <li class="nav-item">
               <a class="nav-link" href="contact.html" data-i18n="nav-contact">Contact</a>
             </li>
-            
+          </ul>
+          
+          <!-- Right menu: Lang & CTA -->
+          <ul class="navbar-nav ms-auto align-items-center">
             <!-- Language Selector Trigger -->
             <li class="nav-item mx-2">
               <a class="nav-link lang-btn lang-toggle" href="#" id="lang-toggle-btn" role="button">
@@ -170,260 +171,118 @@
       </div>
     </section>
 
-
-    <!-- Real Estate Portfolio & Filtering -->
-    <section id="portfolio" class="py-5 bg-deep-green position-relative overflow-hidden">
+    <!-- Development Management Services Section -->
+    <section id="services" class="py-5 bg-deep-green position-relative overflow-hidden">
       <div class="container position-relative z-index-2">
         
-        <!-- Featured Projects Swiper -->
-        <div class="mb-5 pb-3 position-relative">
-          <h2 class="h1 text-white mb-4 fw-bold" data-i18n="portfolio-projects-title">Featured Projects</h2>
-          
-          <div class="swiper projects-swiper" data-aos="fade-up">
-            <div class="swiper-wrapper">
-              <!-- Project 1 -->
-              <div class="swiper-slide">
-                <a href="#" class="text-decoration-none">
-                  <div class="project-card h-100">
-                    <img src="assets/images/dubai-residence.png" alt="Metally Residence">
-                    <div class="project-card-content">
-                      <span class="project-badge" data-i18n="project-badge-ready">Ready to Move</span>
-                      <h3 class="text-white h2 mb-2" data-i18n="project-title-metally">Metally Residence</h3>
-                      <p class="text-white-50 mb-0"><i class="fas fa-map-marker-alt text-success me-2"></i> <span data-i18n="project-loc-altwar">Al Twar 3, Dubai</span></p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              
-              <!-- Project 2 -->
-              <div class="swiper-slide">
-                <a href="#" class="text-decoration-none">
-                  <div class="project-card h-100">
-                    <img src="assets/images/dubai-skyline.png" alt="Future Development">
-                    <div class="project-card-content">
-                      <span class="project-badge bg-warning text-dark" data-i18n="project-badge-offplan">Off-Plan</span>
-                      <h3 class="text-white h2 mb-2" data-i18n="project-title-zimforth">Zimforth Heights</h3>
-                      <p class="text-white-50 mb-0"><i class="fas fa-map-marker-alt text-success me-2"></i> <span data-i18n="project-loc-downtown">Downtown Dubai</span></p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <!-- Project 3 (Example) -->
-              <div class="swiper-slide">
-                <a href="#" class="text-decoration-none">
-                  <div class="project-card h-100">
-                    <img src="assets/images/lobby.png" alt="Oasis Views">
-                    <div class="project-card-content">
-                      <span class="project-badge bg-info text-dark" data-i18n="project-badge-launch">New Launch</span>
-                      <h3 class="text-white h2 mb-2" data-i18n="project-title-oasis">Zimforth Oasis</h3>
-                      <p class="text-white-50 mb-0"><i class="fas fa-map-marker-alt text-success me-2"></i> <span data-i18n="project-loc-marina">Dubai Marina</span></p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
+        <!-- Centered Header -->
+        <div class="row justify-content-center text-center mb-5 reveal-on-scroll">
+          <div class="col-lg-8">
+            <span class="section-tag text-green font-monospace" data-i18n="services-tag">DEVELOPMENT MANAGEMENT</span>
+            <div class="mb-3">
+              <h2 class="h1 text-white fw-bold heading-green-accent" data-i18n="services-title">Our Services</h2>
             </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination mt-4 position-relative bottom-0"></div>
-            <!-- Add Navigation -->
-            <div class="swiper-button-next text-white d-none d-md-flex" style="transform: scale(0.6); right: 0;"></div>
-            <div class="swiper-button-prev text-white d-none d-md-flex" style="transform: scale(0.6); left: 0;"></div>
+            <p class="lead text-white-50" data-i18n="services-desc">
+              We guide private landowners and family investors through every stage of the property development lifecycle, transforming land into high-performing investments.
+            </p>
           </div>
         </div>
 
-        <!-- Filter Bar -->
-        <div class="filter-bar-container mb-5" data-aos="fade-up">
-          <div class="row g-3">
-            <div class="col-md-3">
-              <select class="form-select filter-select" id="filter-location">
-                <option value="all" data-i18n="filter-loc-all">All Locations</option>
-                <option value="al-twar" data-i18n="filter-loc-altwar">Al Twar</option>
-                <option value="downtown" data-i18n="filter-loc-downtown">Downtown</option>
-                <option value="palm" data-i18n="filter-loc-palm">Palm Jumeirah</option>
-              </select>
-            </div>
-            <div class="col-md-3">
-              <select class="form-select filter-select" id="filter-type">
-                <option value="all" data-i18n="filter-type-all">Property Type</option>
-                <option value="apartment" data-i18n="filter-type-apt">Apartment</option>
-                <option value="villa" data-i18n="filter-type-villa">Villa</option>
-                <option value="penthouse" data-i18n="filter-type-pent">Penthouse</option>
-              </select>
-            </div>
-            <div class="col-md-3">
-              <select class="form-select filter-select" id="filter-budget">
-                <option value="all" data-i18n="filter-budget-all">Any Budget</option>
-                <option value="low" data-i18n="filter-budget-low">Under 1M AED</option>
-                <option value="mid" data-i18n="filter-budget-mid">1M - 5M AED</option>
-                <option value="high" data-i18n="filter-budget-high">Above 5M AED</option>
-              </select>
-            </div>
-            <div class="col-md-3">
-              <button class="btn btn-green w-100 h-100" id="apply-filters" data-i18n="filter-btn-search">Search Properties</button>
+        <!-- Services Grid -->
+        <div class="row g-4 mt-2 reveal-on-scroll">
+          <!-- Service 1 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="soft-card bg-dark border-green border-opacity-10 h-100 p-4 p-md-5 d-flex flex-column justify-content-between text-light transition-all shadow-sm">
+              <div>
+                <div class="concept-pill-icon bg-green text-white mb-4"><i class="fas fa-chart-pie"></i></div>
+                <h3 class="fw-bold h4 mb-3 text-white" data-i18n="service-1-title">Highest & Best Use Assessment</h3>
+                <p class="text-white-50 small mb-4" data-i18n="service-1-short">Analyze land parameters and zoning regulations to identify the most profitable development concepts.</p>
+              </div>
+              <div>
+                <a href="service-detail.html?service=1" class="btn btn-sm btn-outline-green rounded-pill px-4 py-2 me-2" data-i18n="btn-learn-more">Learn More</a>
+                <a href="contact.html?service=1" class="btn btn-sm btn-green rounded-pill px-4 py-2" data-i18n="btn-book-consultation">Book Consultation</a>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- Available Properties Grid -->
-        <div>
-          <h2 class="h1 text-white mb-4 fw-bold" data-i18n="portfolio-properties-title">Available Properties</h2>
-          <div class="row g-4" id="properties-grid">
-            
-            <!-- Property 1 -->
-            <div class="col-lg-4 col-md-6 property-item" data-location="al-twar" data-type="apartment" data-budget="mid">
-              <div class="property-card">
-                <div class="property-img-wrapper">
-                  <span class="property-status" data-i18n="prop-status-avail">Available</span>
-                  <img src="assets/images/dubai-bedroom.png" alt="Property">
-                </div>
-                <div class="property-content">
-                  <h4 class="property-title" data-i18n="prop-title-1">1-Bedroom Elite Unit</h4>
-                  <p class="property-location"><i class="fas fa-map-marker-alt"></i> <span data-i18n="prop-loc-altwar">Metally Residence, Al Twar 3</span></p>
-                  <div class="property-specs">
-                    <span class="property-spec-item"><i class="fas fa-bed text-success"></i> <span data-i18n="prop-spec-bed">1 Bed</span></span>
-                    <span class="property-spec-item"><i class="fas fa-bath text-success"></i> <span data-i18n="prop-spec-bath">2 Baths</span></span>
-                    <span class="property-spec-item"><i class="fas fa-vector-square text-success"></i> 850 <span data-i18n="prop-spec-sqft">Sq.Ft</span></span>
-                  </div>
-                  <div class="property-footer">
-                    <span class="property-price">AED 1,250,000</span>
-                    <button type="button" class="btn btn-sm btn-outline-green view-details-btn" data-property-id="1" data-i18n="prop-btn-view">View Details</button>
-                  </div>
-                </div>
+          <!-- Service 2 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="soft-card bg-dark border-green border-opacity-10 h-100 p-4 p-md-5 d-flex flex-column justify-content-between text-light transition-all shadow-sm">
+              <div>
+                <div class="concept-pill-icon bg-green text-white mb-4"><i class="fas fa-calculator"></i></div>
+                <h3 class="fw-bold h4 mb-3 text-white" data-i18n="service-2-title">Feasibility & Financial Analysis</h3>
+                <p class="text-white-50 small mb-4" data-i18n="service-2-short">Run detailed investment simulations, development cost budgets, and return calculations.</p>
+              </div>
+              <div>
+                <a href="service-detail.html?service=2" class="btn btn-sm btn-outline-green rounded-pill px-4 py-2 me-2" data-i18n="btn-learn-more">Learn More</a>
+                <a href="contact.html?service=2" class="btn btn-sm btn-green rounded-pill px-4 py-2" data-i18n="btn-book-consultation">Book Consultation</a>
               </div>
             </div>
-
-            <!-- Property 2 -->
-            <div class="col-lg-4 col-md-6 property-item" data-location="downtown" data-type="penthouse" data-budget="high">
-              <div class="property-card">
-                <div class="property-img-wrapper">
-                  <span class="property-status text-warning border-warning" style="background:rgba(255,193,7,0.1)" data-i18n="prop-status-reserved">Reserved</span>
-                  <img src="assets/images/lobby.png" alt="Property">
-                </div>
-                <div class="property-content">
-                  <h4 class="property-title" data-i18n="prop-title-2">Luxury Penthouse</h4>
-                  <p class="property-location"><i class="fas fa-map-marker-alt"></i> <span data-i18n="prop-loc-downtown">Zimforth Heights, Downtown</span></p>
-                  <div class="property-specs">
-                    <span class="property-spec-item"><i class="fas fa-bed text-success"></i> <span data-i18n="prop-spec-bed">4 Beds</span></span>
-                    <span class="property-spec-item"><i class="fas fa-bath text-success"></i> <span data-i18n="prop-spec-bath">5 Baths</span></span>
-                    <span class="property-spec-item"><i class="fas fa-vector-square text-success"></i> 4,200 <span data-i18n="prop-spec-sqft">Sq.Ft</span></span>
-                  </div>
-                  <div class="property-footer">
-                    <span class="property-price">AED 8,500,000</span>
-                    <button type="button" class="btn btn-sm btn-outline-green view-details-btn" data-property-id="2" data-i18n="prop-btn-view">View Details</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Property 3 -->
-            <div class="col-lg-4 col-md-6 property-item" data-location="palm" data-type="villa" data-budget="high">
-              <div class="property-card">
-                <div class="property-img-wrapper">
-                  <span class="property-status" data-i18n="prop-status-avail">Available</span>
-                  <img src="assets/images/hero-bg.png" alt="Property">
-                </div>
-                <div class="property-content">
-                  <h4 class="property-title" data-i18n="prop-title-3">Signature Villa</h4>
-                  <p class="property-location"><i class="fas fa-map-marker-alt"></i> <span data-i18n="prop-loc-palm">Palm Jumeirah</span></p>
-                  <div class="property-specs">
-                    <span class="property-spec-item"><i class="fas fa-bed text-success"></i> <span data-i18n="prop-spec-bed">6 Beds</span></span>
-                    <span class="property-spec-item"><i class="fas fa-bath text-success"></i> <span data-i18n="prop-spec-bath">7 Baths</span></span>
-                    <span class="property-spec-item"><i class="fas fa-vector-square text-success"></i> 8,000 <span data-i18n="prop-spec-sqft">Sq.Ft</span></span>
-                  </div>
-                  <div class="property-footer">
-                    <span class="property-price">AED 25,000,000</span>
-                    <button type="button" class="btn btn-sm btn-outline-green view-details-btn" data-property-id="3" data-i18n="prop-btn-view">View Details</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Property 4 -->
-            <div class="col-lg-4 col-md-6 property-item" data-location="downtown" data-type="apartment" data-budget="high">
-              <div class="property-card">
-                <div class="property-img-wrapper">
-                  <span class="property-status" data-i18n="prop-status-avail">Available</span>
-                  <img src="assets/images/dubai-skyline.png" alt="Property">
-                </div>
-                <div class="property-content">
-                  <h4 class="property-title" data-i18n="prop-title-4">2-Bedroom Downtown Elite</h4>
-                  <p class="property-location"><i class="fas fa-map-marker-alt"></i> <span data-i18n="prop-loc-downtown">Zimforth Heights, Downtown</span></p>
-                  <div class="property-specs">
-                    <span class="property-spec-item"><i class="fas fa-bed text-success"></i> <span data-i18n="prop-spec-bed">2 Beds</span></span>
-                    <span class="property-spec-item"><i class="fas fa-bath text-success"></i> <span data-i18n="prop-spec-bath">3 Baths</span></span>
-                    <span class="property-spec-item"><i class="fas fa-vector-square text-success"></i> 1,450 <span data-i18n="prop-spec-sqft">Sq.Ft</span></span>
-                  </div>
-                  <div class="property-footer">
-                    <span class="property-price">AED 2,850,000</span>
-                    <button type="button" class="btn btn-sm btn-outline-green view-details-btn" data-property-id="4" data-i18n="prop-btn-view">View Details</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Property 5 -->
-            <div class="col-lg-4 col-md-6 property-item" data-location="al-twar" data-type="apartment" data-budget="low">
-              <div class="property-card">
-                <div class="property-img-wrapper">
-                  <span class="property-status text-warning border-warning" style="background:rgba(255,193,7,0.1)" data-i18n="prop-status-reserved">Reserved</span>
-                  <img src="assets/images/lobby.png" alt="Property">
-                </div>
-                <div class="property-content">
-                  <h4 class="property-title" data-i18n="prop-title-5">Studio Flex Space</h4>
-                  <p class="property-location"><i class="fas fa-map-marker-alt"></i> <span data-i18n="prop-loc-altwar">Metally Residence, Al Twar 3</span></p>
-                  <div class="property-specs">
-                    <span class="property-spec-item"><i class="fas fa-bed text-success"></i> <span data-i18n="prop-spec-studio">Studio</span></span>
-                    <span class="property-spec-item"><i class="fas fa-bath text-success"></i> <span data-i18n="prop-spec-bath">1 Bath</span></span>
-                    <span class="property-spec-item"><i class="fas fa-vector-square text-success"></i> 550 <span data-i18n="prop-spec-sqft">Sq.Ft</span></span>
-                  </div>
-                  <div class="property-footer">
-                    <span class="property-price">AED 850,000</span>
-                    <button type="button" class="btn btn-sm btn-outline-green view-details-btn" data-property-id="5" data-i18n="prop-btn-view">View Details</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Property 6 -->
-            <div class="col-lg-4 col-md-6 property-item" data-location="palm" data-type="penthouse" data-budget="high">
-              <div class="property-card">
-                <div class="property-img-wrapper">
-                  <span class="property-status" data-i18n="prop-status-avail">Available</span>
-                  <img src="assets/images/dubai-residence.png" alt="Property">
-                </div>
-                <div class="property-content">
-                  <h4 class="property-title" data-i18n="prop-title-6">Oceanic Duplex Penthouse</h4>
-                  <p class="property-location"><i class="fas fa-map-marker-alt"></i> <span data-i18n="prop-loc-palm">Palm Jumeirah</span></p>
-                  <div class="property-specs">
-                    <span class="property-spec-item"><i class="fas fa-bed text-success"></i> <span data-i18n="prop-spec-bed">5 Beds</span></span>
-                    <span class="property-spec-item"><i class="fas fa-bath text-success"></i> <span data-i18n="prop-spec-bath">6 Baths</span></span>
-                    <span class="property-spec-item"><i class="fas fa-vector-square text-success"></i> 6,500 <span data-i18n="prop-spec-sqft">Sq.Ft</span></span>
-                  </div>
-                  <div class="property-footer">
-                    <span class="property-price">AED 18,500,000</span>
-                    <button type="button" class="btn btn-sm btn-outline-green view-details-btn" data-property-id="6" data-i18n="prop-btn-view">View Details</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          <!-- No Results Message -->
-          <div id="no-properties-msg" class="text-center py-5 d-none">
-            <i class="fas fa-search fa-3x text-white-50 mb-3"></i>
-            <h4 class="text-white" data-i18n="portfolio-no-results">No properties found</h4>
-            <p class="text-white-50" data-i18n="portfolio-no-results-desc">Please adjust your filter criteria and try again.</p>
           </div>
 
-          <!-- Load More Button -->
-          <div class="text-center mt-5" id="load-more-container">
-            <button class="btn btn-outline-green px-5 py-2 rounded-pill fw-bold" id="load-more-btn" data-i18n="portfolio-btn-loadmore">
-              Load More Properties <i class="fas fa-chevron-down ms-2"></i>
-            </button>
+          <!-- Service 3 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="soft-card bg-dark border-green border-opacity-10 h-100 p-4 p-md-5 d-flex flex-column justify-content-between text-light transition-all shadow-sm">
+              <div>
+                <div class="concept-pill-icon bg-green text-white mb-4"><i class="fas fa-compass"></i></div>
+                <h3 class="fw-bold h4 mb-3 text-white" data-i18n="service-3-title">Project Strategy & Concept</h3>
+                <p class="text-white-50 small mb-4" data-i18n="service-3-short">Define the target market, operational model, and architectural design brief.</p>
+              </div>
+              <div>
+                <a href="service-detail.html?service=3" class="btn btn-sm btn-outline-green rounded-pill px-4 py-2 me-2" data-i18n="btn-learn-more">Learn More</a>
+                <a href="contact.html?service=3" class="btn btn-sm btn-green rounded-pill px-4 py-2" data-i18n="btn-book-consultation">Book Consultation</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="soft-card bg-dark border-green border-opacity-10 h-100 p-4 p-md-5 d-flex flex-column justify-content-between text-light transition-all shadow-sm">
+              <div>
+                <div class="concept-pill-icon bg-green text-white mb-4"><i class="fas fa-users-gear"></i></div>
+                <h3 class="fw-bold h4 mb-3 text-white" data-i18n="service-4-title">Architect & Consultant Selection</h3>
+                <p class="text-white-50 small mb-4" data-i18n="service-4-short">Select, negotiate, and appoint top-tier architects, designers, and consultants.</p>
+              </div>
+              <div>
+                <a href="service-detail.html?service=4" class="btn btn-sm btn-outline-green rounded-pill px-4 py-2 me-2" data-i18n="btn-learn-more">Learn More</a>
+                <a href="contact.html?service=4" class="btn btn-sm btn-green rounded-pill px-4 py-2" data-i18n="btn-book-consultation">Book Consultation</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 5 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="soft-card bg-dark border-green border-opacity-10 h-100 p-4 p-md-5 d-flex flex-column justify-content-between text-light transition-all shadow-sm">
+              <div>
+                <div class="concept-pill-icon bg-green text-white mb-4"><i class="fas fa-cubes"></i></div>
+                <h3 class="fw-bold h4 mb-3 text-white" data-i18n="service-5-title">Design & Execution Management</h3>
+                <p class="text-white-50 small mb-4" data-i18n="service-5-short">Oversee procurement, design refinement, and execution stages on behalf of the owner.</p>
+              </div>
+              <div>
+                <a href="service-detail.html?service=5" class="btn btn-sm btn-outline-green rounded-pill px-4 py-2 me-2" data-i18n="btn-learn-more">Learn More</a>
+                <a href="contact.html?service=5" class="btn btn-sm btn-green rounded-pill px-4 py-2" data-i18n="btn-book-consultation">Book Consultation</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 6 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="soft-card bg-dark border-green border-opacity-10 h-100 p-4 p-md-5 d-flex flex-column justify-content-between text-light transition-all shadow-sm">
+              <div>
+                <div class="concept-pill-icon bg-green text-white mb-4"><i class="fas fa-handshake-angle"></i></div>
+                <h3 class="fw-bold h4 mb-3 text-white" data-i18n="service-6-title">Handover & Operational Advisory</h3>
+                <p class="text-white-50 small mb-4" data-i18n="service-6-short">Manage handover procedures and set up holiday homes or leasing operations.</p>
+              </div>
+              <div>
+                <a href="service-detail.html?service=6" class="btn btn-sm btn-outline-green rounded-pill px-4 py-2 me-2" data-i18n="btn-learn-more">Learn More</a>
+                <a href="contact.html?service=6" class="btn btn-sm btn-green rounded-pill px-4 py-2" data-i18n="btn-book-consultation">Book Consultation</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
     <!-- Concept & Structured Living -->
     <section class="bg-white overflow-hidden position-relative" id="project">
             <div class="dotted-canvas" style="opacity: 0.03;"></div>
@@ -539,137 +398,6 @@
       </div>
     </section>
 
-
-    <!-- Unit Configurations & Floor Plan Explorer -->
-    <section class="bg-cream" id="units">
-      <div class="container">
-        <div class="row justify-content-center text-center mb-5 reveal-on-scroll">
-          <div class="col-lg-8">
-            <span class="section-tag" data-i18n="units-tag">UNIT CONFIGURATIONS</span>
-            <div class="mb-3">
-              <h2 class="h1 fw-bold heading-green-accent" data-i18n="units-title">Boutique 1-Bedroom Layouts</h2>
-            </div>
-            <p class="lead text-muted" data-i18n="units-desc">
-              Each apartment balances elegant visual aesthetics with high operational utility, designed specifically for premium tenants.
-            </p>
-          </div>
-        </div>
-
-        <div class="row g-5 align-items-center">
-          <!-- Floor selection pills -->
-          <div class="col-lg-4 reveal-on-scroll">
-            <p class="text-green font-monospace small mb-3" data-i18n="units-explore-instruction">Hover/Click on blueprint parts to discover specifications:</p>
-            <div class="floor-plan-pill-container">
-              <div class="floor-plan-pill active" data-part="bedroom">
-                <span data-i18n="unit-part-bedroom">One Bedroom</span> <i class="fas fa-bed"></i>
-              </div>
-              <div class="floor-plan-pill" data-part="hall">
-                <span data-i18n="unit-part-hall">Living Hall</span> <i class="fas fa-couch"></i>
-              </div>
-              <div class="floor-plan-pill" data-part="pantry">
-                <span data-i18n="unit-part-pantry">Open/Smart Pantry</span> <i class="fas fa-kitchen-set"></i>
-              </div>
-              <div class="floor-plan-pill" data-part="bath">
-                <span data-i18n="unit-part-bath">Luxury Bathroom</span> <i class="fas fa-shower"></i>
-              </div>
-            </div>
-          </div>
-
-                    <div class="col-lg-5 reveal-zoom">
-            <div class="blueprint-visual-wrapper">
-              <div class="blueprint-grid"></div>
-              <div class="blueprint-laser"></div>
-              <div class="blueprint-layout">
-                
-                <div class="floor-highlight floor-highlight-bedroom active" data-part="bedroom" style="cursor: pointer;">
-                  <span data-i18n="unit-part-bedroom">One Bedroom</span>
-                </div>
-                
-                <div class="floor-highlight floor-highlight-hall" data-part="hall" style="cursor: pointer;">
-                  <span data-i18n="unit-part-hall">Living Hall</span>
-                </div>
-                
-                <div class="floor-highlight floor-highlight-pantry" data-part="pantry" style="cursor: pointer;">
-                  <span data-i18n="unit-part-pantry">Pantry</span>
-                </div>
-                
-                <div class="floor-highlight floor-highlight-bath" data-part="bath" style="cursor: pointer;">
-                  <span data-i18n="unit-part-bath">Bath</span>
-                </div>
-                
-                <div class="blueprint-compass">N</div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Specifications detail card with green border -->
-          <div class="col-lg-3 reveal-on-scroll">
-            <div class="card soft-card floor-detail-card border-green bg-white" id="floor-plan-detail-card">
-              <div class="card-body p-2">
-                <h4 class="card-title fw-bold text-green mb-3">Master Suite</h4>
-                <p class="card-text text-muted">
-                  Generously sized for complete privacy, featuring built-in oak closets, warm recessed LED lighting, high acoustic insulation, and soft tactile wall details.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Layout Key highlights list -->
-        <div class="row mt-5 pt-3 reveal-on-scroll">
-          <div class="col-md-6 col-lg-3">
-            <div class="d-flex gap-3 align-items-start mb-4">
-              <i class="fas fa-circle-check text-green fs-4"></i>
-              <p class="mb-0 text-muted" data-i18n="units-key-1">Efficient 1-Bedroom layout maximizing space</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="d-flex gap-3 align-items-start mb-4">
-              <i class="fas fa-circle-check text-green fs-4"></i>
-              <p class="mb-0 text-muted" data-i18n="units-key-2">Premium marble-texture flooring & warm lighting</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="d-flex gap-3 align-items-start mb-4">
-              <i class="fas fa-circle-check text-green fs-4"></i>
-              <p class="mb-0 text-muted" data-i18n="units-key-3">Smart digital locks & climate controls</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="d-flex gap-3 align-items-start mb-4">
-              <i class="fas fa-circle-check text-green fs-4"></i>
-              <p class="mb-0 text-muted" data-i18n="units-key-4">Pre-wired for high-speed fiber connectivity</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Boutique Interiors Visual Showcase -->
-        <div class="row g-4 mt-5 reveal-on-scroll justify-content-center">
-          <div class="col-md-6">
-            <div class="interior-showcase-card rounded-4 overflow-hidden border-green position-relative" style="height: 320px;">
-              <img src="assets/images/dubai-bedroom.png" alt="Luxury Master Suite Interior" class="w-100 h-100 object-fit-cover">
-              <div class="ops-showcase-overlay p-4">
-                <div class="d-flex align-items-center gap-2">
-                  <span class="status-dot-glowing"></span>
-                  <span class="small font-monospace letter-spacing-1 text-white text-uppercase" data-i18n="unit-part-bedroom-desc">GENEROUS SPACE DESIGNED FOR QUIET COMFORT</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="interior-showcase-card rounded-4 overflow-hidden border-green position-relative" style="height: 320px;">
-              <img src="assets/images/dubai-pantry.png" alt="Sleek Modern Pantry Kitchen" class="w-100 h-100 object-fit-cover">
-              <div class="ops-showcase-overlay p-4">
-                <div class="d-flex align-items-center gap-2">
-                  <span class="status-dot-glowing"></span>
-                  <span class="small font-monospace letter-spacing-1 text-white text-uppercase" data-i18n="unit-part-pantry-desc">EQUIPPED WITH QUARTZ COUNTERTOPS & STRUCTURED SPACE</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
 
     <!-- Operational Advantage -->
@@ -1263,227 +991,6 @@
     <i class="fab fa-whatsapp"></i>
   </a>
 
-  <!-- Premium Property Details Modal Popup Overlay -->
-  <div class="property-modal-overlay" id="propertyDetailModal">
-    <div class="property-modal-card">
-      <button type="button" class="property-modal-close" id="closePropertyModal" aria-label="Close details">
-        <i class="fas fa-times"></i>
-      </button>
-      <div class="property-modal-grid">
-        <!-- Media Side -->
-        <div class="property-modal-media">
-          <div class="property-modal-gallery-main">
-            <img src="assets/images/dubai-bedroom.png" id="modalMainImg" alt="Property Main Showcase">
-          </div>
-          <div class="property-modal-thumbs" id="modalThumbsContainer">
-            <!-- Dynamic thumbnails will go here -->
-          </div>
-        </div>
-        <!-- Info Side -->
-        <div class="property-modal-info">
-          <div>
-            <div class="property-modal-header">
-              <h3 class="property-modal-title" id="modalTitle">Property Title</h3>
-              <p class="property-modal-location" id="modalLocation"><i class="fas fa-map-marker-alt"></i> <span>Location</span></p>
-            </div>
-            
-            <div class="mt-4">
-              <span class="property-modal-specs-title" data-i18n="modal-label-specs">Property Specifications</span>
-              <div class="property-modal-specs-list" id="modalSpecsList">
-                <!-- Specs badges go here -->
-              </div>
-            </div>
-            
-            <div class="mt-4">
-              <p class="property-modal-desc" id="modalDescription">Property rich details curation goes here...</p>
-            </div>
-          </div>
-          
-          <div class="property-modal-footer">
-            <div>
-              <span class="property-modal-price-title" data-i18n="modal-label-price">Investment Value</span>
-              <span class="property-modal-price-val" id="modalPrice">AED 1,250,000</span>
-            </div>
-            <button type="button" class="btn property-modal-inquire-btn" id="modalInquireBtn" data-i18n="modal-btn-inquire">Inquire Now</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- Custom Modal Controller Scripts -->
-  <script>
-    $(document).ready(function () {
-      const propertyDataset = {
-        "1": {
-          images: ["assets/images/dubai-bedroom.png", "assets/images/dubai-pantry.png", "assets/images/lobby.png"],
-          price: "AED 1,250,000",
-          beds: "1",
-          baths: "2",
-          area: "850"
-        },
-        "2": {
-          images: ["assets/images/lobby.png", "assets/images/dubai-bedroom.png", "assets/images/dubai-residence.png"],
-          price: "AED 8,500,000",
-          beds: "4",
-          baths: "5",
-          area: "4,200"
-        },
-        "3": {
-          images: ["assets/images/hero-bg.png", "assets/images/dubai-residence.png", "assets/images/dubai-skyline.png"],
-          price: "AED 25,000,000",
-          beds: "6",
-          baths: "7",
-          area: "8,000"
-        },
-        "4": {
-          images: ["assets/images/dubai-skyline.png", "assets/images/lobby.png", "assets/images/dubai-bedroom.png"],
-          price: "AED 2,850,000",
-          beds: "2",
-          baths: "3",
-          area: "1,450"
-        },
-        "5": {
-          images: ["assets/images/lobby.png", "assets/images/dubai-pantry.png", "assets/images/dubai-bedroom.png"],
-          price: "AED 850,000",
-          beds: "Studio",
-          baths: "1",
-          area: "550"
-        },
-        "6": {
-          images: ["assets/images/dubai-residence.png", "assets/images/dubai-skyline.png", "assets/images/lobby.png"],
-          price: "AED 18,500,000",
-          beds: "5",
-          baths: "6",
-          area: "6,500"
-        }
-      };
-
-      // Modal open click handler
-      $('.view-details-btn').on('click', function () {
-        const id = $(this).data('property-id');
-        const data = propertyDataset[id];
-        if (!data) return;
-
-        // Current active language
-        const currentLang = localStorage.getItem("preferredLanguage") || "en";
-
-        // Fetch translations dynamically
-        const titleKey = `prop-title-${id}`;
-        const descKey = `prop-desc-${id}`;
-        const locMap = {
-          "1": "prop-loc-altwar",
-          "2": "prop-loc-downtown",
-          "3": "prop-loc-palm",
-          "4": "prop-loc-downtown",
-          "5": "prop-loc-altwar",
-          "6": "prop-loc-palm"
-        };
-        const locKey = locMap[id];
-
-        const titleText = translations[currentLang][titleKey] || `Property ${id}`;
-        const descText = translations[currentLang][descKey] || "";
-        const locText = translations[currentLang][locKey] || "";
-
-        const specBedLabel = translations[currentLang]['prop-spec-bed'] || "Beds";
-        const specBathLabel = translations[currentLang]['prop-spec-bath'] || "Baths";
-        const specSqftLabel = translations[currentLang]['prop-spec-sqft'] || "Sq.Ft";
-        const specStudioLabel = translations[currentLang]['prop-spec-studio'] || "Studio";
-
-        // 1. Set text elements
-        $('#modalTitle').text(titleText);
-        $('#modalLocation span').text(locText);
-        $('#modalDescription').text(descText);
-        $('#modalPrice').text(data.price);
-
-        // 2. Set spec list badges
-        let specHtml = "";
-        if (data.beds === "Studio") {
-          specHtml += `<span class="property-modal-spec-badge"><i class="fas fa-bed"></i> ${specStudioLabel}</span>`;
-        } else {
-          specHtml += `<span class="property-modal-spec-badge"><i class="fas fa-bed"></i> ${data.beds} ${specBedLabel}</span>`;
-        }
-        specHtml += `<span class="property-modal-spec-badge"><i class="fas fa-bath"></i> ${data.baths} ${specBathLabel}</span>`;
-        specHtml += `<span class="property-modal-spec-badge"><i class="fas fa-vector-square"></i> ${data.area} ${specSqftLabel}</span>`;
-        $('#modalSpecsList').html(specHtml);
-
-        // 3. Set primary showcase image & dynamic thumbnail previews
-        $('#modalMainImg').attr('src', data.images[0]);
-        let thumbsHtml = "";
-        data.images.forEach((imgSrc, idx) => {
-          const activeClass = idx === 0 ? "active" : "";
-          thumbsHtml += `
-            <div class="property-modal-thumb-item ${activeClass}" data-img="${imgSrc}">
-              <img src="${imgSrc}" alt="Property Thumb ${idx + 1}">
-            </div>
-          `;
-        });
-        $('#modalThumbsContainer').html(thumbsHtml);
-
-        // 4. Inquire button direct contact form scroll-to setup
-        $('#modalInquireBtn').off('click').on('click', function () {
-          // Close modal cleanly
-          $('#propertyDetailModal').removeClass('active');
-          $('body').css('overflow', '');
-
-          // Smooth scroll to contact form section
-          const target = $('#contact');
-          if (target.length) {
-            $('html, body').animate({
-              scrollTop: target.offset().top - 90
-            }, 800);
-
-            // Populate the enquiry form message field
-            const msgInput = $('#contact-message');
-            if (msgInput.length) {
-              const localizedMsg = currentLang === "ar" 
-                ? `مرحباً، أنا مهتم بالحصول على استفسار خاص ومعاينة لوحدة "${titleText}" المعروضة في المحفظة العقارية لميتالي.` 
-                : `Hello, I am interested in securing a private viewing and inquiry for the "${titleText}" featured in the Metally properties portfolio.`;
-              msgInput.val(localizedMsg).trigger('input');
-            }
-          }
-        });
-
-        // 5. Open Modal with clean scale transition
-        $('#propertyDetailModal').addClass('active');
-        $('body').css('overflow', 'hidden'); // Lock background scroll
-      });
-
-      // Gallery Thumbnail Click Swapper
-      $(document).on('click', '.property-modal-thumb-item', function () {
-        const imgSrc = $(this).data('img');
-        $('.property-modal-thumb-item').removeClass('active');
-        $(this).addClass('active');
-        
-        // Dynamic crossfade flash on showcase screen
-        $('#modalMainImg').css('opacity', '0.4');
-        setTimeout(() => {
-          $('#modalMainImg').attr('src', imgSrc).css('opacity', '1');
-        }, 150);
-      });
-
-      // Modal Close handlers
-      function closeModal() {
-        $('#propertyDetailModal').removeClass('active');
-        $('body').css('overflow', ''); // Unlock background scroll
-      }
-
-      $('#closePropertyModal').on('click', closeModal);
-
-      // Close modal on click outside card
-      $('#propertyDetailModal').on('click', function (e) {
-        if ($(e.target).hasClass('property-modal-overlay')) {
-          closeModal();
-        }
-      });
-
-      // Close modal on escape keypress
-      $(document).on('keydown', function (e) {
-        if (e.key === "Escape") {
-          closeModal();
-        }
-      });
-    });
-  </script>
 </body>
 </html>
