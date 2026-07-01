@@ -94,103 +94,91 @@
       </div>
     </section>
 
-    <!-- Services Grid List -->
-    <section class="py-6 bg-white text-dark position-relative" id="services-grid-section">
-      <div class="dotted-canvas" style="opacity: 0.02;"></div>
+    <!-- Services Timeline Section -->
+    <section class="py-6 bg-deep-green position-relative" id="services-timeline-section">
+      <div class="dotted-canvas" style="opacity: 0.05;"></div>
       <div class="container">
         
-        <div class="row g-4 mt-2" id="services-cards-wrapper">
-          <!-- Service 1 -->
-          <div class="col-lg-4 col-md-6" data-aos="fade-up">
-            <div class="soft-card border border-secondary border-opacity-10 h-100 p-4 p-lg-5 d-flex flex-column justify-content-between">
-              <div>
-                <div class="concept-pill-icon bg-green text-white mb-4"><i class="fas fa-chart-pie"></i></div>
-                <h3 class="fw-bold h4 mb-3 text-green" data-i18n="service-1-title">Highest & Best Use Assessment</h3>
-                <p class="text-muted small mb-4" data-i18n="service-1-short">Analyze land parameters and zoning regulations to identify the most profitable development concepts.</p>
-              </div>
-              <div>
-                <a href="service-detail.html?service=1" class="btn btn-sm btn-outline-green rounded-pill px-4 py-2 me-2" data-i18n="btn-learn-more">Learn More</a>
-                <a href="contact.html?service=1" class="btn btn-sm btn-green rounded-pill px-4 py-2" data-i18n="btn-book-consultation">Book Consultation</a>
-              </div>
+        <div class="row g-5">
+          <!-- Sticky Left Sidebar -->
+          <div class="col-lg-4">
+            <div class="service-sticky-sidebar reveal-on-scroll">
+              <span class="section-tag text-green font-monospace" data-i18n="services-tag">DEVELOPMENT MANAGEMENT</span>
+              <h2 class="display-5 fw-bold text-white mb-4" data-i18n="services-title">Our Services</h2>
+              <p class="text-white-50 mb-5" data-i18n="services-desc">
+                We guide private landowners and family investors through every stage of the property development lifecycle, transforming land into high-performing investments.
+              </p>
+              <a href="contact.html?subject=Strategic+Consultation" class="btn btn-green rounded-pill px-5 py-3 font-monospace text-uppercase letter-spacing-1" data-i18n="btn-book-consultation">Book Consultation</a>
             </div>
           </div>
 
-          <!-- Service 2 -->
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="soft-card border border-secondary border-opacity-10 h-100 p-4 p-lg-5 d-flex flex-column justify-content-between">
-              <div>
-                <div class="concept-pill-icon bg-green text-white mb-4"><i class="fas fa-calculator"></i></div>
-                <h3 class="fw-bold h4 mb-3 text-green" data-i18n="service-2-title">Feasibility & Financial Analysis</h3>
-                <p class="text-muted small mb-4" data-i18n="service-2-short">Run detailed investment simulations, development cost budgets, and return calculations.</p>
-              </div>
-              <div>
-                <a href="service-detail.html?service=2" class="btn btn-sm btn-outline-green rounded-pill px-4 py-2 me-2" data-i18n="btn-learn-more">Learn More</a>
-                <a href="contact.html?service=2" class="btn btn-sm btn-green rounded-pill px-4 py-2" data-i18n="btn-book-consultation">Book Consultation</a>
-              </div>
-            </div>
-          </div>
+          <!-- Right Side Process List -->
+          <div class="col-lg-8">
+            <div class="service-process-list reveal-on-scroll">
+              
+              <!-- Stage 01 -->
+              <a href="service-detail.html?service=1" class="service-process-card text-decoration-none">
+                <span class="service-process-num">01</span>
+                <div class="service-process-content">
+                  <h4 class="service-process-title" data-i18n="service-1-title">Highest & Best Use Assessment</h4>
+                  <p class="service-process-desc" data-i18n="service-1-short">Analyze land parameters and zoning regulations to identify the most profitable development concepts.</p>
+                </div>
+                <div class="service-process-arrow"><i class="fas fa-chevron-right"></i></div>
+              </a>
 
-          <!-- Service 3 -->
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="soft-card border border-secondary border-opacity-10 h-100 p-4 p-lg-5 d-flex flex-column justify-content-between">
-              <div>
-                <div class="concept-pill-icon bg-green text-white mb-4"><i class="fas fa-compass"></i></div>
-                <h3 class="fw-bold h4 mb-3 text-green" data-i18n="service-3-title">Project Strategy & Concept</h3>
-                <p class="text-muted small mb-4" data-i18n="service-3-short">Define the target market, operational model, and architectural design brief.</p>
-              </div>
-              <div>
-                <a href="service-detail.html?service=3" class="btn btn-sm btn-outline-green rounded-pill px-4 py-2 me-2" data-i18n="btn-learn-more">Learn More</a>
-                <a href="contact.html?service=3" class="btn btn-sm btn-green rounded-pill px-4 py-2" data-i18n="btn-book-consultation">Book Consultation</a>
-              </div>
-            </div>
-          </div>
+              <!-- Stage 02 -->
+              <a href="service-detail.html?service=2" class="service-process-card text-decoration-none">
+                <span class="service-process-num">02</span>
+                <div class="service-process-content">
+                  <h4 class="service-process-title" data-i18n="service-2-title">Feasibility & Financial Analysis</h4>
+                  <p class="service-process-desc" data-i18n="service-2-short">Run detailed investment simulations, development cost budgets, and return calculations.</p>
+                </div>
+                <div class="service-process-arrow"><i class="fas fa-chevron-right"></i></div>
+              </a>
 
-          <!-- Service 4 -->
-          <div class="col-lg-4 col-md-6" data-aos="fade-up">
-            <div class="soft-card border border-secondary border-opacity-10 h-100 p-4 p-lg-5 d-flex flex-column justify-content-between">
-              <div>
-                <div class="concept-pill-icon bg-green text-white mb-4"><i class="fas fa-users-gear"></i></div>
-                <h3 class="fw-bold h4 mb-3 text-green" data-i18n="service-4-title">Architect & Consultant Selection</h3>
-                <p class="text-muted small mb-4" data-i18n="service-4-short">Select, negotiate, and appoint top-tier architects, designers, and consultants.</p>
-              </div>
-              <div>
-                <a href="service-detail.html?service=4" class="btn btn-sm btn-outline-green rounded-pill px-4 py-2 me-2" data-i18n="btn-learn-more">Learn More</a>
-                <a href="contact.html?service=4" class="btn btn-sm btn-green rounded-pill px-4 py-2" data-i18n="btn-book-consultation">Book Consultation</a>
-              </div>
-            </div>
-          </div>
+              <!-- Stage 03 -->
+              <a href="service-detail.html?service=3" class="service-process-card text-decoration-none">
+                <span class="service-process-num">03</span>
+                <div class="service-process-content">
+                  <h4 class="service-process-title" data-i18n="service-3-title">Project Strategy & Concept</h4>
+                  <p class="service-process-desc" data-i18n="service-3-short">Define the target market, operational model, and architectural design brief.</p>
+                </div>
+                <div class="service-process-arrow"><i class="fas fa-chevron-right"></i></div>
+              </a>
 
-          <!-- Service 5 -->
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="soft-card border border-secondary border-opacity-10 h-100 p-4 p-lg-5 d-flex flex-column justify-content-between">
-              <div>
-                <div class="concept-pill-icon bg-green text-white mb-4"><i class="fas fa-cubes"></i></div>
-                <h3 class="fw-bold h4 mb-3 text-green" data-i18n="service-5-title">Design & Execution Management</h3>
-                <p class="text-muted small mb-4" data-i18n="service-5-short">Oversee procurement, design refinement, and execution stages on behalf of the owner.</p>
-              </div>
-              <div>
-                <a href="service-detail.html?service=5" class="btn btn-sm btn-outline-green rounded-pill px-4 py-2 me-2" data-i18n="btn-learn-more">Learn More</a>
-                <a href="contact.html?service=5" class="btn btn-sm btn-green rounded-pill px-4 py-2" data-i18n="btn-book-consultation">Book Consultation</a>
-              </div>
-            </div>
-          </div>
+              <!-- Stage 04 -->
+              <a href="service-detail.html?service=4" class="service-process-card text-decoration-none">
+                <span class="service-process-num">04</span>
+                <div class="service-process-content">
+                  <h4 class="service-process-title" data-i18n="service-4-title">Architect & Consultant Selection</h4>
+                  <p class="service-process-desc" data-i18n="service-4-short">Select, negotiate, and appoint top-tier architects, designers, and consultants.</p>
+                </div>
+                <div class="service-process-arrow"><i class="fas fa-chevron-right"></i></div>
+              </a>
 
-          <!-- Service 6 -->
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="soft-card border border-secondary border-opacity-10 h-100 p-4 p-lg-5 d-flex flex-column justify-content-between">
-              <div>
-                <div class="concept-pill-icon bg-green text-white mb-4"><i class="fas fa-handshake-angle"></i></div>
-                <h3 class="fw-bold h4 mb-3 text-green" data-i18n="service-6-title">Handover & Operational Advisory</h3>
-                <p class="text-muted small mb-4" data-i18n="service-6-short">Manage handover procedures and set up holiday homes or leasing operations.</p>
-              </div>
-              <div>
-                <a href="service-detail.html?service=6" class="btn btn-sm btn-outline-green rounded-pill px-4 py-2 me-2" data-i18n="btn-learn-more">Learn More</a>
-                <a href="contact.html?service=6" class="btn btn-sm btn-green rounded-pill px-4 py-2" data-i18n="btn-book-consultation">Book Consultation</a>
-              </div>
+              <!-- Stage 05 -->
+              <a href="service-detail.html?service=5" class="service-process-card text-decoration-none">
+                <span class="service-process-num">05</span>
+                <div class="service-process-content">
+                  <h4 class="service-process-title" data-i18n="service-5-title">Design & Execution Management</h4>
+                  <p class="service-process-desc" data-i18n="service-5-short">Oversee procurement, design refinement, and execution stages on behalf of the owner.</p>
+                </div>
+                <div class="service-process-arrow"><i class="fas fa-chevron-right"></i></div>
+              </a>
+
+              <!-- Stage 06 -->
+              <a href="service-detail.html?service=6" class="service-process-card text-decoration-none">
+                <span class="service-process-num">06</span>
+                <div class="service-process-content">
+                  <h4 class="service-process-title" data-i18n="service-6-title">Handover & Operational Advisory</h4>
+                  <p class="service-process-desc" data-i18n="service-6-short">Manage handover procedures and set up holiday homes or leasing operations.</p>
+                </div>
+                <div class="service-process-arrow"><i class="fas fa-chevron-right"></i></div>
+              </a>
+
             </div>
           </div>
         </div>
-
       </div>
     </section>
 

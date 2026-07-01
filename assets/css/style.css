@@ -3033,3 +3033,147 @@ html[dir="rtl"] .property-modal-close {
   left: 20px;
 }
 
+/* Service Process Timeline Layout (Minimal & Modern) */
+.service-sticky-sidebar {
+  position: sticky;
+  top: 130px;
+  height: fit-content;
+}
+@media (max-width: 991.98px) {
+  .service-sticky-sidebar {
+    position: static;
+    margin-bottom: 40px;
+  }
+}
+.service-process-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.service-process-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(250, 247, 242, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius-md);
+  padding: 26px 30px;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none !important;
+}
+.service-process-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: var(--accent-leaf);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+html[dir="rtl"] .service-process-card::before {
+  left: auto;
+  right: 0;
+}
+.service-process-card:hover {
+  background: rgba(78, 138, 83, 0.08);
+  border-color: rgba(78, 138, 83, 0.25);
+  transform: translateX(8px);
+}
+html[dir="rtl"] .service-process-card:hover {
+  transform: translateX(-8px);
+}
+.service-process-card:hover::before {
+  opacity: 1;
+}
+.service-process-num {
+  font-family: var(--font-sans);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--accent-leaf);
+  opacity: 0.85;
+  margin-right: 25px;
+  min-width: 45px;
+}
+html[dir="rtl"] .service-process-num {
+  margin-right: 0;
+  margin-left: 25px;
+}
+.service-process-content {
+  flex-grow: 1;
+}
+.service-process-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--bg-cream);
+  margin-bottom: 5px;
+  transition: color 0.3s ease;
+}
+.service-process-card:hover .service-process-title {
+  color: #FFFFFF;
+}
+.service-process-desc {
+  font-size: 0.9rem;
+  color: rgba(250, 247, 242, 0.65);
+  margin-bottom: 0;
+  font-weight: 300;
+}
+.service-process-arrow {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(250, 247, 242, 0.7);
+  transition: all 0.3s ease;
+  margin-left: 20px;
+  flex-shrink: 0;
+}
+html[dir="rtl"] .service-process-arrow {
+  margin-left: 0;
+  margin-right: 20px;
+  transform: rotate(180deg);
+}
+.service-process-card:hover .service-process-arrow {
+  background: var(--accent-leaf);
+  border-color: var(--accent-leaf);
+  color: #FFFFFF;
+  transform: scale(1.05);
+}
+html[dir="rtl"] .service-process-card:hover .service-process-arrow {
+  transform: rotate(180deg) scale(1.05);
+}
+@media (max-width: 576px) {
+  .service-process-card {
+    padding: 20px;
+  }
+  .service-process-num {
+    font-size: 1.4rem;
+    margin-right: 15px;
+    min-width: 30px;
+  }
+  html[dir="rtl"] .service-process-num {
+    margin-left: 15px;
+  }
+  .service-process-title {
+    font-size: 1.1rem;
+  }
+  .service-process-desc {
+    font-size: 0.82rem;
+  }
+  .service-process-arrow {
+    width: 32px;
+    height: 32px;
+    margin-left: 10px;
+  }
+  html[dir="rtl"] .service-process-arrow {
+    margin-right: 10px;
+  }
+}
+
