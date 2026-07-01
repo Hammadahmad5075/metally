@@ -3034,6 +3034,17 @@ html[dir="rtl"] .property-modal-close {
 }
 
 /* Service Process Timeline Layout (Minimal & Modern) */
+.service-sticky-sidebar {
+  position: sticky;
+  top: 130px;
+  height: fit-content;
+}
+@media (max-width: 991.98px) {
+  .service-sticky-sidebar {
+    position: static;
+    margin-bottom: 40px;
+  }
+}
 .service-process-list {
   display: flex;
   flex-direction: column;
