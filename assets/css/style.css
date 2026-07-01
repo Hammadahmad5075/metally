@@ -9,6 +9,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://db.onlinewebfonts.com/c/11d2534b1be852ecc92863ef5cbda987?family=TT+Interphases+Pro');
 @import url('https://db.onlinewebfonts.com/c/dee436f274c410c23fc3de43367ef1ae?family=Janna+LT');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
 
 /* Custom Variables */
 :root {
@@ -43,7 +44,8 @@
   /* Fonts */
   --font-header: 'Playfair Display', 'Outfit', 'Plus Jakarta Sans', system-ui, sans-serif;
   --font-sans: 'TT Interphases Pro', 'Inter', system-ui, -apple-system, sans-serif;
-  --font-arabic: 'Janna LT', 'Cairo', system-ui, -apple-system, sans-serif;
+  /* --font-arabic: 'Janna LT', 'Cairo', system-ui, -apple-system, sans-serif; */
+  --font-arabic: "Cairo", sans-serif;
 
   /* Elevation (Soft UI Shadows) */
   --shadow-soft: 0 10px 30px rgba(6, 51, 42, 0.04), 0 2px 10px rgba(6, 51, 42, 0.02);
@@ -3719,6 +3721,7 @@ html[dir="rtl"] .service-process-content {
   box-shadow: 0 15px 45px rgba(3, 26, 18, 0.2);
   transition: transform 0.4s ease, border-color 0.4s ease;
 }
+
 .service-detail-card:hover {
   border-color: rgba(78, 138, 83, 0.15) !important;
 }
@@ -3733,6 +3736,7 @@ html[dir="rtl"] .service-process-content {
   box-shadow: 0 15px 45px rgba(3, 26, 18, 0.3) !important;
   transition: transform 0.4s ease, border-color 0.4s ease;
 }
+
 .service-sidebar-card:hover {
   border-color: rgba(78, 138, 83, 0.45) !important;
 }
@@ -3747,12 +3751,14 @@ html[dir="rtl"] .service-process-content {
   box-shadow: 0 0 20px rgba(78, 138, 83, 0.4);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
+
 .service-sidebar-card:hover .concept-pill-icon {
   transform: scale(1.05);
   box-shadow: 0 0 25px rgba(78, 138, 83, 0.6);
 }
 
 @media (max-width: 768px) {
+
   .service-detail-card,
   .service-sidebar-card {
     padding: 30px 20px;
