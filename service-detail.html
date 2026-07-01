@@ -119,6 +119,9 @@
               <p class="text-white-50 lh-lg" style="font-weight: 300; font-size: 1.1rem;" id="detail-narrative" data-i18n="service-1-long">
                 We conduct rigorous analysis of zoning laws, site constraints, and market dynamics to identify the development path that maximizes both rental yield and long-term capital appreciation.
               </p>
+              
+              <!-- Dynamic Methodology Steps to fill height -->
+              <div id="methodology-steps-container"></div>
             </div>
           </div>
 
@@ -296,6 +299,82 @@
       };
       iconContainer.innerHTML = `<i class="fas ${icons[serviceId]}"></i>`;
 
+      // Steps data mapping for each service (1-6) in English & Arabic
+      const stepsData = {
+        1: {
+          en: [
+            { title: "Zoning & Regulations Analysis", desc: "Auditing municipality zoning laws, plot ratios, and height restrictions." },
+            { title: "Market Demand Research", desc: "Examining local residential and commercial demand indicators." },
+            { title: "Concept Matching", desc: "Selecting the three most profitable mixed-use or residential build models." }
+          ],
+          ar: [
+            { title: "تحليل اللوائح والتنظيمات", desc: "تدقيق قوانين البناء البلدية، ونسب البناء، ومحددات الارتفاع." },
+            { title: "دراسة طلب السوق", desc: "فحص مؤشرات الطلب السكني والتجاري المحلي." },
+            { title: "مطابقة المفاهيم العقارية", desc: "تحديد نماذج التطوير الثلاثة الأكثر ربحية للمشروع." }
+          ]
+        },
+        2: {
+          en: [
+            { title: "Development Cost Estimation", desc: "Projecting construction, infrastructure, licensing, and soft costs." },
+            { title: "Cash Flow Projection", desc: "Modeling quarterly expenses, funding schedules, and pre-sales inflows." },
+            { title: "Sensitivity Stress-Testing", desc: "Testing project returns against interest rate and market price changes." }
+          ],
+          ar: [
+            { title: "تقدير تكاليف التطوير", desc: "توقع تكاليف البناء، والبنية التحتية، والتراخيص، والرسوم الاستشارية." },
+            { title: "توقع التدفقات النقدية", desc: "نمذجة المصاريف الربع سنوية، وجداول التمويل، وتدفقات البيع المسبق." },
+            { title: "اختبار حساسية المخاطر", desc: "اختبار عوائد المشروع مقابل تقلبات أسعار الفائدة والسوق." }
+          ]
+        },
+        3: {
+          en: [
+            { title: "Target Audience Profiling", desc: "Identifying luxury buyer demographics, preferences, and price tolerances." },
+            { title: "Unique Selling Proposition (USP)", desc: "Establishing architectural and lifestyle differentiators for the property." },
+            { title: "Operational Flow Design", desc: "Defining long-term property management and facility layouts." }
+          ],
+          ar: [
+            { title: "تحديد الجمهور المستهدف", desc: "تحديد التركيبة السكانية للمشترين الفاخرين، وتفضيلاتهم، وقدراتهم الشرائية." },
+            { title: "صياغة ميزة البيع الفريدة (USP)", desc: "تأسيس عناصر التميز المعماري وأسلوب الحياة للعقار." },
+            { title: "تصميم التدفق التشغيلي", desc: "تحديد معايير إدارة العقار والمرافق على المدى الطويل." }
+          ]
+        },
+        4: {
+          en: [
+            { title: "Design Brief Formulation", desc: "Translating concept goals into formal guidelines for the architects." },
+            { title: "RFP Launch & Evaluation", desc: "Launching requests for proposal and comparing bids from top-tier designers." },
+            { title: "Contract Negotiation", desc: "Appointing consultants under optimal legal and fee schedules." }
+          ],
+          ar: [
+            { title: "صياغة موجز التصميم", desc: "ترجمة أهداف المفههم العام إلى إرشادات رسمية للمهندسين المعماريين." },
+            { title: "إطلاق طلبات العروض وتقييمها", desc: "مقارنة العطاءات المقدمة من كبار المصممين المعماريين." },
+            { title: "تفاوض العقود والتعيين", desc: "تعيين الاستشاريين بموجب شروط قانونية ومالية مثالية." }
+          ]
+        },
+        5: {
+          en: [
+            { title: "Value Engineering", desc: "Refining designs to optimize construction costs without losing premium appeal." },
+            { title: "Procurement Oversight", desc: "Tendering main contractor and major material packages transparently." },
+            { title: "Milestone Quality Audits", desc: "Conducting regular site inspections to ensure full specifications compliance." }
+          ],
+          ar: [
+            { title: "الهندسة القيمية", desc: "تحسين التصاميم لتقليل تكاليف البناء دون فقدان المظهر الفاخر." },
+            { title: "الإشراف على المشتريات", desc: "طرح مناقصات المقاولين وحزم المواد الرئيسية بشفافية." },
+            { title: "تدقيق الجودة عند المعالم", desc: "إجراء عمليات تفتيش دورية للموقع لضمان الامتثال التام للمواصفات." }
+          ]
+        },
+        6: {
+          en: [
+            { title: "Defect Snagging Audit", desc: "Conducting professional inspections of units to compile rectification lists." },
+            { title: "Asset Handover Management", desc: "Managing documentation, authority clearances, and key handovers." },
+            { title: "Operator Selection & Set-up", desc: "Appointing leasing, property management, or holiday home operators." }
+          ],
+          ar: [
+            { title: "تدقيق وتصحيح العيوب", desc: "إجراء فحص مهني للوحدات المكتملة لإعداد قوائم الإصلاح." },
+            { title: "إدارة تسليم الأصول", desc: "إدارة الوثائق والتخليص الحكومي وتسليم مفاتيح العقار." },
+            { title: "اختيار المشغل وتجهيز العمليات", desc: "تعيين مشغلي التأجير أو إدارة العقارات أو بيوت العطلات." }
+          ]
+        }
+      };
+
       // Function to render deliverables bullets dynamically
       window.renderDeliverables = function(lang) {
         // Set dynamic stage badge
@@ -323,6 +402,41 @@
               </div>
             `;
           });
+          container.innerHTML = html;
+        }
+
+        // Render methodology steps inside left card
+        window.renderSteps(lang);
+      };
+
+      // Function to render methodology steps inside the left card
+      window.renderSteps = function(lang) {
+        const steps = stepsData[serviceId] ? stepsData[serviceId][lang] : [];
+        const container = document.getElementById('methodology-steps-container');
+        if (container && steps.length > 0) {
+          const sectionTitle = lang === 'ar' ? 'تفاصيل المنهجية المتبعة' : 'Methodology Breakdown';
+          let html = `
+            <div class="mt-4 pt-4 border-top border-white border-opacity-10">
+              <h5 class="text-green fw-bold mb-3 font-monospace small text-uppercase">${sectionTitle}</h5>
+              <div class="d-flex flex-column gap-3 text-start">
+          `;
+          steps.forEach((step, idx) => {
+            html += `
+              <div class="d-flex gap-3 align-items-start">
+                <div class="rounded-circle border border-green text-green d-flex align-items-center justify-content-center fw-bold small" style="width: 28px; height: 28px; flex-shrink: 0; font-size: 0.8rem; background: rgba(78, 138, 83, 0.05); margin-top: 2px;">
+                  0${idx + 1}
+                </div>
+                <div>
+                  <h6 class="fw-bold mb-1 text-white" style="font-size: 0.95rem;">${step.title}</h6>
+                  <p class="text-white-50 mb-0 small" style="font-weight: 300; font-size: 0.85rem;">${step.desc}</p>
+                </div>
+              </div>
+            `;
+          });
+          html += `
+              </div>
+            </div>
+          `;
           container.innerHTML = html;
         }
       };
