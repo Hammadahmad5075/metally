@@ -3034,17 +3034,6 @@ html[dir="rtl"] .property-modal-close {
 }
 
 /* Service Process Timeline Layout (Minimal & Modern) */
-.service-sticky-sidebar {
-  position: sticky;
-  top: 130px;
-  height: fit-content;
-}
-@media (max-width: 991.98px) {
-  .service-sticky-sidebar {
-    position: static;
-    margin-bottom: 40px;
-  }
-}
 .service-process-list {
   display: flex;
   flex-direction: column;
@@ -3057,7 +3046,7 @@ html[dir="rtl"] .property-modal-close {
   background: rgba(250, 247, 242, 0.02);
   border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: var(--radius-md);
-  padding: 26px 30px;
+  padding: 26px 40px;
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   cursor: pointer;
   position: relative;
@@ -3082,10 +3071,8 @@ html[dir="rtl"] .service-process-card::before {
 .service-process-card:hover {
   background: rgba(78, 138, 83, 0.08);
   border-color: rgba(78, 138, 83, 0.25);
-  transform: translateX(8px);
-}
-html[dir="rtl"] .service-process-card:hover {
-  transform: translateX(-8px);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(6, 51, 42, 0.15);
 }
 .service-process-card:hover::before {
   opacity: 1;
@@ -3105,6 +3092,11 @@ html[dir="rtl"] .service-process-num {
 }
 .service-process-content {
   flex-grow: 1;
+  padding-right: 30px;
+}
+html[dir="rtl"] .service-process-content {
+  padding-right: 0;
+  padding-left: 30px;
 }
 .service-process-title {
   font-size: 1.25rem;
@@ -3122,32 +3114,30 @@ html[dir="rtl"] .service-process-num {
   margin-bottom: 0;
   font-weight: 300;
 }
-.service-process-arrow {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+.service-process-actions {
   display: flex;
   align-items: center;
-  justify-content: center;
-  color: rgba(250, 247, 242, 0.7);
-  transition: all 0.3s ease;
-  margin-left: 20px;
+  gap: 12px;
   flex-shrink: 0;
 }
-html[dir="rtl"] .service-process-arrow {
-  margin-left: 0;
-  margin-right: 20px;
-  transform: rotate(180deg);
-}
-.service-process-card:hover .service-process-arrow {
-  background: var(--accent-leaf);
-  border-color: var(--accent-leaf);
-  color: #FFFFFF;
-  transform: scale(1.05);
-}
-html[dir="rtl"] .service-process-card:hover .service-process-arrow {
-  transform: rotate(180deg) scale(1.05);
+@media (max-width: 991.98px) {
+  .service-process-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+  }
+  .service-process-content {
+    padding-right: 0;
+    padding-left: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .service-process-actions {
+    width: 100%;
+    justify-content: flex-start;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 16px;
+  }
 }
 @media (max-width: 576px) {
   .service-process-card {
@@ -3166,14 +3156,6 @@ html[dir="rtl"] .service-process-card:hover .service-process-arrow {
   }
   .service-process-desc {
     font-size: 0.82rem;
-  }
-  .service-process-arrow {
-    width: 32px;
-    height: 32px;
-    margin-left: 10px;
-  }
-  html[dir="rtl"] .service-process-arrow {
-    margin-right: 10px;
   }
 }
 

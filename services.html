@@ -99,82 +99,113 @@
       <div class="dotted-canvas" style="opacity: 0.05;"></div>
       <div class="container">
         
-        <div class="row g-5">
-          <!-- Sticky Left Sidebar -->
-          <div class="col-lg-4">
-            <div class="service-sticky-sidebar reveal-on-scroll">
-              <span class="section-tag text-green font-monospace" data-i18n="services-tag">DEVELOPMENT MANAGEMENT</span>
-              <h2 class="display-5 fw-bold text-white mb-4" data-i18n="services-title">Our Services</h2>
-              <p class="text-white-50 mb-5" data-i18n="services-desc">
-                We guide private landowners and family investors through every stage of the property development lifecycle, transforming land into high-performing investments.
-              </p>
-              <a href="contact.html?subject=Strategic+Consultation" class="btn btn-green rounded-pill px-5 py-3 font-monospace text-uppercase letter-spacing-1" data-i18n="btn-book-consultation">Book Consultation</a>
-            </div>
-          </div>
-
-          <!-- Right Side Process List -->
+        <!-- Centered Section Header at the Top -->
+        <div class="row justify-content-center text-center mb-5 reveal-on-scroll">
           <div class="col-lg-8">
-            <div class="service-process-list reveal-on-scroll">
+            <span class="section-tag text-green font-monospace" data-i18n="services-tag">DEVELOPMENT MANAGEMENT</span>
+            <div class="mb-3">
+              <h2 class="h1 text-white fw-bold heading-green-accent" data-i18n="services-title">Our Services</h2>
+            </div>
+            <p class="lead text-white-50" data-i18n="services-desc">
+              We guide private landowners and family investors through every stage of the property development lifecycle, transforming land into high-performing investments.
+            </p>
+          </div>
+        </div>
+
+        <!-- Full-Width Centered Process Timeline Stack -->
+        <div class="row justify-content-center reveal-on-scroll">
+          <div class="col-lg-10 col-xl-9">
+            <div class="service-process-list">
               
               <!-- Stage 01 -->
-              <a href="service-detail.html?service=1" class="service-process-card text-decoration-none">
-                <span class="service-process-num">01</span>
-                <div class="service-process-content">
-                  <h4 class="service-process-title" data-i18n="service-1-title">Highest & Best Use Assessment</h4>
-                  <p class="service-process-desc" data-i18n="service-1-short">Analyze land parameters and zoning regulations to identify the most profitable development concepts.</p>
+              <div class="service-process-card" onclick="window.location.href='service-detail.html?service=1';">
+                <div class="d-flex align-items-center flex-grow-1">
+                  <span class="service-process-num">01</span>
+                  <div class="service-process-content">
+                    <h4 class="service-process-title" data-i18n="service-1-title">Highest & Best Use Assessment</h4>
+                    <p class="service-process-desc" data-i18n="service-1-short">Analyze land parameters and zoning regulations to identify the most profitable development concepts.</p>
+                  </div>
                 </div>
-                <div class="service-process-arrow"><i class="fas fa-chevron-right"></i></div>
-              </a>
+                <div class="service-process-actions" onclick="event.stopPropagation();">
+                  <a href="service-detail.html?service=1" class="btn btn-sm btn-outline-green rounded-pill px-4 py-2" data-i18n="btn-learn-more">Learn More</a>
+                  <a href="contact.html?service=1" class="btn btn-sm btn-green rounded-pill px-4 py-2" data-i18n="btn-book-consultation">Book Consultation</a>
+                </div>
+              </div>
 
               <!-- Stage 02 -->
-              <a href="service-detail.html?service=2" class="service-process-card text-decoration-none">
-                <span class="service-process-num">02</span>
-                <div class="service-process-content">
-                  <h4 class="service-process-title" data-i18n="service-2-title">Feasibility & Financial Analysis</h4>
-                  <p class="service-process-desc" data-i18n="service-2-short">Run detailed investment simulations, development cost budgets, and return calculations.</p>
+              <div class="service-process-card" onclick="window.location.href='service-detail.html?service=2';">
+                <div class="d-flex align-items-center flex-grow-1">
+                  <span class="service-process-num">02</span>
+                  <div class="service-process-content">
+                    <h4 class="service-process-title" data-i18n="service-2-title">Feasibility & Financial Analysis</h4>
+                    <p class="service-process-desc" data-i18n="service-2-short">Run detailed investment simulations, development cost budgets, and return calculations.</p>
+                  </div>
                 </div>
-                <div class="service-process-arrow"><i class="fas fa-chevron-right"></i></div>
-              </a>
+                <div class="service-process-actions" onclick="event.stopPropagation();">
+                  <a href="service-detail.html?service=2" class="btn btn-sm btn-outline-green rounded-pill px-4 py-2" data-i18n="btn-learn-more">Learn More</a>
+                  <a href="contact.html?service=2" class="btn btn-sm btn-green rounded-pill px-4 py-2" data-i18n="btn-book-consultation">Book Consultation</a>
+                </div>
+              </div>
 
               <!-- Stage 03 -->
-              <a href="service-detail.html?service=3" class="service-process-card text-decoration-none">
-                <span class="service-process-num">03</span>
-                <div class="service-process-content">
-                  <h4 class="service-process-title" data-i18n="service-3-title">Project Strategy & Concept</h4>
-                  <p class="service-process-desc" data-i18n="service-3-short">Define the target market, operational model, and architectural design brief.</p>
+              <div class="service-process-card" onclick="window.location.href='service-detail.html?service=3';">
+                <div class="d-flex align-items-center flex-grow-1">
+                  <span class="service-process-num">03</span>
+                  <div class="service-process-content">
+                    <h4 class="service-process-title" data-i18n="service-3-title">Project Strategy & Concept</h4>
+                    <p class="service-process-desc" data-i18n="service-3-short">Define the target market, operational model, and architectural design brief.</p>
+                  </div>
                 </div>
-                <div class="service-process-arrow"><i class="fas fa-chevron-right"></i></div>
-              </a>
+                <div class="service-process-actions" onclick="event.stopPropagation();">
+                  <a href="service-detail.html?service=3" class="btn btn-sm btn-outline-green rounded-pill px-4 py-2" data-i18n="btn-learn-more">Learn More</a>
+                  <a href="contact.html?service=3" class="btn btn-sm btn-green rounded-pill px-4 py-2" data-i18n="btn-book-consultation">Book Consultation</a>
+                </div>
+              </div>
 
               <!-- Stage 04 -->
-              <a href="service-detail.html?service=4" class="service-process-card text-decoration-none">
-                <span class="service-process-num">04</span>
-                <div class="service-process-content">
-                  <h4 class="service-process-title" data-i18n="service-4-title">Architect & Consultant Selection</h4>
-                  <p class="service-process-desc" data-i18n="service-4-short">Select, negotiate, and appoint top-tier architects, designers, and consultants.</p>
+              <div class="service-process-card" onclick="window.location.href='service-detail.html?service=4';">
+                <div class="d-flex align-items-center flex-grow-1">
+                  <span class="service-process-num">04</span>
+                  <div class="service-process-content">
+                    <h4 class="service-process-title" data-i18n="service-4-title">Architect & Consultant Selection</h4>
+                    <p class="service-process-desc" data-i18n="service-4-short">Select, negotiate, and appoint top-tier architects, designers, and consultants.</p>
+                  </div>
                 </div>
-                <div class="service-process-arrow"><i class="fas fa-chevron-right"></i></div>
-              </a>
+                <div class="service-process-actions" onclick="event.stopPropagation();">
+                  <a href="service-detail.html?service=4" class="btn btn-sm btn-outline-green rounded-pill px-4 py-2" data-i18n="btn-learn-more">Learn More</a>
+                  <a href="contact.html?service=4" class="btn btn-sm btn-green rounded-pill px-4 py-2" data-i18n="btn-book-consultation">Book Consultation</a>
+                </div>
+              </div>
 
               <!-- Stage 05 -->
-              <a href="service-detail.html?service=5" class="service-process-card text-decoration-none">
-                <span class="service-process-num">05</span>
-                <div class="service-process-content">
-                  <h4 class="service-process-title" data-i18n="service-5-title">Design & Execution Management</h4>
-                  <p class="service-process-desc" data-i18n="service-5-short">Oversee procurement, design refinement, and execution stages on behalf of the owner.</p>
+              <div class="service-process-card" onclick="window.location.href='service-detail.html?service=5';">
+                <div class="d-flex align-items-center flex-grow-1">
+                  <span class="service-process-num">05</span>
+                  <div class="service-process-content">
+                    <h4 class="service-process-title" data-i18n="service-5-title">Design & Execution Management</h4>
+                    <p class="service-process-desc" data-i18n="service-5-short">Oversee procurement, design refinement, and execution stages on behalf of the owner.</p>
+                  </div>
                 </div>
-                <div class="service-process-arrow"><i class="fas fa-chevron-right"></i></div>
-              </a>
+                <div class="service-process-actions" onclick="event.stopPropagation();">
+                  <a href="service-detail.html?service=5" class="btn btn-sm btn-outline-green rounded-pill px-4 py-2" data-i18n="btn-learn-more">Learn More</a>
+                  <a href="contact.html?service=5" class="btn btn-sm btn-green rounded-pill px-4 py-2" data-i18n="btn-book-consultation">Book Consultation</a>
+                </div>
+              </div>
 
               <!-- Stage 06 -->
-              <a href="service-detail.html?service=6" class="service-process-card text-decoration-none">
-                <span class="service-process-num">06</span>
-                <div class="service-process-content">
-                  <h4 class="service-process-title" data-i18n="service-6-title">Handover & Operational Advisory</h4>
-                  <p class="service-process-desc" data-i18n="service-6-short">Manage handover procedures and set up holiday homes or leasing operations.</p>
+              <div class="service-process-card" onclick="window.location.href='service-detail.html?service=6';">
+                <div class="d-flex align-items-center flex-grow-1">
+                  <span class="service-process-num">06</span>
+                  <div class="service-process-content">
+                    <h4 class="service-process-title" data-i18n="service-6-title">Handover & Operational Advisory</h4>
+                    <p class="service-process-desc" data-i18n="service-6-short">Manage handover procedures and set up holiday homes or leasing operations.</p>
+                  </div>
                 </div>
-                <div class="service-process-arrow"><i class="fas fa-chevron-right"></i></div>
-              </a>
+                <div class="service-process-actions" onclick="event.stopPropagation();">
+                  <a href="service-detail.html?service=6" class="btn btn-sm btn-outline-green rounded-pill px-4 py-2" data-i18n="btn-learn-more">Learn More</a>
+                  <a href="contact.html?service=6" class="btn btn-sm btn-green rounded-pill px-4 py-2" data-i18n="btn-book-consultation">Book Consultation</a>
+                </div>
+              </div>
 
             </div>
           </div>
