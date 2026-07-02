@@ -387,6 +387,7 @@
         if (delivStr) {
           const items = delivStr.split(',');
           let html = '';
+          const descPlaceholder = translations[lang] && translations[lang]['detail-outcomes-desc-placeholder'] ? translations[lang]['detail-outcomes-desc-placeholder'] : 'Phase deliverable verified for operational handoff.';
           items.forEach(function(item, idx) {
             html += `
               <div class="col-md-4" data-aos="fade-up" data-aos-delay="${(idx + 1) * 100}">
@@ -396,7 +397,7 @@
                   </div>
                   <div>
                     <h5 class="fw-bold mb-2 font-serif text-dark">${item.trim()}</h5>
-                    <p class="text-muted small mb-0" data-i18n="detail-outcomes-desc-placeholder">Phase deliverable verified for operational handoff.</p>
+                    <p class="text-muted small mb-0" data-i18n="detail-outcomes-desc-placeholder">${descPlaceholder}</p>
                   </div>
                 </div>
               </div>

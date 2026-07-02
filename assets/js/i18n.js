@@ -634,6 +634,12 @@ const translations = {
     "btn-learn-more": "Learn More",
     "detail-deliverables-title": "Key Deliverables",
     "detail-duration-title": "Timeline / Duration",
+    "detail-methodology-title": "Detailed Methodology",
+    "detail-outcomes-title": "Expected Project Outcomes",
+    "detail-outcomes-desc": "At the end of this phase, the landowner receives formal documents and strategic files:",
+    "detail-outcomes-desc-placeholder": "Phase deliverable verified for operational handoff.",
+    "detail-cta-title": "Have questions about this stage?",
+    "detail-cta-desc": "Our advisors are ready to walk you through the assessment process, helping you estimate development costs and target yields.",
 },
   ar: {
     "proj-hero-badge": "مساكن زيمفورث",
@@ -1274,5 +1280,11 @@ const translations = {
     "btn-learn-more": "اكتشف المزيد",
     "detail-deliverables-title": "المخرجات الرئيسية",
     "detail-duration-title": "الجدول الزمني / المدة",
+    "detail-methodology-title": "تفاصيل المنهجية المتبعة",
+    "detail-outcomes-title": "النتائج المتوقعة للمشروع",
+    "detail-outcomes-desc": "في نهاية هذه المرحلة، يتلقى مالك الأرض المستندات والملفات الاستراتيجية التالية:",
+    "detail-outcomes-desc-placeholder": "مخرج مرحلي معتمد للتشغيل والتسليم.",
+    "detail-cta-title": "هل لديك أسئلة حول هذه المرحلة؟",
+    "detail-cta-desc": "مستشارونا جاهزون لمساعدتك خلال عملية التقييم وتقدير تكاليف التطوير والعوائد المستهدفة.",
 }
 };
