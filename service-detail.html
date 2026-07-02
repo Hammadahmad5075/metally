@@ -385,7 +385,7 @@
         const delivStr = translations[lang] ? translations[lang][delivKey] : '';
         const container = document.getElementById('deliverables-container');
         if (delivStr) {
-          const items = delivStr.split(',');
+          const items = delivStr.split(/[,،]/);
           let html = '';
           const descPlaceholder = translations[lang] && translations[lang]['detail-outcomes-desc-placeholder'] ? translations[lang]['detail-outcomes-desc-placeholder'] : 'Phase deliverable verified for operational handoff.';
           items.forEach(function(item, idx) {
